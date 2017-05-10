@@ -1,0 +1,116 @@
+<div>
+    <div class="reg-top">
+        <div class="container">
+            <span>已有帐号？</span><a ui-sref="login">登录</a>
+        </div>
+    </div>
+
+    <div class="reg-main" ng-app="regist">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <form class="regForm" name="regForm">
+                        <div class="reg-style reg-name">
+                            <i class="iconfont icon-shouji"></i>
+                            <input type="text"
+                                   name="utel"
+                                   class="regText"
+                                   placeholder="请输入手机号"
+                                   ng-model="utel"
+                                   required
+                                   utelcheck
+                            >
+                            <p class="iconfont icon-gou checkgou" ng-if="regForm.utel.$valid"></p>
+                        </div>
+                        <div class="check" id="regutel" style="height: 20px;overflow:hidden" id="loginUser">
+                            <div class="error" ng-if="regForm.utel.$error.required && regForm.utel.$touched"><span>手机号不能为空</span>
+                            </div>
+                            <div class="error" ng-if="regForm.utel.$error.utelcheck && regForm.utel.$touched"><span>请输入正确的手机号</span>
+                            </div>
+                        </div>
+                        <div class="ver">
+                            <div class="reg-ver">
+                                <i class="iconfont icon-yanzhengmayanzheng"></i>
+                                <input type="text"
+                                       name="userver"
+                                       class="regverText"
+                                       placeholder="请输入收到的验证码"
+                                       ng-model="userver"
+                                       required
+                                >
+                            </div>
+                            <div class="ver-btn">
+                                <a href="#">获取验证码</a>
+                            </div>
+                        </div>
+                        <div class="check" style="height: 20px">
+                            <div class="error"><span>                </span></div>
+                        </div>
+                        <div class="reg-style reg-name">
+                            <i class="iconfont icon-wode"></i>
+                            <input type="text"
+                                   name="uname"
+                                   class="regText"
+                                   placeholder="请输入昵称"
+                                   ng-model="uname"
+                                   required
+                                   ng-minlength="3"
+                                   ng-maxlength="6"
+                                   unamecheck
+                            >
+                            <p class="iconfont icon-gou checkgou" ng-if="regForm.uname.$valid"></p>
+                        </div>
+                        <div class="check" style="height: 20px">
+                            <div class="error" ng-if="regForm.uname.$error.required && regForm.uname.$touched"><span>昵称不能为空</span>
+                            </div>
+                            <div class="error" ng-if="regForm.uname.$error.unamecheck && regForm.uname.$touched"><span>昵称不能包含数字和特殊字符</span>
+                            </div>
+                            <div class="error" ng-if="(regForm.uname.$error.minlength || regForm.uname.$error.maxlength)&&
+                                                   regForm.uname.$touched"><span>昵称长度为3-6位</span></div>
+                        </div>
+                        <div class="reg-style reg-name">
+                            <i class="iconfont icon-taocan-suoxiao"></i>
+                            <input type="password"
+                                   name="upwd"
+                                   class="regText"
+                                   placeholder="请输入密码"
+                                   ng-model="upwd"
+                                   required
+                                   upwdcheck
+                            >
+                            <p class="iconfont icon-gou checkgou" ng-if="regForm.upwd.$valid"></p>
+                        </div>
+                        <div class="check" style="height: 20px">
+                            <div class="error" ng-if="regForm.upwd.$error.required && regForm.upwd.$touched"><span>密码不能为空</span>
+                            </div>
+                            <div class="error" ng-if="regForm.upwd.$error.upwdcheck && regForm.upwd.$touched"><span>字母开头，6-18，包含字符、数字和下划线</span>
+                            </div>
+                        </div>
+                        <div class="reg-style reg-name">
+                            <i class="iconfont icon-taocan-suoxiao"></i>
+                            <input type="password"
+                                   name="upwd1"
+                                   class="regText"
+                                   placeholder="请确认密码"
+                                   ng-model="upwd1"
+                                   required
+                            >
+                            <p class="iconfont icon-gou checkgou" ng-if="regForm.upwd1.$valid"></p>
+                        </div>
+                        <div class="check" style="height: 20px">
+                            <div class="error" ng-if="(upwd != upwd1) &&
+                                                  regForm.upwd1.$touched"><span>两次输入密码不一致</span></div>
+                        </div>
+
+                        <button type="button" class="regBtn" ng-disabled="regForm.$invalid" ng-click="regists()">注 册
+                        </button>
+
+                        <div class="alreadyhave">
+                            <p>已有帐号，直接 <a ui-sref="login">登录</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

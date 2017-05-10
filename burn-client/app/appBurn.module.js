@@ -1,0 +1,27 @@
+/**
+ * Created by Yezi on 2017/4/21.
+ */
+angular.module('burn',[
+    'header',
+    'footer',
+    'ui.router',
+    'indexBurn',
+    'login',
+    'regist',
+    'video',
+    'videoDetail',
+    'videoBuy',
+    'course',
+    'courseDetaileds',
+    'appoinmentCoachPart',
+    'blog',
+    'blogDetail',
+    'blogUpload',
+    'coach',
+    'coachDetail',
+    'personal',
+    'allFunction',
+    'publicUrl',
+    'ngResource',
+    'ngSanitize'
+]);

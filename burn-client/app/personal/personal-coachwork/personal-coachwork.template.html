@@ -1,0 +1,113 @@
+<div class="detail-coantianer">
+    <div class="detail-title">
+        <div class="detail-list" id="my-coach-schedule">
+            <p>我的课表</p>
+        </div>
+        <div class="detail-list" id="my-coach-push-schedule">
+            <p ng-click="alreadyCourse()">发布课程表</p>
+        </div>
+        <!--<div class="detail-list" id="my-coach-appointment-schedule">-->
+            <!--<p ng-click="alreadyCourse()">我的记录</p>-->
+        <!--</div>-->
+    </div>
+
+
+    <div>
+
+        <!--我的课表-->
+        <div id="personal-coach-schedule">
+            <!--<div class="nav-middle-right-dingdan" ng-repeat="vh in coachCourse">
+                <div class="nav-middle-right-dingdan-colo">
+                    <span style="line-height: 30px;margin-left: 15px;">购买日期：</span><span ng-bind="vh.otime" style="line-height: 30px;"></span>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7  nav-middle-right-dingdan-lef">
+                    <div class="nav-middle-right-dingdan-lef-im">
+                        <img ng-src="{{videoUrl+vh.vpic}}" alt="">
+                    </div>
+                    <div class="nav-middle-right-dingdan-lef-tt">
+                        <p>名称: <span ng-bind="vh.vname"></span></p>
+                        <p>类型:<span ng-bind="vh.kname"></span></p>
+                        <p>时长:<span ng-bind="vh.vtime"></span></p>
+                        <p>难度:<span ng-bind="vh.rname"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav-middle-right-dingdan-lef">
+                    <div class="nav-middle-right-dingdan-pr">
+                        <p>¥<span ng-bind="vh.vprice"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                    <div class="nav-middle-right-dingdan-pa">
+                        <a ui-sref="video-detail({vid:vh.vid})">立即观看</a>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="coach-schedule-box" ng-repeat="cc in coachCourse">
+                <i class="iconfont icon-sanjiao"></i>
+                <div class="coach-schedule-box-top">
+                    <div class="schedule-box-top-left">
+                        <img src="images/f2.jpg" alt="">
+                    </div>
+                    <div class="schedule-box-top-right">
+                        <h5 ng-bind="cc.cname"></h5>
+                        <p><span ng-bind="cc.ccount"></span>:个预约</p>
+                    </div>
+                </div>
+                <div class="coach-schedule-box-bottom">
+                    <div class="coach-schedule-time">日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期：<span ng-bind="cc.cdate"></span></div>
+                    <div class="coach-schedule-time">开始时间：<span ng-bind="cc.ctimestart"></span></div>
+                    <div class="coach-schedule-time">结束时间：<span ng-bind="cc.ctimeend"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--发布课表-->
+        <div id="personal-coach-push-schedule" style="display:none">
+            <div class="information-nickname list-name">
+                <button>课程名称:</button>
+                <input type="text" ng-model="cname">
+            </div>
+            <div class="information-nickname list-name">
+                <button>最大人数:</button>
+                <input type="text" ng-model="ccount">
+            </div>
+            <div class="information-nickname list-name">
+                <button>上课日期:</button>
+                <input class="Wdate" type="text" id="cdate" onClick="WdatePicker({dateFmt:'yyyy-M-d',minDate:'%y-%M-{%d+1}',maxDate:'%y-%M-%ld'})">
+
+                <!--<input type="date" ng-model="cdate">-->
+            </div>
+            <div class="information-nickname list-name">
+                <button>开始时间:</button>
+                <input class="Wdate" type="text" id="ctimestart" onClick="WdatePicker({dateFmt:'yyyy-M-d H:mm:ss',minDate:'%y-%M-{%d+1} 08:00:00'})">
+
+                <!--<input id="cstarttime" type="time" ng-model="ctimestart">-->
+            </div>
+            <div class="information-nickname list-name">
+                <button>结束时间:</button>
+                <input class="Wdate" type="text" id="ctimeend" onClick="WdatePicker({dateFmt:'yyyy-M-d H:mm:ss',minDate:'#F{$dp.$D(\'ctimestart\') 08:00:00}'})">                <!--<input id="cendtime" type="time" ng-model="ctimeend">-->
+            </div>
+            <div class="card-photo">
+                <h3>课程封面:</h3>
+                <div class="card-pic">
+                    <img ngf-src="coursePic || data.defaultCoursePic" alt="">
+                    <i class="iconfont icon-paizhao" ngf-select="" id="userCard1" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="coursePic"></i>
+                </div>
+            </div>
+            <div class="information-signature card-photo">
+                <h3>课程介绍:</h3>
+                <textarea name="user-signature" ng-model="cintroduce"></textarea>
+            </div>
+            <div class="operate-btn-box">
+                <input type="button" class="save-btn" value="发布课表" ng-click="ReleaseCourse()">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

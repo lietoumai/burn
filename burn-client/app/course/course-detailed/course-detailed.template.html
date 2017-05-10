@@ -1,0 +1,75 @@
+
+<div class="show-coches">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+                <!--教练资料卡 start-->
+                <div class="show-one-coche" id="coches1">
+                    <div class="coche-head">
+                        <p>教 练</p>
+                    </div>
+                    <div class="pic">
+                        <img ng-src="{{IconUrl+coursedataDetailed.uicon}}" alt="">
+                    </div>
+                    <div class="show-star">
+                        <div class="over" style="width:75%"></div><!--这里是遮罩，设置宽度以达到评分的效果-->
+                    </div>
+                    <div class="coche-name">
+                        <p ng-bind="coursedataDetailed.uname"></p>
+                    </div>
+                    <div class="show-coche-type">
+                        <p ng-bind="coursedataDetailed.cqname"></p>
+                    </div>
+                    <div class="show-job-type">
+                        <div class="show-job" ng-bind="coursedataDetailed.cotag">
+                        </div>
+                    </div>
+                </div><!--教练资料卡 end-->
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <div class="course">
+                    <div class="course-top">
+                        <div class="course-top-left">
+                            <h2 ng-bind="coursedataDetailed.cname"></h2>
+                        </div>
+                        <div class="course-top-right">
+                            <p>预约人数 <span class="alreadyCount" ng-bind="coursedataCount.peopleCount"></span>/<span ng-bind="coursedataDetailed.ccount"></span></p>
+                        </div>
+                    </div>
+                    <div class="course-main">
+                       <!--     <td ng-bind="coursedataDetailed.ccount"></td>    -->
+                       <div class="course-main-container">
+                           <div class="course-main-left">
+                               <div class="course-list">
+                                    <button>课程名称</button><span ng-bind="coursedataDetailed.cname"></span>
+                               </div>
+                               <div class="course-list">
+                                   <button>上课日期</button><span ng-bind="coursedataDetailed.cdate"></span>
+                               </div>
+                               <div class="course-list">
+                                   <button>开始时间</button><span ng-bind="coursedataDetailed.ctimestart"></span>
+                               </div>
+                               <div class="course-list">
+                                   <button>结束时间</button><span ng-bind="coursedataDetailed.ctimeend"></span>
+                               </div>
+                               <div class="course-list">
+                                   <button>已报人数</button><span ng-bind="coursedataCount.peopleCount"></span>
+                               </div>
+                           </div>
+                           <div class="course-main-right">
+                               <img ng-src="{{courseUrl+coursedataDetailed.cpicc1}}" alt="">
+                           </div>
+                       </div>
+
+                        <div class="course-introduce">
+                            <p ng-bind="coursedataDetailed.cintroduce"></p>
+                        </div>
+                    </div>
+                    <div class="select-course">
+                        <input type="button" value="选课" id="selectCourse" ng-click="selectCourse()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

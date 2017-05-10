@@ -1,0 +1,111 @@
+<div class="upload-blog-warp">
+    <div class="container">
+        <div class="row">
+            <div class="upload-blog-row">
+                <form action="">
+                    <div class="upload-blog-explain text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>发表健身圈</h3>
+                    </div>
+                    <div class="upload-blog-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>标题</h5>
+                        <input type="text" ng-model="bptitle" placeholder="在此输入博客标题，最长不超过15个字长度！">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-title-hint">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="upload-blog-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>正文</h5>
+                    </div>
+
+                    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 1px gainsboro;">
+                        <div class="htmleaf-container">
+
+                            <div id="standalone-container">
+                                <div id="toolbar-container">
+					<span class="ql-formats">
+					<select class="ql-font"></select>
+					<select class="ql-size"></select>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-bold"></button>
+					<button class="ql-italic"></button>
+					<button class="ql-underline"></button>
+					<button class="ql-strike"></button>
+					</span>
+                                    <span class="ql-formats">
+					<select class="ql-color"></select>
+					<select class="ql-background"></select>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-script" value="sub"></button>
+					<button class="ql-script" value="super"></button>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-header" value="1"></button>
+					<button class="ql-header" value="2"></button>
+					<button class="ql-blockquote"></button>
+					<button class="ql-code-block"></button>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-list" value="ordered"></button>
+					<button class="ql-list" value="bullet"></button>
+					<button class="ql-indent" value="-1"></button>
+					<button class="ql-indent" value="+1"></button>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-direction" value="rtl"></button>
+					<select class="ql-align"></select>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-link"></button>
+					<button class="ql-image"></button>
+					<button class="ql-video"></button>
+					<button class="ql-formula"></button>
+					</span>
+                                    <span class="ql-formats">
+					<button class="ql-clean"></button>
+					</span>
+                                </div>
+                                <div id="editor-container" style="min-height: 500px;"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="blog-label-box col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>*选择合适标签，最多可选3个</p>
+                        <div class="job-type classify-item">
+                            <ul>
+                                <li ng-repeat="k in kindType"  ng-click="blogKindSelect($index+1)">
+                                    <span ng-bind="k.kname"></span>
+                                    <i class="iconfont icon-sanjiao"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog-uploader-cover col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="blog-cover-img text-center">
+                            <img ngf-src="blogCover || data.defaultBlogCover" alt="">
+                            <i class="iconfont icon-paizhao" ngf-select="" id="blogCover" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="blogCover"></i>
+                        </div>
+                        <span>封面为420*260像素的 PNG/JPG/GIF 格式图片</span>
+                    </div>
+
+                    <div class="blog-uploader-roundup col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>摘要：</p>
+                    </div>
+
+                    <div class="blog-roundup col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <textarea name="" id="" ng-model="bpzhaiyao"></textarea>
+                    </div>
+                    <div class="upload-blog-btn">
+                        <input type="button" class="upload-btn blue-burn-btn" ng-click="publishBlog()" value="发布">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

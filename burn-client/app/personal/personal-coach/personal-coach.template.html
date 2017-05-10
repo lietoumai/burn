@@ -1,0 +1,55 @@
+<div class="detail-coantianer">
+    <div class="detail-title">
+        <div class="detail-list" id="information">
+            <p>签约教练</p>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="nav-middle-right-se">
+            <form name="becomeCoach" name="becomeCoach" method="post">
+            <div class="information-nickname list-name1">
+                <button>教练证书:</button>
+                <div class="coach-card">
+                    <img ngf-src="coachPhoto || data.defaultcoachPhoto" alt="">
+                    <i class="iconfont icon-paizhao" ngf-select="" id="coach-certificate" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="coachPhoto"></i>
+            </div>
+            <div class="information-nickname list-name1">
+                <button>职位选择:</button>
+                <span><input type="radio" value="2" ng-model="jobtype">全职</input></span>
+                <span><input type="radio" value="1" ng-model="jobtype">兼职</input></span>
+            </div>
+            <div class="information-nickname list-name1">
+                <button>工作类型:</button>
+                <span  ng-repeat="c in kindtypedata">
+                    <input type="checkbox" value="" class="jobtype" name="jobtypes" ng-click="subjob(c.kname)"><span ng-bind="c.kname"></span>
+                </span>
+            </div>
+            <div class="information-nickname list-name1">
+                <button>上次工作:</button>
+
+                <div id="node">
+                    <div class="job" id="job">
+                        <button>开始时间:</button><span><input type="date" ng-model="starttime"></span>
+                        <button>结束时间:</button><span><input type="date" ng-model="endtime"></span>
+                        <div class="job-express">
+                            <button>工作职责</button>
+                            <div class="express-txt">
+                                <textarea ng-model="mainjob"></textarea>
+                            </div>
+                        </div>
+                        <!--<i class="iconfont icon-shanchu" id="deletejob" ng-click="$(this).parent('div').remove()"></i>-->
+                    </div>
+                </div>
+
+                <div class="addexpress">
+                    <!--<i class="iconfont icon-zengjia" id="addjob"  ng-click="addDiv()"></i>-->
+                </div>
+                <button class="tijiao" ng-click="becomeCoach1()">提交审核</button>
+            </div>
+            </form>
+        </div>
+
+    </div>
+</div>

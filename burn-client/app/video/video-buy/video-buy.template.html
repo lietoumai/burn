@@ -1,0 +1,54 @@
+<div class="buy-warp">
+    <div class="container">
+        <div class="row">
+            <div class="buy-row">
+                <div class="buy-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="buy-title text-center">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <p>课程</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <p>课程名</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <p>价格</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <p>时长</p>
+                        </div>
+
+                    </div>
+                    <div class="buy-goods-info text-center">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 goods-icon goods-info ">
+                            <img src="images/nv2.jpg" alt="">
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 goods-info">
+                            <p ng-bind="vname"></p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 goods-info">
+                            <p>￥: <span ng-bind="vprice"></span></p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 goods-info">
+                            <p ng-bind="vtime"></p>
+                        </div>
+                    </div>
+
+                    <div class="order-btn">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <input type="button" class="cancel-buy red-burn-btn" onClick="javascript: history.go(-1);" value="取消订单">
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <input type="button" class="cancel-buy red-burn-btn" ng-click="buyVideo()" value="立即购买">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="modal-alert text-center" style="display: none">
+        <p>余额不足</p>
+        <input type="button" value="确定">
+    </div>-->
+</div>

@@ -1,0 +1,108 @@
+
+<div class="show-coches">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+                <!--教练资料卡 start-->
+                <div class="show-one-coche" id="coches1">
+                    <div class="coche-head">
+                        <p>教 练</p>
+                    </div>
+                    <div class="pic">
+                        <img ng-src="{{IconUrl+coachdataDetailed.uicon}}" alt="">
+                    </div>
+                    <div class="show-star">
+                        <div class="over" style="width:75%"></div><!--这里是遮罩，设置宽度以达到评分的效果-->
+                    </div>
+                    <div class="coche-name">
+                        <p ng-bind="coachdataDetailed.uname"></p>
+                    </div>
+                    <div class="show-coche-type">
+                        <p ng-bind="coachdataDetailed.cqname"></p>
+                    </div>
+                    <div class="show-job-type">
+                        <div class="show-job" ng-bind="coachdataDetailed.cotag">
+                        </div>
+                    </div>
+                </div><!--教练资料卡 end-->
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <div class="coche-detailed">
+                    <h4>预约教练</h4>
+                    <hr style="height:3px;border-top:solid 3px #00BFF0;" />
+                    <span>您预约的课程是 <span style="color:#E84E40;" ng-bind="now|date: 'yyyy-MM-dd'"></span>的课程
+                    </span>
+
+
+
+
+
+                    <div class="coach-type classify-item">
+                        <ul>
+                            <li style="font-weight: 900;margin: 50px 0">请选择时间段</li>
+                        </ul>
+                        <ul id="coachtype1">
+                            <li id="time01">
+                                <button ng-click="chuan('8:00-10:00')" id="btn01">8:00-10:00</button>
+                                <i class="iconfont icon-sanjiao"></i>
+                            </li>
+                            <li id="time02">
+                                <button ng-click="chuan('10:00-12:00')" id="btn02">10:00-12:00</button>
+                                <i class="iconfont icon-sanjiao"></i>
+                            </li>
+                            <li id="time03">
+                                <button ng-click="chuan('14:00-16:00')" id="btn03">14:00-16:00</button>
+                                <i class="iconfont icon-sanjiao"></i>
+                            </li>
+                            <li id="time04">
+                                <button ng-click="chuan('16:00-18:00')" id="btn04">16:00-18:00</button>
+                                <i class="iconfont icon-sanjiao"></i>
+                            </li>
+                            <li id="time05">
+                                <button ng-click="chuan('19:00-21:00')" id="btn05">19:00-21:00</button>
+                                <i class="iconfont icon-sanjiao"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+<!--
+                    <div class="time"><input type="radio" name="radio1" id="radio1" value="8:00-10:00" ng-model="time1"><label for="radio1">8:00-10:00</label></div>
+                    <hr>
+                    <div class="time"><input type="radio" name="radio2" id="radio2" value="10:00-12:00" ng-model="time1"><label for="radio2">10:00-12:00</label></div>
+                    <hr>
+                    <div class="time"><input type="radio" name="radio3" id="radio3" value="14:00-16:00" ng-model="time1"><label for="radio3">14:00-16:00</label></div>
+                    <hr>
+                    <div class="time"><input type="radio" name="radio4" id="radio4" value="16:00-18:00" ng-model="time1"><label for="radio4">16:00-18:00</label></div>
+                    <hr>
+                    <div class="time"><input type="radio" name="radio5" id="radio5" value="19:00-21:00" ng-model="time1"><label for="radio5">19:00-21:00</label></div>
+-->
+
+
+<!--
+
+                    <span>请选择：</span>
+                    <span>
+                        <select name="" id="">
+                        <option value="8:00-10:00">8:00-10:00</option>
+                        <option value="10:00-12:00">10:00-12:00</option>
+                        <option value="14:00-16:00">14:00-16:00</option>
+                        <option value="16:00-18:00">16:00-18:00</option>
+                        <option value="19:00-21:00">19:00-21:00</option>
+                    </select>
+                    </span>
+
+-->
+
+
+                    <div class="appoinment-coach">
+                        <input type="button" value="提交" id="selectCourse" ng-click="appoinment()">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

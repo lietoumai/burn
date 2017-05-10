@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/fullcalendar2.css">
+    <link rel="stylesheet" href="plugin/kindeditor-4.1.7/themes/default/default.css">
+
+    <!--文本编辑器-->
+    <link rel="stylesheet" href="css/userBlogListCss.css">
+    <link rel="stylesheet" href="css/quill.snow.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/monokai-sublime.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css"/>
+    <script language="javascript" type="text/javascript" src="css/My97DatePicker/WdatePicker.js"></script>
+
+    <!--导入js-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/videojs-ie8.min.js"></script>
+    <script src="js/My97DatePicker/WdatePicker.js"></script>
+
+    <!--导入angular-->
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-resource.min.js"></script>
+    <script src="js/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+
+
+    <!--导入文件上传-->
+    <script src="js/ng-file-upload/ng-file-upload-shim.min.js"></script>
+    <script src="js/ng-file-upload/ng-file-upload.min.js"></script>
+    <!--导入module-->
+    <script src="appBurn.module.js"></script>
+    <script src="appBurn.config.js"></script>
+
+    <!--依赖header.module-->
+    <script src="header-part/header.module.js"></script>
+    <script src="header-part/header.directive.js"></script>
+
+    <!--导入footer指令-->
+    <script src="footer/footer.module.js"></script>
+    <script src="footer/footer.directive.js"></script>
+
+    <!--导入首页-->
+    <script src="index/index-page.module.js"></script>
+    <script src="index/index-page.directive.js"></script>
+
+    <!--导入公共路径-->
+    <script src="service/public/public.module.js"></script>
+
+    <!--导入服务-->
+    <script src="service/service.module.js"></script>
+
+    <!--导入用户基本服务-->
+    <script src="service/user/user.module.js"></script>
+    <script src="service/user/user.service.js"></script>
+
+
+    <!--导入轮播-->
+    <script src="js/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+
+    <!--导入登录注册指令-->
+    <script src="header-part/user-entrance/user-entrance.module.js"></script>
+    <script src="header-part/user-entrance/user-entrance.directive.js"></script>
+
+    <!--导入登录-->
+    <script src="login/login.module.js"></script>
+    <script src="login/login.directive.js"></script>
+
+    <!--导入注册-->
+    <script src="regist/regist.module.js"></script>
+    <script src="regist/regist.directive.js"></script>
+
+
+    <!--导入视频service-->
+    <script src="service/video/videoService.module.js"></script>
+    <script src="service/video/videoService.service.js"></script>
+
+    <!--导入视频-->
+    <script src="video/video.module.js"></script>
+    <script src="video/video.directive.js"></script>
+
+    <!--导入视频详情-->
+    <script src="video/video-detail/video-detail.module.js"></script>
+    <script src="video/video-detail/video-detail.directive.js"></script>
+
+    <!--导入视频购买页面-->
+    <script src="video/video-buy/video-buy.module.js"></script>
+    <script src="video/video-buy/video-buy.directive.js"></script>
+
+
+    <!--导入课程service-->
+    <script src="service/course/courses.module.js"></script>
+    <script src="service/course/courses.service.js"></script>
+    <!--导入课程-->
+    <script src="course/course.module.js"></script>
+    <script src="course/course.directive.js"></script>
+    <!--导入课程详情-->
+    <script src="course/course-detailed/course-detailed.module.js"></script>
+    <script src="course/course-detailed/course-detailed.directive.js"></script>
+
+
+    <!--导入博客service-->
+    <script src="service/blog/blogService.module.js"></script>
+    <script src="service/blog/blogService.service.js"></script>
+
+    <!--导入博客健身圈-->
+    <script src="blog/blog.module.js"></script>
+    <script src="blog/blog.directive.js"></script>
+
+    <!--导入博客详情-->
+    <script src="blog/blog-detail/blog-detail.module.js"></script>
+    <script src="blog/blog-detail/blog-detail.directive.js"></script>
+
+    <!--导入发表博客-->
+    <script src="blog/blog-upload/blog-upload.module.js"></script>
+    <script src="blog/blog-upload/blog-upload.directive.js"></script>
+
+    <!--文本编辑器-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script src="js/quill.js"></script>
+
+    <!--导入教练Service-->
+    <script src="service/coach/coachService.module.js"></script>
+    <script src="service/coach/coachService.service.js"></script>
+
+    <!--导入预约教练-->
+    <script src="coach/coach.module.js"></script>
+    <script src="coach/coach.directive.js"></script>
+
+    <!--导入教练详情-->
+    <script src="coach/coach-detail/coach-detail.module.js"></script>
+    <script src="coach/coach-detail/coach-detail.directive.js"></script>
+
+    <!--导入预约教练-->
+    <script src="coach/coach-detail/appoinment/appoinment.module.js"></script>
+    <script src="coach/coach-detail/appoinment/appoinment.directive.js"></script>
+
+
+    <!--导入个人中心-->
+    <script src="personal/personal.module.js"></script>
+    <script src="personal/personal.directive.js"></script>
+    <script src="personal/personal-config.js"></script>
+
+    <!--导入个人中心主页-->
+    <script src="personal/personal-homepage/personal-homepage.module.js"></script>
+    <script src="personal/personal-homepage/personal-homepage.directive.js"></script>
+
+    <!--导入个人中心课程-->
+    <script src="personal/personal-course/personal-course.module.js"></script>
+    <script src="personal/personal-course/personal-course.directive.js"></script>
+
+
+    <!--导入订单中心-->
+    <script src="personal/personal-order/personal-order.module.js"></script>
+    <script src="personal/personal-order/personal-order.directive.js"></script>
+
+    <!--导入收藏中心-->
+    <script src="personal/personal-collect/personal-collect.modulel.js"></script>
+    <script src="personal/personal-collect/personal-collect.directive.js"></script>
+
+    <!--导入我的设置-->
+    <script src="personal/personal-set/personal-set.module.js"></script>
+    <script src="personal/personal-set/personal-set.directive.js"></script>
+
+    <!--导入成为教练-->
+    <script src="personal/personal-coach/personal-coach.module.js"></script>
+    <script src="personal/personal-coach/personal-coach.directive.js"></script>
+
+    <!--导入我的工作-->
+    <script src="personal/personal-coachwork/personal-coachwork.module.js"></script>
+    <script src="personal/personal-coachwork/personal-coachwork.directive.js"></script>
+
+
+</head>
+<body ng-app="burn">
+
+    <header>
+        <header-part></header-part>
+    </header>
+
+    <div class="show-warp" ui-view>
+
+    </div>
+
+    <div class="container-fluid footer-warp">
+        <footer-part></footer-part>
+    </div>
+
+</body>
+</html>

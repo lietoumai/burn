@@ -1,0 +1,133 @@
+
+<div class="show-coches">
+
+    <!-- banner -->
+    <div class="banner1" id="home">
+        <div class="container">
+            <div class="banner-info">
+                <div class="banner-left">
+                    <img ng-src="{{IconUrl+coachdataDetailed.uicon}}" alt="">
+                </div>
+                <div class="banner-right">
+                    <h1 ng-bind="coachdataDetailed.uname"></h1>
+                    <div class="border"></div>
+                    <h2 ng-bind="coachdataDetailed.cqname"></h2>
+                    <a  ui-sref="appoinmentCoachPart({coid:coachdataDetailed.coid})">点我预约</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--/header-banner-->
+    <!--about-->
+    <div class="about text-center" id="about">
+        <div class="container">
+            <h3>关于我</h3>
+            <div class="strip text-center"><img src="images/about.png" alt=" "/></div>
+            <p ng-bind="coachdataDetailed.mainjob"></p>
+        </div>
+    </div>
+    <!--//about-->
+    <div class="about-back"></div>
+    <!--my skill-->
+    <div class="my-skills text-center">
+        <div class="container">
+            <h3>专业技能</h3>
+            <div class="strip text-center"><img src="images/skill.png" alt=" "/></div>
+            <div class="skill-grids">
+                <div class="col-md-12 skills-grid text-center">
+                    <div class="circle" id="circles-1"></div>
+                    <p ng-bind="coachdataDetailed.cotag"></p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--//my skill-->
+    <div class="my-skill-back"></div>
+    <!--education-->
+    <div class="education text-center">
+        <div class="container">
+            <div class="edu-info">
+                <h3>发布的课程</h3>
+            </div>
+            <div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
+            <div class="edu-grids">
+                <div class="col-md-4 edu-grid" ng-repeat="sc in coachdataCourse">
+                    <p ng-bind="sc.cdate"></p>
+                    <span><span ng-bind="sc.ctimestart"></span>-<span ng-bind="sc.ctimeend"></span></span>
+                    <img src="images/arrow.png" alt=""/>
+                    <div class="edu-border">
+                        <div class="edu-grid-master">
+                            <h3 ng-bind="sc.cname"></h3>
+                            <h4 ng-bind="sc.uname"></h4>
+                        </div>
+                        <div class="edu-grid-info" ui-sref="courseDetaileds({cid:sc.cid})">
+                            <h5 ng-bind="sc.cintroduce"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+<!--    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+                &lt;!&ndash;教练资料卡 start&ndash;&gt;
+                <div class="show-one-coche" id="coches1">
+                    <div class="coche-head">
+                        <p>教 练</p>
+                    </div>
+                    <div class="pic">
+                        <img ng-src="{{IconUrl+coachdataDetailed.uicon}}" alt="">
+                    </div>
+                    <div class="show-star">
+                        <div class="over" style="width:75%"></div>&lt;!&ndash;这里是遮罩，设置宽度以达到评分的效果&ndash;&gt;
+                    </div>
+                    <div class="coche-name">
+                        <p ng-bind="coachdataDetailed.uname"></p>
+                    </div>
+                    <div class="show-coche-type">
+                        <p ng-bind="coachdataDetailed.cqname"></p>
+                    </div>
+                    <div class="show-job-type">
+                        <div class="show-job" ng-bind="coachdataDetailed.cotag">
+                        </div>
+                    </div>
+                    <div class="chat" ui-sref="appoinmentCoachPart({coid:coachdataDetailed.coid})">我要预约</div>
+                </div>&lt;!&ndash;教练资料卡 end&ndash;&gt;
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                <div class="coche-detailed">
+                    <h4>工作经历</h4>
+                    <hr style="height:3px;border-top:solid 3px #00BFF0;" />
+                    <p ng-bind="coachdataDetailed.mainjob"></p>
+                    <ul>
+                        <li><h4 style="margin-top: 30px" id="aboutvideo">相关视频</h4></li>
+                    </ul>
+                    <hr style="height:3px;background-color: #00BFF0;margin-top: 5px" />
+                     <div class="about-videos">
+                         <div class="row">
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: center">
+                                 <img src="../upfile/b2.jpg" alt="">
+                             </div>
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: center">
+                                 <img src="../upfile/b2.jpg" alt="">
+                             </div>
+                         </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+</div>
