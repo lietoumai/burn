@@ -1,0 +1,2966 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-family: 'Arimo', sans-serif;
+    font-size: 100%;
+    background:#fff; }
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/*我的主页 css----------------------------------------------------------------------*/
+
+.nav-middle-right-t {
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    border-bottom: solid 1px grey;
+}
+
+.person-blog-title{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.person-blog-title i{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    font-size: 3em;
+}
+
+.person-blog-title-pic{
+    float:left;
+}
+.person-blog-title-pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+}
+.person-blog-title-title{
+    float:left;
+    margin-left: 50px;
+    font-size: 1em;
+    font-weight: 600;
+}
+.person-blog-title-title p span{
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0 10px;
+    color: black;
+}
+.person-blog-title-title p{
+    font-weight: 100;
+    color: darkgrey;
+}
+.person-blog-title-time{
+    float: right;
+}
+.person-blog-content{
+    margin-top: 10px;
+    width: 980px;
+    height: 200px;
+    border-top: solid 1px gainsboro;
+    border-bottom: solid 1px gainsboro;
+}
+.person-blog-content-pic{
+    width: 250px;
+    height: 200px;
+    line-height: 200px;
+    padding-left: 10px;
+    float: left;
+}
+.person-blog-content-pic img{
+    width: 250px;
+    height: 180px;
+}
+.person-blog-content-right{
+    padding: 10px 20px;
+    height: 200px;
+    width:630px;
+    float: left;
+}
+.person-blog-content-right-0{
+    height:50px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.person-blog-content-right-1{
+    padding-top: 50px;
+    height:150px;
+    font-size: 1.3em;
+    color:grey;
+}
+
+.person-blog-content-right-3{
+    height:50px;
+    padding-left: 300px;
+}
+/*我的主页 css 结束----------------------------------------------------------------------*/
+
+/*我的课程  最近浏览css 开始------------------------------------------------------------------------*/
+.nav-middle-right-toop{
+    border-bottom: solid 1px grey;
+}
+.nav-middle-right-t-1{
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    display: inline-block;
+}
+.nav-middle-right-shipin{
+    width: 900px;
+    height: 180px;
+    margin-top: 20px;
+    border-bottom:solid 1px grey;
+}
+.nav-middle-right-shipin-im{
+    float: left;
+    padding-bottom: 10px;
+}
+.nav-middle-right-shipin-im img{
+    width: 240px;
+    height: 170px;
+    padding-bottom: 10px;
+}
+.nav-middle-right-shipin-r-1 {
+    width:80px;
+    height:30px;
+    background-color: #e8160b;
+    float:left;
+    margin-top: 140px;
+    margin-left: 80px;
+}
+.nav-middle-right-shipin-r-1 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+}
+.nav-middle-bottom{
+    font-size:0.5cm;
+    text-align:center;
+    padding-top: 40px;
+}
+
+
+/*我的课程 最近浏览css 结束------------------------------------------------------------------------*/
+
+/*我的课程 已购买的课程 css开始---------------------------------------------------------------------------*/
+.nav-middle-right-toop{
+    border-bottom: solid 1px grey;
+}
+.nav-middle-right-t-1{
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    display: inline-block;
+}
+.nav-middle-right-shipin{
+    width: 900px;
+    height: 180px;
+    margin-top: 20px;
+    border-bottom:solid 1px grey;
+}
+.nav-middle-right-shipin-im{
+    float: left;
+    padding-bottom: 10px;
+}
+.nav-middle-right-shipin-im img{
+    width: 240px;
+    height: 170px;
+    padding-bottom: 10px;
+}
+.nav-middle-right-shipin-r-p2{
+    float: left;
+    padding-right: 210px;
+    padding-top: 10px;
+}
+.nav-middle-right-shipin-r-p2 h1{
+    padding-left: 28px;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.nav-middle-right-shipin-r-p2 p{
+    padding-left: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 5px 10px;
+}
+.nav-middle-right-shipin-r-p2 p span{
+    font-weight: 100;
+    color:grey;
+}
+.nav-middle-right-shipin-r-1 {
+    width:80px;
+    height:30px;
+    background-color: #e8160b;
+    float:left;
+    margin-top: 140px;
+    margin-left: 80px;
+}
+.nav-middle-right-shipin-r-1 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+}
+.nav-middle-bottom{
+    font-size:0.5cm;
+    text-align:center;
+    padding-top: 40px;
+}
+
+
+/*我的课程 已购买的课程 css结束---------------------------------------------------------------------------*/
+
+/*我的课程 我的课程表 css 开始————————————————————————————————————————————————————————————————*/
+.nav-middle-right-biao{
+    width: 900px;
+    /*height: auto;*/
+}
+.nav-middle-right-biao-ta{
+    width: auto;
+    margin-top: 20px;
+}
+.nav-middle-right-biao-ta table {
+    width: 100%;
+    border-collapse: collapse;
+    background:#fff
+}
+.nav-middle-right-biao-ta tr:nth-of-type(odd) {
+    background: #eee;
+}
+.nav-middle-right-biao-ta th{
+    background:#e8160b;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+.nav-middle-right-biao-ta table td,th{
+    padding: 8px;
+    border: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.person-container .person-main-right .nav-middle-right .nav-middle-right-t {
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+
+    border-bottom: solid 1px grey;
+}
+
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan{
+    width: 900px;
+    height: 200px;
+    border: solid 1px  #bfbfbf;
+    margin-top: 20px;
+}
+.nav-middle-right-dingdan .nav-middle-right-dingdan-colo{
+    width: 900px;
+    height: 30px;
+    background-color: rgba(232, 232, 232, 0.22);
+    border-bottom: solid 1px gainsboro;
+}
+
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan .nav-middle-right-dingdan-t-1{
+    display: inline-block;
+    margin: 9px 10px 0 0;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan .nav-middle-right-dingdan-lef-im img{
+    width: 250px;
+    height: 160px;
+    float: left;
+    margin-top: 9px;
+    padding-bottom: 10px;
+}
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan .nav-middle-right-dingdan-lef-tt {
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2em;
+    padding-top:10px;
+    margin-top: 10px;
+}
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan .nav-middle-right-dingdan-pr {
+    width: 300px;
+    height: 160px;
+    float: left;
+    padding-left: 40px;
+    font-size: 1.2em;
+    padding-top:70px;
+    margin-top: 9px;
+}
+.person-container .person-main-right .nav-middle-right .nav-middle-right-dingdan .nav-middle-right-dingdan-pa p{
+    float: left;
+    padding-left: 70px;
+    font-size: 1.2em;
+    padding-top:70px;
+    margin-top: 9px;
+}
+
+/*我的课程 我的课表 css结束----------------------------------------------------------------------------------*/
+
+/*我的订单 css 开始----------------------------------------------------------------------------------------------*/
+.nav-middle-right-dingdan{
+    position: relative;
+    width: 900px;
+    height: 200px;
+    border: solid 1px  #bfbfbf;
+    margin-top: 20px;
+}
+.nav-middle-right-dingdan i{
+    position: absolute;
+    right: 0px;
+    top: 90px;
+    font-size: 3em;
+}
+
+.nav-middle-right-dingdan-colo{
+    width: 900px;
+    height: 30px;
+    background-color: #bfbfbf;
+}
+
+.nav-middle-right-dingdan-t-1{
+    display: inline-block;
+    margin: 9px 10px 0 0;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+.nav-middle-right-dingdan-lef-im img{
+    width: 250px;
+    height: 160px;
+    float: left;
+    margin-top: 9px;
+    padding-bottom: 10px;
+}
+.nav-middle-right-dingdan-lef-tt {
+    float: left;
+    padding-left: 10px;
+    font-size: 1.2em;
+    padding-top:10px;
+    margin-top: 10px;
+}
+.nav-middle-right-dingdan-lef-tt p{
+    font-size: 1em;
+    font-weight: 600;
+    margin: 5px 10px;
+    line-height: 25px;
+    margin-left: 100px;
+}
+.nav-middle-right-dingdan-lef-tt span{
+    font-weight: 100;
+    color:grey;
+}
+.nav-middle-right-dingdan-pr {
+    width: 300px;
+    height: 160px;
+    float: left;
+    padding-left: 40px;
+    font-size: 1.2em;
+    padding-top:70px;
+    margin-top: 9px;
+}
+.nav-middle-right-dingdan-pa{
+    width: 300px;
+    height: 160px;
+    float: left;
+    padding-left: 40px;
+    font-size: 1.2em;
+    padding-top:70px;
+    margin-top: 9px;
+}
+.nav-middle-right-dingdan-pa a{
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 20px;
+    background-color: #b2aeae;
+    color: #ffffff;
+    font-weight: 600;
+}
+.nav-middle-right-dingdan-pa a:hover{
+    cursor: pointer;
+    background-color: grey;
+    transition: 1s;
+}
+
+
+.nav-middle-right-dingdan-pa p{
+    float: left;
+    padding-left: 70px;
+    font-size: 1.2em;
+    padding-top:70px;
+    margin-top: 9px;
+}
+/*我的订单 css结束------------------------------------------------------------------------------------------*/
+
+/*我的收藏 收藏视频css 开始----------------------------------------------------------------------------------*/
+.nav-middle-right-shipin-r{
+    float: left;
+    padding-right: 210px;
+    padding-top: 50px;
+}
+.nav-middle-right-shipin-r h1{
+    padding-left: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.nav-middle-right-shipin-r p{
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+/*我的课程 我的博客css开始--------------------------------------------------------------------------------------*/
+.nav-middle-right-scblog{
+    margin-top: 20px;
+    width: 900px;
+    height: 250px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.nav-middle-right-scblog-pi img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    float: left;
+}
+.nav-middle-right-scblog-nam{
+    float: left;
+}
+.nav-middle-right-scblog-nam p{
+    font-size: 1.3em;
+    padding-top: 35px;
+    padding-left: 20px;
+}
+.nav-middle-right-scblog-tim{
+    float: left;
+}
+.nav-middle-right-scblog-tim{
+    font-size: 1.3em;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+.nav-middle-right-scblog-pi-1{
+    float: left;
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+.nav-middle-right-scblog-pi-1 img{
+    width: 170px;
+    height: 150px;
+}
+.nav-middle-right-scblog-wenzi{
+    width: 500px;
+    height: 150px;
+    display: inline-block;
+}
+.nav-middle-right-scblog-wenzi h1{
+    padding-left: 20px;
+    font-size: 2em;
+}
+.nav-middle-right-scblog-wenzi p{
+    margin-left: 40px;
+    font-size: 1.5em;
+
+}
+.nav-middle-right-scblog-tubiao{
+    float:left;
+    padding-right: 120px;
+    padding-left: 215px;
+}
+
+
+
+
+
+
+/*personal 个人中心设置 css------------------------------------------------------------------*/
+
+.person-main-right{
+    float: left;
+    margin-top: 20px;
+    width: 900px;
+}
+
+
+.detail-coantianer{
+
+}
+
+.detail-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #bebebe;
+}
+
+.detail-list{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.detail-list p:active{
+    color: #e8160b;
+}
+.list-name{
+     height: 50px;
+     line-height: 50px;
+     border-bottom: solid 1px gainsboro;
+     width: 600px;
+}
+
+.list-name button{
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.info-edit{
+    position: relative;
+    right: -650px;
+    cursor: pointer;
+}
+
+
+/*个人信息修改页面 css-----------------------------------------------------------*/
+
+.list-name input{
+    width: 300px;
+    height: 30px;
+}
+
+.info-icon{
+    width: 600px;
+}
+.info-icon h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 1.5em;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color:#e5e5e5;
+}
+.information-sex label{
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.information-sex label input{
+    line-height: 30px;
+    width: 12px;
+    height: 12px;
+}
+
+.info-icon-box{
+    margin-top: 30px;
+    width: 200px;
+    height: 130px;
+    margin-right: 20px;
+    text-align: center;
+    border: solid 1px #b5b5b5;
+    overflow: hidden;
+    cursor: pointer;
+}
+.info-icon-box i{
+    line-height: 130px;
+    font-size: 5em;
+    text-align: center;
+}
+
+.operate-btn-box{
+    margin:20px 0;
+}
+.save-btn{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #e81602;
+    color: white;cursor: pointer;
+}
+
+
+
+/*个人中心成为教练css------------------------*/
+.list-name1{
+    height: auto;
+    width: 600px;
+}
+
+.list-name1 button{
+    margin: 20px 10px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.list-name1 .coach-card{
+    width: 200px;
+    height: 250px;
+    border: solid 1px grey;
+    margin-left: 110px;
+    text-align: center;
+}
+
+.coach-card {
+    position: relative;
+}
+
+.coach-card i{
+    font-size: 7em;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    line-height: 250px;
+    left: 40px;
+    cursor: pointer;
+    color: #00BFF0;
+}
+
+
+.list-name1 .coach-card img{
+    width: 200px;
+    height: 250px;
+    width: 100%;
+}
+.list-name1 .uploadCoach{
+    margin-left: 110px;
+    width: 200px;
+    background-color: #E84E40;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+}
+.list-name1 input[type='checkbox']{
+    margin: 10px;
+    font-size: 2em;
+}
+.list-name1 input[type='radio']{
+    margin: 10px;
+    font-size: 2em;
+}
+.list-name1 .job{
+    margin-left: 100px;
+}
+.job-express textarea{
+    margin-top: 10px;
+    width: 500px;
+    height: 150px;
+}
+.job-express .express-txt{
+    margin-left: 10px;
+}
+.addexpress{
+    position: relative;
+    height: 50px;
+    width: 650px;
+}
+/*.addexpress .icon-shanchu{
+    position: absolute;
+    top:0;
+    left:80px;
+    font-size: 2em;
+    font-weight: 900;
+}*/
+.addexpress .icon-zengjia{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 3em;
+    font-weight: 900;
+}
+button.tijiao{
+    margin-right:10px;
+    background-color: #E84E40;
+    width: 200px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+/*personal 个人中心设置 css------------------------------------------------------------------*/
+
+.person-main-right{
+    float: left;
+    margin-top: 20px;
+    width: 900px;
+}
+
+
+.detail-coantianer{
+
+}
+
+.detail-title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #bebebe;
+}
+
+.detail-list{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.detail-list p:active{
+    color: #e8160b;
+}
+.list-name{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px gainsboro;
+    width: 600px;
+    position: relative;
+}
+
+.list-name button{
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.info-edit{
+    position: absolute;
+    right: -200px;
+    cursor: pointer;
+}
+
+
+
+/*教练我的工作-----------------------------------------------------------*/
+
+
+.coach-schedule-box{
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+    margin-top: 30px;
+    width: 270px;
+    height: 300px;
+    border: solid 1px gainsboro;
+    padding-bottom: 50px;
+    box-shadow: 2px 5px 10px #c9c9c9;
+    /*background-color: gainsboro;*/
+}
+.coach-schedule-box i{
+    font-size: 7em;
+    position: absolute;
+    right: -25px;
+    top: -19px;
+    color: rgba(255, 0, 0, 0.76);
+}
+
+
+.coach-schedule-box-top{
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    /*background-color: cyan;*/
+}
+.coach-schedule-box-bottom{
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 90%;
+    height: 80px;
+    /*background-color: #1fadc5;*/
+}
+.schedule-box-top-left{
+    float: left;
+    width: 150px;
+    height: 130px;
+    /*background-color: palevioletred;*/
+}
+.schedule-box-top-left img{
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 150px;
+    width: 100%;
+}
+.schedule-box-top-right{
+    padding-left: 10px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 130px;
+    /*background-color: yellowgreen;*/
+}
+
+.schedule-box-top-right h5{
+    margin-top: 80px;
+    line-height: 30px;
+}
+.schedule-box-top-right p{
+    font-size: .5em;
+}
+.coach-schedule-time {
+    padding-left: 10px;
+    border-bottom: solid 1px #a2a2a2;
+    margin-bottom: 10px;
+}
+.coach-schedule-time span{
+    float: right;
+    margin-right: 70px;
+}
+
+
+
+
+
+
+
+
+/*个人信息修改页面 css-----------------------------------------------------------*/
+
+
+.card-photo{
+    width: 600px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.card-photo h3{
+    line-height: 30px;
+    font-size: 1.5em;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color:#e5e5e5;
+}
+.card-pic{
+    margin-top: 30px;
+    width: 200px;
+    height: 130px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    border: solid 1px #b5b5b5;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.card-pic img{
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    width: 100%
+}
+
+.card-pic i{
+    position: absolute;
+    z-index: 999;
+    left: 50px;
+    line-height: 130px;
+    font-size: 5em;
+}
+
+.information-signature textarea{
+    margin-top: 10px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.information-signature textarea{
+    width: 600px;
+    height: 100px;
+}
+/*个人中心 框架css-----------------------------------------------------------------------------*/
+
+
+.personal-wrap{
+    /*overflow: hidden;*/
+    /*height: 1200px;*/
+    /*border: solid 1px red;*/
+}
+.person-content{
+    width: 100%;
+}
+
+.person-new{
+    /*overflow: hidden;*/
+}
+.person-top{
+    width: 100%;
+    height: 270px;
+    background-image: url("../images/background.jpg");
+    background-repeat:no-repeat ;
+    background-size: 1366px;
+}
+.person-container{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+}
+ .person-top-left{
+    position: relative;
+    float: left;
+}
+
+.person-top-left span{
+    position: absolute;
+    display: block;
+    left: 170px;
+    top: 220px;
+    width: 70px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px white;
+    color: white;
+    cursor:pointer;
+    opacity: 1;
+
+}
+.person-top-left span:hover{
+    background-color: #e8261e;
+}
+.person-top-left input{
+    display: none;
+    position: absolute;
+    left: 170px;
+    top: 220px;
+    width: 70px;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px white;
+    color: white;
+    outline: none;
+    cursor:pointer;
+    background-color: transparent;
+}
+
+.person-top-left input:hover{
+    background-color: #e8261e;
+}
+
+
+.person-top-left img{
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 35px auto;
+}
+.person-top-right{
+    float: left;
+    margin-left: 50px;
+}
+.person-top-right p span{
+    color:white;
+}
+.person-top-right h2{
+    margin-top: 85px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.person-top-right .iconfont{
+    color: #E84E40;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.person-top-right p{
+    font-size: 1.5em;
+    color: #434b47;
+    margin-top: 10px;
+}
+.person-content{
+    margin-bottom: 50px;
+}
+.person-main-left{
+    margin-top: 40px;
+    width: 270px;
+    /*height: 500px;*/
+    float: left;
+    text-align: center;
+}
+.nav-aside-1{
+    border:solid 1px #d3d3d3;
+    width: 80%;
+    box-shadow: 2px 5px 20px #c2c2c2;
+}
+.nav-aside{
+    margin: auto;
+    width: 100%;
+    border-bottom: solid 1px gainsboro;
+    height: 60px;
+    line-height: 60px;
+}
+.nav-aside .iconfont{
+    margin-left: 0;
+    font-size: 2em;
+    color: #5b5b5b;
+}
+.nav-aside span{
+    font-size: 1.6em;
+    color: #5b5b5b;
+    outline: none;
+}
+
+
+.nav-aside:hover{
+    /*width:100%*/
+    background-color: #e8160b;
+    color: white !important;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.nav-middle-right{
+    width: 900px;
+    float:left;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/*个人中心 框架css  结束-----------------------------------------------------------------------------*/
+
+/*主页开始index css----------------------------------------------*/
+
+.blog-container{
+    background: rgba(0, 0, 0, 0.05);
+}
+.blog-push-item p{
+    font-size: 2em;
+    line-height: 3em;
+    color: black;
+}
+blog-push-item{
+    padding-bottom: 20px;
+}
+
+.blog-push-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.blog-push-wrap{
+    margin-top: 30px;
+}
+.blog-push-box{
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    color: black;
+    border: solid 1px #cacaca;
+    box-shadow: 4px 4px 5px #bcbcbc;
+    overflow: hidden;
+    color: #6b6b6b;
+}
+.blog-push-box:hover{
+    transition:.3s;
+    position: relative;
+    top: -5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #bcbcbc;
+}
+.blog-push-content{
+    height: 225px;
+}
+
+.blog-push-content h6{
+    font-size: 1em;
+    line-height: 2em;
+    color: darkgrey;
+}
+.blog-push-content h3{
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-right: 100px;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+}
+.blog-push-content h3:hover{
+
+}
+
+.blog-push-content p{
+    text-indent: 2em;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.blog-push-author{
+    color: black;
+    line-height: 50px;
+}
+.blog-push-author span{
+    margin-right: 10px;
+}
+
+.blog-push-author span img{
+    width: 30px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 100%;
+}
+
+
+.video-push{
+    padding-top: 50px;
+}
+
+
+.video-push-item p{
+    line-height: 2em;
+    font-size: 3em;
+}
+
+.video-push-box{
+    margin-top: 40px;
+    position: relative;
+    height: 215px;
+    color: white;
+    /*border:  solid 1px #d3d3d8;*/
+    box-shadow: -2px 5px 10px #b2b2b2;
+    overflow: hidden;
+}
+
+.video-push-brief{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+.video-push-brief p{
+    font-size: 2em;
+}
+
+.video-push-info{
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 80%;
+}
+
+.video-push-img{
+    width: 100%;
+    overflow: hidden;
+}
+.video-push-img img{
+    width: 100%;
+}
+
+.couser-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.course-push{
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.course-push-today p{
+    line-height: 2em;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.course-push-today h6{
+    text-indent: 1em;
+    font-size: 1.5em;
+    line-height: 3em;
+    border-bottom: solid 1px #cfcfcf;
+}
+.course-push-today h6 span{
+    float: right;
+    padding-right: 50px;
+}
+
+.course-push-icon{
+    margin-top: 30px;
+}
+.course-push-icon img{
+    width: 80%;
+}
+.course-push-coach p{
+    line-height: 2em;
+    font-size: 3em;
+}
+
+.coach-container{
+    background-color: #d6d6d6;
+    padding-top: 50px;
+}
+
+
+.coach-push-coach{
+    font-size:3em;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+}
+
+
+
+.map-contianer{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.coach-push-box{
+    padding-top: 50px;
+    height: 300px;
+    /*border: solid 1px;*/
+    text-align: center;
+}
+
+.coach-push-img{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color:#1FADC5;
+}
+
+.coach-push-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    opacity:0.3;
+
+}
+.coach-push-img img:hover{
+    opacity: 1;
+    transition: 0.75s;
+}
+
+.coach-push-name{
+    padding-top: 20px;
+}
+.coach-push-name p{
+    color: black;
+    font-size:1.5em;
+    line-height: 2em;
+}
+
+/*主页结束index css----------------------------------------------*/
+
+
+/*教练开始----------------------------------------------------*/
+.active{
+    background-color: #2B333B;
+    border-radius: 2px;
+    color: #ffffff;
+}
+.classify{
+    margin-top: 30px;
+    width: 100%;
+}
+.fenlei ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.show-coches{
+    width: 100%;
+}
+.show-coches .container .row .show-one-coche{
+    margin: 20px 0;
+    border-left: solid 1px #dadada;
+    border-top: solid 1px #dadada;
+    text-align: center;
+    box-shadow: 5px 5px 2px #d4d4d4;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    padding-bottom: 10px;
+}
+.show-coches .container .row .show-one-coche .coche-head{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #00BFF0;
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 600;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+}
+
+.show-coches .container .row .show-one-coche .pic img{
+    border: solid 1px grey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: black;
+}
+.show-coches .container .row .show-one-coche .show-star{
+    margin: 20px auto;
+    width: 60px;
+    height: 16px;
+    background-image: url("../images/star_gray.png");
+}
+.show-coches .container .row .show-one-coche .over{
+    height: 16px;
+    background-image: url("../images/star_org.png");
+    background-repeat: no-repeat;
+}
+.show-coches .container .row .show-one-coche .coche-name{
+    margin: 10px auto;
+}
+.show-coches .container .row .show-one-coche .coche-name p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.show-coches .container .row .show-one-coche .show-coche-type{
+    margin: 10px auto;
+}
+.show-coches .container .row .show-one-coche .show-job-type{
+    margin: auto;
+    width: 100%;
+}
+.show-coches .container .row .show-one-coche .show-job-type div{
+    padding: 5px;
+    margin: 10px 10px;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+}
+/*教练展示结束-----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*教练详情开始------------------------------------------------------------------------------------*/
+
+.banner1{
+    background: url(../images/banner.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    min-height:500px;
+}
+.banner-left img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.banner-info{
+    width:65%;
+    margin: 141px auto 0 auto;
+}
+.banner-right h1{
+    font-size:34px;
+    font-weight:800;
+    color:#ffffff;
+    margin:35px 0 15px 0;
+    letter-spacing: 15px;
+}
+.banner-right h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 15px 0 30px 0;
+}
+.banner-right a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:500;
+    padding:10px 20px;
+    border:2px solid #fff;
+}
+
+.banner-left{
+    float:left;
+    width: 50%;
+}
+.banner-right{
+    float:right;
+    width: 50%;
+}
+.border {
+    background: #00BFF0;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.about{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about h3{
+    margin:0;
+    color:#2b2b2b;
+    font-size:36px;
+    font-weight:500;
+    letter-spacing: 18px;
+}
+.strip{
+    margin: 28px 0 0px 0;
+}
+.about p{
+    margin:45px 0 0 0;
+    color:#888b90;
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+    line-height:1.8em;
+}
+
+.about-back{
+    background: url(../images/about-b.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height:102px;
+}
+.my-skill-back{
+    background: url(../images/myskill-b.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height:93px;
+}
+.my-skills{
+    background: #00BFF0;
+    padding: 60px 0;
+}
+.my-skills h3{
+    margin:0;
+    color:#ffffff;
+    font-size:36px;
+    font-weight:500;
+    letter-spacing: 18px;
+}
+.skill-grids{
+    margin-top:50px;
+}
+.skills-grid p{
+    margin:20px 0 0 0;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.skills-grid p{
+    font-size: 2em;
+}
+
+
+.education{
+    padding:60px 0;
+    background:#eeeeee;
+}
+.edu-info h3{
+    margin:0;
+    color:#2b2b2b;
+    font-size:36px;
+    font-weight:500;
+    letter-spacing: 18px;
+}
+
+.edu-grid p{
+    margin:0px auto;
+    color:#ffffff;
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+    background:#00BFF0;
+    width: 36%;
+    padding: 3px 0;
+}
+.edu-grid span{
+    margin:0px auto;
+    display:block;
+    color:#ffffff;
+    font-size:12px;
+    font-family: 'Lato', sans-serif;
+    background:#00BFF0;
+    width: 36%;
+    padding: 3px 0;
+}
+.edu-grid span span{
+    display: inline-block;
+}
+.edu-grid-master{
+
+    background:#00BFF0;
+    padding: 15px 0;
+}
+.edu-grid-master h3{
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    font-size:18px;
+    color:#4a4a4a;
+    font-weight:700;
+    line-height:1.8em;
+}
+.edu-grid-master h4{
+    font-family: 'Lato', sans-serif;
+    margin:10px 0 0 0;
+    font-size:18px;
+    color:#ffffff;
+    font-weight: 600;
+}
+.edu-grid-info{
+    background:#ffffff;
+    padding: 25px 30px;
+}
+.edu-grid-info:hover{
+    cursor: pointer;
+}
+.edu-grid-info h5{
+    font-family: 'Lato', sans-serif;
+    line-height:1.8em;
+    margin:0;
+    font-size:18px;
+    color:#888b90;
+    font-weight:300;
+}
+.edu-border{
+    border:1px solid #e2e2e2;
+    margin-top:50px;
+    border-radius: 6px;
+    border-bottom: 2px solid #c3c3c3;
+}
+.edu-grids {
+    margin-top: 50px;
+}
+.edu-grid{
+    position:relative;
+}
+.edu-grid img{
+    position:absolute;
+    top: 25%;
+    left: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show-coches .container .row .show-one-coche .chat{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #00BFF0;
+    color: #ffffff;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.show-coches .container .row .coche-detailed{
+    padding: 20px 20px;
+    border: solid 1px #dadada;
+    margin: 20px 0;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.show-coches .container .row .coche-detailed ul li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 20px;
+}
+.show-coches .container .row .coche-detailed ul li h4{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.show-coches .container .row .coche-detailed p{
+    font-size: 1.4em;
+    line-height: 20px;
+}
+.show-coches .container .row .about-videos img{
+    width: 90%;
+}
+.show-coches .container .row .coche-detailed .chat-head{
+    width: 100%;
+    height: 40px;
+    background-color: #00BFF0;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.show-coches .container .row .coach-evaluate{
+    padding: 10px 10px;
+}
+/*===============预约教练============*/
+.appoinment-coach{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+.appoinment-coach input{
+    border: none;
+    outline: none;
+    background-color: #00BFF0;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+.time{
+    border: solid 1px grey;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 20px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*课程表------------------------------------------------------------------------------*/
+.calendar-top{
+    width: 100%;
+    background-image: url("../images/slide1.jpg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    height: 200px;
+}
+.calendar-top .box{
+    height: 200px;
+    line-height: 200px;
+    font-size: 5em;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-shadow: 5px 5px 5px grey;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*课程详情---------------------------------------------------------------------------------*/
+.container .row .pic img{
+    border: solid 1px grey;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+.container .row .coche-name{
+    text-align: center;
+    margin: 10px auto;
+}
+.container .row .coche-name p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.container .row .course{
+    margin-top: 20px;
+    height: auto;
+}
+.container .row .course .course-top{
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 5px #00BFF0;
+}
+.container .row .course .course-top .course-top-left{
+    float: left;
+}
+.container .row .course .course-top .course-top-left h2{
+    padding: 10px 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.container .row .course .course-top .course-top-right{
+    margin-top: 10px;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.5em;
+    padding: 4px 10px;
+}
+.container .row .course .course-top .course-top-right .alreadyCount{
+    color: #00BFF0;
+}
+
+.container .row .course .course-main{
+    margin: auto;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+.course-introduce{
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 30px;
+    padding: 10px 10px;
+}
+.course-main-container{
+    height: auto;
+    overflow: hidden;
+}
+.container .row .course .course-main .course-main-left{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    line-height: 20px;
+    padding: 50px 10px;
+    font-size: 1.4em;
+}
+
+.container .row .course .course-main .course-main-left .course-list{
+    height: 49px;
+    line-height: 49px;
+    /*border-bottom: solid 1px gainsboro;*/
+    width:100%;
+    position: relative;
+}
+
+.container .row .course .course-main .course-main-left button{
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.container .row .course .course-main .course-main-left ul li span{
+    margin-left: 20px;
+    font-weight: 100;
+    color: grey;
+}
+.container .row .course .course-main .course-main-right {
+    box-sizing: border-box;
+    text-align: right;
+    float: right;
+    width: 50%;
+    padding: 50px 10px;
+    text-align: center;
+}
+.container .row .course .course-main .course-main-right table{
+    margin: 10px auto;
+}
+table td{
+    padding: 10px 20px;
+    border: solid 1px;
+}
+.container .row .course .course-main .course-main-right img{
+    width: 90%;
+}
+.container .row .course .select-course{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+.container .row .course .select-course input{
+    border: none;
+    outline: none;
+    background-color: #00BFF0;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*轮播开始-------------------------------------------------------*/
+.banner{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top:0px;
+    left: 0;
+    z-index: -10;
+}
+
+#imgDiv{
+    width: 100%;
+    position: relative;
+}
+#imgDiv img{
+    width: 2000px;
+}
+#imgDiv .imgIndex{
+    color: #ffffff;
+    position: absolute;
+    top:150px;
+    right: 150px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 30px;
+    background-color: rgba(255,255,255,0.3);
+}
+#imgDiv .imgIndex ul li{
+    list-style: none;
+    font-size: 1.5em;
+}
+.yellowBorder{
+    background-color: #E84E40;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+#imgDiv img{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+
+/*订单中心css---------------------------------------------*/
+.buy-warp{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.buy-container{
+    overflow: hidden;
+    border: solid 1px ghostwhite;
+    box-shadow: 2px 2px 2px #bcbcbc;
+    padding-bottom: 15px;
+}
+
+/*
+.modal-alert{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    width: 350px;
+    height: 150px;
+    border: solid 1px #e0e0e0;
+    box-shadow: 2px 2px 5px 2px #d7d7d7;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.modal-alert p{
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+.modal-alert input{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border: solid 1px gainsboro;
+}
+*/
+
+.buy-title{
+    font-size: 1.5em;
+    line-height: 3em;
+    overflow: hidden;
+    border-bottom: solid 1px gainsboro;
+    letter-spacing: .2em;
+}
+
+.buy-goods-info{
+    height: 150px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.goods-icon img{
+    width: 70%;
+}
+
+.goods-info{
+    line-height: 150px;
+}
+
+.red-burn-btn{
+    padding: 10px 30px;
+    background-color: #e84e40;
+    border:none;
+    outline: none;
+    color: white;
+    letter-spacing: .1em;
+}
+
+.order-btn{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*upload-blog 发表博客 CSS--------------------------------------------------------*/
+
+.upload-blog-explain h3{
+    line-height: 2em;
+    margin-left: 15px;
+}
+
+.upload-blog-title h5{
+    line-height:30px;
+}
+
+
+
+.upload-blog-title input{
+    width: 100%;
+    height: 35px;
+    margin-left: 0px;
+}
+
+.blog-title-hint{
+    margin-top: 6px;
+    height: 20px;
+}
+
+.edit-blog{
+    background-color: #e9e9e9;
+    height:400px;
+    border: solid 1px gainsboro;
+    padding:20px 30px;
+    margin: 0px 15px 10px 15px;
+}
+
+#editor_id{
+    width: 100%;
+    height: 100%;
+}
+
+.blog-label-box p{
+    line-height: 30px;
+}
+
+.blog-label ul li{
+    display: inline-block;
+    border: solid 1px #d0d6d9;
+    padding: 5px 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.blog-label ul li:active{
+    border: solid 1px #e8463b;
+}
+
+
+
+.blog-uploader-cover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-cover-img{
+    position: relative;
+    width: 200px;
+    height:150px;
+    border: solid 1px lightgrey;
+}
+
+.blog-cover-img img{
+    width: 200px;
+    height:150px;
+    width: 100%;
+}
+.blog-cover-img i{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 6em;
+    line-height: 150px;
+    cursor: pointer;
+}
+.blog-cover-img i:hover{
+    color: #00BFF0;
+}
+
+.blog-uploader-roundup{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.blue-burn-btn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #00BFF0;
+    border:none;
+    outline: none;
+    color: white;
+    letter-spacing: .1em;
+}
+
+.blog-uploader-cover span{
+    margin-left: 10px;
+    color: #a9a9a9;
+}
+
+.blog-roundup textarea{
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+}
+
+.upload-blog-btn{
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.upload-btn{
+    padding: 10px 45px;
+}
+
+/*blog-whole 博客详情页面css-----------------------------------------*/
+.blog-row{
+    padding-top: 10px;
+}
+
+.blog-path{
+    line-height: 2em;
+    color: grey;
+}
+
+.blog-detail-title h2{
+    line-height: 2em;
+}
+.blog-detail-upload{
+    line-height: 2em;
+    padding-bottom: 10px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.blog-text{
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    padding: 20px 25px;
+    text-indent:2em;
+}
+.blog-comment-container{
+    padding-top: 60px;
+}
+
+.blog-comment{
+    border-top: solid 1px gainsboro;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-indent:2em;
+    padding-bottom: 10px;
+    border-bottom:solid 1px gainsboro;
+    color: grey;
+}
+
+.blog-comment p{
+}
+.blog-comment-box{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-comment-more{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color:#00BFF0;
+    border: solid 2px #00BFF0;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.blog-comment-more:hover{
+    cursor: pointer;
+    border: solid 2px #00BFF0;
+    background-color: white;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.blog-operation-warp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.blog-detail-operation:hover{
+    color: orangered;
+}
+
+
+
+
+
+/*blog 页面css开始---------------------------------------------------------*/
+.biog-container{
+    margin-top: 10px;
+}
+
+.blog-content{
+    padding-bottom: 10px;
+    overflow: hidden;
+    border: solid 1px gainsboro;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.blog-brief-title h3{
+    margin-left: -15px;
+    line-height: 2em;
+}
+.blog-brief-title p{
+    line-height: 4em;
+}
+.blog-icon{
+    vertical-align: middle;
+}
+
+.blog-icon img{
+    width: 100%;
+}
+
+.blog-brief{
+    color: #6c6c6c;
+}
+
+.blog-brief h3{
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+
+.blog-brief p{
+    text-indent:2em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #464646;
+}
+
+.blog-uploader-info{
+    overflow: hidden;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.icon-operation{
+    margin-right: 5px !important;
+    font-size: 2em !important;
+}
+
+.upload-blog{
+    font-size: 2em;
+    margin-bottom: 15px;
+    background-color: #00BFF0;
+    color: white;
+    letter-spacing: .1em;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: solid 2px #00BFF0;
+}
+.upload-blog:hover{
+    border: solid 2px #00BFF0;
+    background-color: white;
+    color: grey;
+}
+.recommend{
+    line-height: 2em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.recommend-blog-title{
+    border-bottom: solid 1px gainsboro;
+}
+
+.recommend-blog-title p{
+    font-size: 1.5em;
+    line-height: 2.5em;
+    cursor: pointer;
+
+}
+
+.recommend-blog-title i{
+    color:#b5b9bc;
+}
+
+
+
+/*课程详情页面视频播放页面开始----------------------------------------------------------------*/
+
+.video-plaer-box{
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comment-tilte{
+    margin-top: 10px;
+    height: 50px;
+    border-bottom:solid 1px gainsboro;
+}
+
+.comment-tilte h5{
+    line-height: 50px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.comment-box{
+    margin-top: 10px;
+    overflow: hidden;
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.comment-content{
+    margin-top: 10px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+.comment-content h6{
+    color: #93999f;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.my-comment-input textarea{
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.my-comment-input{
+    margin-bottom: 20px;
+}
+.my-comment-input button{
+    margin-top: 20px;
+    margin-left: 85%;
+}
+
+.upload-comment-btn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #00BFF0;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: .1em;
+}
+
+
+
+.recommend{
+    margin-top: 10px;
+}
+
+.recommend-video{
+    margin-top: 30px;
+    font-size: 1.5em;
+    padding-bottom: 10px; ;
+    border-bottom: solid 1px #c7c7c7;
+}
+.recommend-video a{
+    color: #0f0f0f;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.see-more{
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: solid 2px #00BFF0;
+}
+
+.see-more:hover{
+    cursor: pointer;
+    background-color: #00BFF0;
+    color: white;
+}
+
+.video-info{
+    height: 200px;
+    background-image:url("../images/xuhua.jpg");
+    background-size:cover;
+}
+
+.video-dirctory ul li{
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+.video-title{
+    color: white;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 12%
+}
+
+.video-pingjia{
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.video-argument p{
+    color: white;
+    line-height: 50px;
+}
+
+.video-argument p span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.uploader-info{
+    margin-top: 15px;
+    border-bottom: solid 1px grey;
+    height: 30px;
+}
+
+.video-upload-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: black;
+}
+
+
+
+
+.uploader-name{
+    line-height: 30px;
+    padding-left: 5px;
+}
+.uploader-name span{
+    margin-left: 1.5em;
+}
+.uploader-name i{
+    margin-left: 80%;
+    font-size: 2.5em;
+}
+.video-player{
+    margin-top: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.video-player img{
+    width: 100%;
+}
+
+.video-list{
+    height: 110px;
+}
+
+
+
+.video-list-video{
+    margin-top: 10px;
+    overflow: hidden;
+    height: 100px;
+}
+
+/*课程详情页面 视频播放页面结束---------------------------------------------------------------*/
+
+/*video css 课程展示页面开始----------------------------------------------------------------*/
+
+/*.course-type ul li{*/
+    /*display: inline-block;*/
+/*}*/
+.video-warp{
+    margin-top: 20px;
+}
+.video-content{
+    padding-top: 20px;
+}
+.video-brief-box{
+    margin-bottom: 20px;
+}
+
+.video-show-box{
+    position: relative;
+    height: 300px;
+    border: solid 1px #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #929292;
+}
+.video-show-box:hover{
+    transition: 0.5s;
+    background-image: url("../images/nv2.jpg");
+    background-size: 100%;
+    background-position: center;
+    color: white;
+}
+
+.video-type{
+    width: 100%;
+    height: 45px;
+    padding-left: 30px;
+    border-radius: 5px 5px 0 0;
+    background-color: #00BFF0;
+    line-height: 45px;
+    color: white;
+
+}
+
+
+.video-show-title{
+    text-align: center;
+}
+.video-show-title h4{
+    line-height: 60px;
+}
+
+
+.video-show-title h6{
+    padding: 5px 25px;
+    line-height: 1.7em;
+}
+
+
+.video-show-title p{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    line-height: 40px;
+    color: #161616;
+    background-color:white;
+    text-align: left;
+    padding-left: 30px;
+}
+.watch-mark{
+    position: absolute;
+    width: 40px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #2b333b;
+    font-weight: 200;
+    text-align: center;
+    right: -4px;
+    top: 12px;
+    z-index: 1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+/*课程展示页面结束----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------用户登录开始-----------------------------------------*/
+/*登录开始*/
+.error{
+    color:#a10;
+    height: 25px;
+}
+.checkgou{
+    position: absolute;
+    top:0;
+    right: 0;
+    color: green;
+    font-weight: 600;
+}
+input.error{
+    color: black;
+}
+.login-main{
+    margin: 50px 0;
+    width: 100%;
+}
+.login-main .container .login-left{
+    text-align: right;
+}
+.login-main .container .login-left img{
+    width: 80%;
+}
+.login-main .container .login-right{
+    width: 300px;
+    margin: auto;
+}
+.login-main .container .login-right form{
+    width: 260px;
+}
+.login-main .container .login-right form div{
+    margin: 10px 0;
+}
+.login-main .container .login-right form span{
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #666;
+}
+.login-main .container .login-right form .login-name{
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+}
+.login-main .container .login-right form .iconfont{
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+.login-main .container .login-right form .loginText{
+    float: left;
+    width: 80%;
+    height: 38px;
+    border: none;
+    outline: none;
+}
+.login-main .container .login-right form .login-password{
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+}
+.login-main .container .login-right form .forget{
+    height: 30px;
+    line-height: 30px;
+}
+.login-main .container .login-right form .forget .forget-left{
+    float: left;
+}
+.login-main .container .login-right form .forget .forget-right{
+    float: right;
+}
+.login-main .container .login-right form a{
+    font-size: 1.5em;
+    color: #E84E40;
+    text-decoration: none;
+}
+.login-main .container .login-right form .login-btn .loginBtn{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #E84E40;
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    border: none;
+}
+.login-main .container .login-right .third-party .title-wrapper{
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+    height: 0;
+    overflow: visible;
+}
+.login-main .container .login-right .third-party span{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    background: #FFF;
+}
+.login-main .container .login-right .third-party{
+    margin-top: 20px;
+    text-align: center;
+    width: 260px;
+}
+.login-main .container .login-right .third-party .fa{
+    font-size: 2em;
+    margin: 0 20px;
+}
+.iconfont{
+    font-size: 2em;
+    margin: 6px 25px;
+}
+.iconfont.icon-QQ{
+    color: blue;
+}
+.iconfont.icon-wechat{
+    color: green;
+}
+.iconfont.icon-weibo{
+    color: red;
+}
+
+/*--------------------------------------------用户登录结束------------------------------------------*/
+
+
+
+/*--------------------------------------------用户注册开始------------------------------------------*/
+.reg-top{
+    text-align: right;
+    width: 100%;
+    height: 55px;
+    border-bottom: solid 5px #E84E40;
+}
+.reg-top .container{
+    height: 55px;
+    line-height: 55px;
+}
+.reg-top .container a{
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #E84E40;
+    margin-left: 10px;
+}
+.reg-main{
+    margin: 50px 0;
+}
+.reg-main .container .regForm{
+    width: 260px;
+    margin: 50px auto;
+}
+.reg-main .container .regForm .reg-style{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+    margin: 5px 0;
+    background-color: white;
+}
+.reg-main .container form .iconfont{
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+.reg-main .container form .regText{
+    float: left;
+    width: 80%;
+    height: 38px;
+    border: none;
+    outline: none;
+}
+.reg-main .container .regForm .ver{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+}
+.reg-main .container .regForm .ver .reg-ver{
+    width: 60%;
+    height: 40px;
+    float: left;
+    border: solid 1px black;
+}
+.reg-main .container .regForm .ver .reg-ver input{
+    width: 70%;
+    float: left;
+    height: 38px;
+    border: none;
+    outline: none;
+}
+.reg-main .container .regForm .ver .ver-btn{
+    float: right;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 35%;
+    background-color: #E84E40;
+}
+.reg-main .container .regForm .ver .ver-btn a{
+    color: #ffffff;
+}
+.reg-main .container .regForm .regBtn{
+    width: 100%;
+    height: 40px;
+    border: solid 1px black;
+    margin: 5px 0;
+    background-color: #E84E40;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: none !important;
+    font-size: 2em;
+    text-align: center;
+    margin: 5px 0;
+    color: #ffffff;
+    font-weight: 600;
+}
+.reg-main .container .regForm .alreadyhave{
+    width: 100%;
+    text-align: right;
+}
+.reg-main .container .regForm .alreadyhave a{
+    color: red;
+}
+
+/*--------------------------------------------用户注册结束------------------------------------------*/
+
+
+
+/*--------------------------------------------课程开始------------------------------------------*/
+.course .course-top{
+    width: 100%;
+    background-image: url("../images/top-image1.jpg");
+    height: 190px;
+    border-bottom: solid 10px #00BFF0;
+}
+.course .course-top .classes h2{
+    padding: 20px 50px;
+    background-color: #00BFF0;
+    position: absolute;
+    top:200px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.course .course-main{
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+}
+.courseInfo{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+.courseInfo th{
+    background-color: #00BFF0;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.show-course-pic{
+    padding: 0;
+}
+.show-course-pic img{
+    width: 100%;
+    height: 272px;
+}
+.show-course-txt{
+    background-color: #00BFF0;
+    color: #ffffff;
+    height: 272.7px;
+}
+.show-course-container{
+    margin: 20px 0;
+}
+.show-course{
+    height: auto;
+}
+.show-course-title{
+    text-align: center;
+    margin: 10px auto;
+}
+.show-course-content{
+    margin: 10px 0;
+}
+.show-course-coach{
+    height: auto;
+    overflow: hidden;
+}
+.show-course-coach .course-coach-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 10px 0;
+}
+.show-course-coach .course-coach-img img{
+    width: 100%;
+}
+.show-course-coach .course-coach-name{
+    float: left;
+    padding: 28px 20px;
+}
+.show-course-btn{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border:solid 1px #ffffff;
+    border-radius: 2px;
+    margin: 20px auto;
+}
+.show-course-btn a{
+    color: #ffffff;
+}
+.course-main .join{
+    width: 100%;
+    height: auto;
+    background-color: #00BFF0;
+}
+.joinLogin{
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+}
+.joinLogin h1{
+    font-weight: 600;
+}
+.joinLogin p{
+    font-size: 1.5em;
+    line-height: 30px;
+}
+.joinLogin button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:none;
+    outline:none;
+    background-color: #E84E40;
+    color:#ffffff;
+    font-size:2em;
+    font-weight:600;
+    padding: 10px 50px;
+}
+.all-course{
+    margin: 20px auto;
+}
+.all-course h1{
+    margin: auto;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.all-course-show{
+    background-color: #00BFF0;
+    border-right: solid 1px #ffffff;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.all-course-show a{
+    color: #ffffff;
+}
+.all-course-show ul{
+    border-bottom: solid 1px #ffffff;
+}
+.all-course-show ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.calander{
+    margin: 20px auto;
+    text-align: center;
+}
+.calander h1{
+    margin: auto;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.calander input{
+    width: 120px !important;
+}
+.calander .icon-xiangqing{
+    font-size: 1em;
+}
+/*--------------------------------------------课程结束------------------------------------------*/

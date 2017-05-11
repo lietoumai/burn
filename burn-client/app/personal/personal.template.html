@@ -1,0 +1,55 @@
+<div class="personal-wrap">
+    <div class="person-top">
+        <div class="person-container">
+            <div class="person-top-left">
+                    <img ngf-src="user_icon || data.defaultImage" alt="">
+                    <span ngf-select="" ngf-pattern="'image/*'" id="change-user-icon-btn" ngf-multiple="false" ng-model="user_icon">更换头像</span>
+                    <input type="submit" ng-click="uploadUserIcon()" id="true-icon-btn" value="确定">
+            </div>
+            <div class="person-top-right">
+                <h2 ng-bind="uname"></h2>
+                <i class="iconfont icon-male"></i>
+                <p><span>个性签名：<span ng-bind="usignature"></span></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="person-content">
+        <div class="person-container">
+            <div class="person-main-left">
+                <div class="nav-aside-1">
+                    <div class="nav-aside" ui-sref="personal.homepage" ui-sref-opt="{reload:true}">
+                        <i class="iconfont icon-home"></i>
+                        <span ng-click="getBlogByuid1()">我的主页</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.course" ui-sref-opt="{reload:true}">
+                        <i class="iconfont icon-vrbofangqi"></i>
+                        <span>我的课程</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.order" ui-sref-opt="{reload:true}">
+                        <i class="iconfont icon-dingdan"></i>
+                        <span>我的订单</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.collect" ui-sref-opt="{reload:true}">
+                        <i class="iconfont icon-shoucang1"></i>
+                        <span>我的收藏</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.set" ui-sref-opt="{reload:true}">
+                        <i class="iconfont icon-shezhi"></i>
+                        <span>我的设置</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.coach" id="coachDiv">
+                        <i class="iconfont icon-yijianfankui"></i>
+                        <span id="becomeCoach">成为教练</span>
+                    </div>
+                    <div class="nav-aside" ui-sref="personal.coachwork" id="myJob">
+                        <i class="iconfont icon-yijianfankui"></i>
+                        <span id="coach-work">我的工作</span>
+                    </div>
+                </div>
+            </div>
+            <div class="person-main-right" ui-view>
+
+            </div>
+        </div>
+    </div>
+</div>

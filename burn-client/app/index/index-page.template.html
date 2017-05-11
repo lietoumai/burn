@@ -1,0 +1,149 @@
+<div>
+    <div class="banner" ng-controller="CarouselDemoCtrl">
+            <carousel interval="myInterval" no-wrap="noWrapSlides" id="imgDiv">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                </slide>
+                <div class="imgIndex">
+                    <ul>
+                        <li id="img01">{{slides[0].text}}</li>
+                        <li id="img02">{{slides[1].text}}</li>
+                        <li id="img03">{{slides[2].text}}</li>
+                    </ul>
+                </div>
+            </carousel>
+    </div>
+    <div style="height: 412px"></div>
+    <div class="container">
+       <!--首页内容-->
+    </div>
+    <div class="blog-container">
+        <div class="container">
+            <div class="row">
+                <div class="blog-row">
+                    <div class="blog-push">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-push-item text-center">
+                            <p>健身分享</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-push-container">
+
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blog-push-wrap" ng-repeat="bp in blogPush" ng-click="blogPushDetail(bp.bid)">
+                                <div class="blog-push-box">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-push-content">
+                                        <h6 ng-bind="bp.btime"></h6>
+                                        <h3 ng-bind="bp.btitle"></h3>
+                                        <p ng-bind="bp.bzhaiyao">
+                                            <span>...</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-push-author">
+                                        <span><img src="images/f2.jpg" alt=""></span><span ng-bind="bp.uname">小明</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="container">
+            <div class="row">
+                <div class="video-row">
+                    <div class="video-push">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 video-push-item">
+                            <p>精品课程</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 video-push-box" ng-repeat="vp in videoPush" ng-click="watchVideoPush(vp.vid,vp.price,vp.name,vp.time,vp.vid,vp.pic)">
+                            <div class="video-push-brief">
+                                <p ng-bind="vp.vname"></p>
+                            </div>
+                            <div class="video-push-img">
+                                <img src="images/nv2.jpg" alt="">
+                            </div>
+                            <div class="video-push-info">
+                                <p>观看-<span ng-bind="vp.vcount"></span>-次</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="couser-container">
+        <div class="container">
+            <div class="row">
+                <div class="course-row">
+                    <div class="course-push">
+                        <div class="col-xs-12 col-md-12 col-md-12 col-lg-12">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 course-push-today">
+                                <p>热门课程</p>
+                                <div ng-repeat="cp in coursePush">
+                                    <a ui-sref="courseDetaileds({cid:cp.cid})">
+                                        <h6>{{cp.cname}}<span ng-bind="cp.ctimestart"></span></h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center course-push-icon">
+                                <img src="images/course-push.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coach-container">
+        <div class="container">
+            <div class="row">
+                <div class="coach-row">
+                    <div class="coach-push">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 coach-push-coach">
+                            <p>明星教练</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 coach-push-box" ng-repeat=" co in coachPush">
+                            <a ui-sref="coachDetail({coid:co.coid})">
+                                <div class="coach-push-img">
+                                    <img src="images/f2.jpg" alt="">
+                                </div>
+                                <div class="coach-push-name">
+                                    <p ng-bind="co.uname"></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="map-contianer">-->
+        <!--&lt;!&ndash;<img src="images/map.jpg" alt="">&ndash;&gt;-->
+    <!--</div>-->
+    <script>
+        $(function () {
+            $(".video-push-box").mouseenter(function () {
+                var ow=$(this).find(".video-push-img img").width();
+                var oh=$(this).find(".video-push-img img").height();
+                var wValue =1.5*ow;
+                var hValue =1.5*oh;
+                $(this).find(".video-push-img img").animate({
+                    width:wValue,
+                    height:hValue,
+                    left:("-"+(0.5*ow)/2),
+                    top:("-"+(0.5*oh)/2,500),
+                })
+//            $(ev.target).find(".video-push-img img").css('width', '150%');
+                $(this).find(".video-push-img").siblings().show();
+                console.log(1)
+            }).mouseleave(function () {
+                $(this).find("div img").css('width','100%');
+                $(this).find(".video-push-img").siblings().hide();
+                console.log(2)
+            })
+        })
+    </script>
+
+</div>
+

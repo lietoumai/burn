@@ -1,0 +1,78 @@
+<div class="detail-coantianer">
+    <div class="detail-title">
+        <div class="detail-list" id="video-collect">
+            <p ng-click="collectVideo()">收藏的视频</p>
+        </div>
+        <div class="detail-list" id="blog-collect">
+            <p ng-click="collectBlog()">收藏的博客</p>
+        </div>
+    </div>
+    <div>
+        <div id="personal-collect-video">
+            <div class="nav-middle-right-dingdan" ng-repeat="ac in videokeepData">
+                <div class="nav-middle-right-dingdan-colo">
+                    <span style="line-height: 30px;margin-left: 15px;">收藏日期：</span><span ng-bind="ac.vktime" style="line-height: 30px;"></span>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9  nav-middle-right-dingdan-lef">
+                    <div class="nav-middle-right-dingdan-lef-im">
+                        <img ng-src="{{videoUrl+ac.vpic}}" alt="">
+                    </div>
+                    <div class="nav-middle-right-dingdan-lef-tt">
+                        <p>名称: <span ng-bind="ac.vname"></span></p>
+                        <p>类型:<span ng-bind="ac.kname"></span></p>
+                        <p>时长:<span ng-bind="ac.vtime"></span></p>
+                        <p>难度:<span ng-bind="ac.rname"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                    <div class="nav-middle-right-dingdan-pa">
+                        <a ui-sref="video-detail({vid:ac.vid})">立即观看</a>
+                    </div>
+                </div>
+                <i class="iconfont icon-shanchu" ng-click="deleteVideoCollect(ac.vkid)"></i>
+            </div>
+        </div>
+
+
+
+        <div  id="personal-collect-blog" style="display: none">
+            <div class="blog-show" ng-repeat="bk in blogkeepData">
+                <a  >
+                <div class="person-blog-title">
+                    <i class="iconfont icon-shanchu" ng-click="deleteBlogCollect(bk.bkid)"></i>
+                    <div class="person-blog-title-pic" ui-sref="blog-detail({bid:bk.bid})">
+                        <img ng-src="{{IconUrl+bk.uicon}}" alt="">
+                    </div>
+                    <div class="person-blog-title-title">
+                        <span style="color: red;font-weight: 600" ng-bind="bk.uname"> </span><span>发布了博客:</span><span style="font-weight: 600" ng-bind="bk.btitle"></span>
+                    </div>
+                    <div class="person-blog-title-time">
+                        <p><span ng-bind="bk.bktime"></span>收藏了博客</p>
+                    </div>
+                </div>
+                <div class="person-blog-content">
+                    <div class="person-blog-content-pic">
+                        <img ng-src="{{blogCoverUrl+bk.bpic}}" alt="">
+                    </div>
+                    <div class="person-blog-content-right">
+                        <div class="person-blog-content-right-1">
+                            <span ng-bind="bk.bzhaiyao"></span>
+                        </div>
+                        <div class="person-blog-content-right-3">
+                            <i class="iconfont icon-zan1 icon-operation"></i>
+                            <span ng-bind="bk.bcomment"></span>
+                            &nbsp;&nbsp;
+                            <i class="iconfont icon-pinglun icon-operation"></i>
+                            <span ng-bind="bk.blikecount"></span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

@@ -1,0 +1,127 @@
+<div>
+    <div class="video-title-container">
+        <div class="container">
+            <div class="row">
+                <div class="video-info">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 video-dirctory">
+                        <ul>
+                            <li>腹肌\</li>
+                            <li>雕刻腹肌</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 video-title">
+                        <h2 ng-bind="videoDetail[0].vname"></h2>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 video-pingjia">
+                        <img src="images/pingxing.png" alt="">
+                        <img src="images/pingxing.png" alt="">
+                        <img src="images/pingxing.png" alt="">
+                        <img src="images/pingxing.png" alt="">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center video-argument">
+                        <p>
+                            难度：<span ng-bind="videoDetail[0].rname"></span>|
+                            时长：<span ng-bind="videoDetail[0].vtime"></span>分钟|
+                            学习人数：<span ng-bind="videoDetail[0].vlookcount"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player-container">
+        <div class="container">
+            <div class="row">
+                <div class="video-content">
+                    <div class="col-lg-12 uploader-info">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                            <img ng-src="{{iconUrl+videoDetail[0].uicon}}" alt="头像">
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9  uploader-name">
+                            <p ng-bind="videoDetail[0].uname"></p>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <p ng-bind="videoDetail[0].vuploadtime"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 video-player">
+                        <video id="my-video" class="video-js video-plaer-box" controls preload="auto"
+                               poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                            <!--<source src="{{videoDetail[0].vcontent}}"type="video/mp4">-->
+                            <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                            <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a web browser
+                                that
+                                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                    video</a>
+                            </p>
+                        </video>
+                        <script type="text/javascript">
+                            var myPlayer = videojs('my-video');
+                            videojs("my-video").ready(function () {
+                                var myPlayer = this;
+                                myPlayer.play();
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-comment">
+        <div class="container">
+            <div class="row">
+                <div class="comment">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-tilte">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><h5>评论</h5></div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right">
+                            <i class="iconfont icon-zan" ng-click="videoLike()"></i>
+                            <span ng-bind="vlc"></span>
+                            <i class="iconfont icon-shoucang" id="isvideoCollect" ng-click="videoCollect()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                    <div class="comment-box" ng-repeat="vc in videoComment | limitTo:number">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                            <img ng-src="{{iconUrl+vc.uicon}}" alt="头像">
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11  uploader-name">
+                            <p ng-bind="vc.uname"></p>
+                        </div>
+                        <div class="col-lg-12 comment-content">
+                            <p ng-bind="vc.vccomment">
+                            </p>
+                            <h6>时间：<span ng-bind="vc.vctime"></span></h6>
+                        </div>
+                    </div>
+                    <div class="my-comment">
+                        <!--<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                            <img src="images/f2.jpg" alt="头像">
+                        </div>
+                        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11  uploader-name">
+                            <p>磨刀霍霍</p>
+                        </div>-->
+                        <div class="col-lg-12 my-comment-input">
+                            <textarea name="" id="" cols="30" rows="10" ng-model="vContent"></textarea>
+                            <button type="button" class="btn btn-primary" ng-click="videoCommentPush()">发表评论</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 text-center see-more">
+                        <p ng-click="number=number+6">查看更多</p>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 recommend">
+                    <h3>推荐视频</h3>
+                    <div class="recommend-video" ng-repeat="vbr in videoByRank">
+                        <a ng-bind="vbr.vname" ng-click="isCharge(vbr.vid,vbr.vprice,vbr.vname,vbr.vtime,vbr.vpic)"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

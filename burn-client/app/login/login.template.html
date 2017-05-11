@@ -1,0 +1,80 @@
+<div ng-app="login">
+    <div class="login-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 login-left">
+                    <img src="images/login.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-1 col-lg-1 login-center"></div>
+                <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 login-right">
+                    <form class="loginForm" name="loginForm">
+                        <div class="login-title">
+                            <span style="font-weight: 600">帐号登录</span>
+                        </div>
+                        <div class="login-name">
+                            <i class="iconfont icon-wode"></i>
+                            <input type="text"
+                                   name="utel"
+                                   placeholder="请输入手机号"
+                                   class="loginText"
+                                   ng-model="utel"
+                                   id="utel"
+                                   required
+                                   utelcheck1
+                            >
+                        </div>
+                        <div class="check" id="loginutel" style="height: 20px;overflow: hidden">
+                            <div class="error" style="margin-top: 0px" ng-if="loginForm.utel.$error.required && loginForm.utel.$touched">手机号不能为空</div>
+                            <div class="error" style="margin-top: 0px" ng-if="loginForm.utel.$error.utelcheck1 && loginForm.utel.$touched">请输入正确的手机号</div>
+                        </div>
+                        <div class="login-password">
+                            <i class="iconfont icon-taocan-suoxiao"></i>
+                            <input type="password"
+                                   name="upwd"
+                                   placeholder="请输入密码"
+                                   class="loginText"
+                                   ng-model="upwd"
+                                   id="upwd"
+                                   required
+                                   ng-click="clear2()"
+                            >
+                        </div>
+                        <div class="check" id="loginupwd" style="height: 20px">
+                            <div class="error" ng-if="loginForm.upwd.$error.required && loginForm.upwd.$touched">密码不能为空</div>
+                        </div>
+                        <div class="forget">
+                            <div class="forget-left">
+                                <input type="checkbox" id="chk_remember"><label for="chk_remember">下次自动登录</label>
+                            </div>
+                            <div class="forget-right"><a href="#">忘记密码?</a></div>
+                        </div>
+                        <div class="login-btn">
+                            <button type="button" class="loginBtn" ng-disabled="loginForm.$invalid" ng-click="login()" onclick="javascript: history.go(-1);" >登 录</button>
+                        </div>
+                        <div class="noLogin">
+                            <div class="noLogin-left"><span>还没有帐号?</span><a ui-sref="regist">免费注册</a></div>
+                        </div>
+                    </form>
+                    <div class="third-party">
+                        <h3 class="title-wrapper">
+                            <span>用合作账号登录</span>
+                        </h3>
+                        <a href="/burn/message"><i class="iconfont icon-QQ"></i></a>
+                        <a href="/burn/message"><i class="iconfont icon-wechat"></i></a>
+                        <a href="/burn/message"><i class="iconfont icon-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade bs-example-modal-sm" id="loginSuccess" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                登陆成功
+            </div>
+        </div>
+    </div>
+
+</div>

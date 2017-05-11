@@ -1,0 +1,81 @@
+
+<div class="blog-warp">
+    <div class="container">
+        <div class="row">
+            <div class="blog-row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="blog-path col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <span>健身圈&nbsp;\&nbsp;</span>
+                        <span>瑜伽&nbsp;\&nbsp;</span>
+                        <span>完美瑜伽&nbsp;\&nbsp;</span>
+                    </div>
+
+                    <div class="blog-detail-title col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2 ng-bind="bDC[0].btitle"></h2>
+                    </div>
+
+                    <div class="blog-detail-upload col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                            <img ng-src="{{iconUrl+bDC[0].uicon}}" alt="头像">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-4 text-left uploader-name">
+                            <span ng-bind="bDC[0].uname"></span>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                            <p ng-bind="bDC[0].btime"></p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                            <p>阅读<span ng-bind="bDC[0].blookcount"></span>次</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-text">
+                        <p ng-bind-html="bDC[0].bcontent">
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center blog-operation-warp">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 blog-detail-operation">
+                            <i class="iconfont icon-shoucang1" id="blog-collect" ng-click="blogCollect()">&nbsp;&nbsp;收藏</i>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 blog-detail-operation">
+                            <i class="iconfont icon-fenxiang">&nbsp;&nbsp;分享</i>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 blog-detail-operation">
+                            <i class="iconfont icon-pinglun">&nbsp;&nbsp;评论</i>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 blog-detail-operation">
+                            <i class="iconfont icon-zan1" id="blog-like" ng-click="blogLike()">&nbsp;&nbsp;点赞</i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 my-comment-input">
+                        <textarea name="" id="" cols="30" rows="10" ng-model="cbccontent"></textarea>
+                        <button type="button" class="btn btn-primary" ng-click="blogComment()">发表评论</button>
+                    </div>
+
+                </div>
+                <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 blog-comment-container">
+                    <h3 class="text-center">评论</h3>
+                    <div class="blog-comment-box" ng-repeat="bc in bcc | limitTo:lookMore">
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                            <img ng-src="{{iconUrl+bc.uicon}}" alt="头像">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-left uploader-name">
+                            <span ng-bind="bc.uname"></span>
+                            <span ng-bind="bc.bctime"></span>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-comment">
+                            <p ng-bind="bc.bccontent">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="text-center blog-comment-more" ng-click="lookMore=lookMore+5">查看更多</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="header">
+    <div class="nav-top">
+        <div class="container">
+            <div class="nav-top-logo">
+                <a ui-sref="index">
+                    <i class="iconfont icon-jianshen"></i>
+                    <span>Burn</span>
+                </a>
+            </div>
+
+            <!--top-nav start-->
+            <div class="top-nav">
+                <ul>
+                    <li><a class="scroll" ui-sref="video">视频</a></li>
+                    <li><a class="scroll" ui-sref="course">课程表</a></li>
+                    <li><a class="scroll" ui-sref="blog">健身圈</a></li>
+                    <li><a class="scroll" ui-sref="appointment">预约教练</a></li>
+                </ul>
+            </div><!--top-nav end-->
+
+            <div class="search">
+                <div class="search-box">
+                    <div class="icon"><i class="iconfont icon-sousuo"></i></div>
+                    <div class="search-txt"><input type="text" ng-model="txt_search" class="searchText"></div>
+                    <button type="button" class="search-btn"  ng-mouseover="content1()" ng-click="searchs(txt_search)" ui-sref="video({serchTxt:txt})"><span>搜索</span></button>
+                </div>
+            </div>
+
+            <!--个人-->
+            <div class="login">
+                    <user-entrance-part></user-entrance-part>
+            </div>
+
+            <!--列表-->
+            <div class="top2">
+                <div class="nav_right">
+                    <i class="iconfont icon-liebiao" onclick="nav_show()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-min" id="nav-min">
+        <ul>
+            <li>
+                <user-entrance-part></user-entrance-part>
+            </li>
+        </ul>
+        <ul>
+            <a ui-sref="video"><li>视频</li></a>
+            <a ui-sref="course"><li>课程表</li></a>
+            <a ui-sref="blog"><li>健身圈</li></a>
+            <a ui-sref="appointment"><li>预约教练</li></a>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="search1">
+            <div class="search-box1">
+                <div class="icon"><i class="iconfont icon-sousuo"></i></div>
+                <div class="search-txt1"><input type="text" ng-model="txt_search" class="searchText"></div>
+                <button type="button" class="search-btn1" ng-mouseover="content1()" ng-click="searchs(txt_search)" ui-sref="video({serchTxt:txt})"><span>搜索</span></button>
+            </div>
+        </div>
+    </div>
+</div>

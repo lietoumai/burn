@@ -1,0 +1,93 @@
+<div>
+
+<div class="classify">
+    <div class="container">
+        <div class="coach-type classify-item">
+            <ul id="coachtype1">
+                <li id="coach-type-select"style="font-weight: 900">分类</li>
+                <li ng-click="kindSelect(0)" class="all-select" >
+                    全部
+                    <i class="iconfont icon-sanjiao"></i></li>
+                <li ng-repeat="c in kindtypedata" ng-click="kindSelect(c.kname)">
+                    <span ng-bind="c.kname"></span>
+                    <i class="iconfont icon-sanjiao"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="job-type classify-item">
+            <ul id="coachtype2">
+                <li id="job-type-select"style="font-weight: 900">职位</li>
+
+                <li class="all-select" ng-click="quanSelect(0)">
+                    全部
+                    <i class="iconfont icon-sanjiao"></i>
+                </li>
+                <li ng-repeat="c in showjobtype"  ng-click="quanSelect(c.cqname)">
+                    <span ng-bind="c.cqname"></span>
+                    <i class="iconfont icon-sanjiao"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="show-coches">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 " ng-repeat="co in partNew">
+                <!--教练资料卡 start-->
+                <a ui-sref="coachDetail({coid:co.coid})">
+                <div class="show-one-coche" id="coches1">
+                    <div class="coche-head">
+                        <p>教 练</p>
+                    </div>
+                    <div class="pic">
+                        <img ng-src="{{IconUrl+co.uicon}}" alt="">
+                    </div>
+                    <div class="show-star">
+                        <div class="over" style="width:75%"></div><!--这里是遮罩，设置宽度以达到评分的效果-->
+                    </div>
+                    <div class="coche-name">
+                        <p ng-bind="co.uname"></p>
+                    </div>
+                    <div class="show-coche-type">
+                        <p ng-bind="co.cqname"></p>
+                    </div>
+                    <div class="show-job-type">
+                        <div class="show-job" ng-bind="co.cotag"></div>
+                    </div>
+                </div><!--教练资料卡 end-->
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="pages">
+    <div class="container">
+        <!--<do-page></do-page>-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div aria-label="Page navigation" class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="javascript:void(0);" aria-label="Previous" id="backPage" ng-click="turnPage(page_now-1)">
+                            <span aria-hidden="true">上一页</span>
+                        </a>
+                    </li>
+
+                    <li ng-repeat="c in part_count">
+                        <a href="javascript:void(0);" ng-bind="c" ng-click="turnPage(c)"></a>
+                    </li>
+
+                    <li >
+                        <a href="javascript:void(0);" aria-label="Next" id="goPage" ng-click="turnPage(page_now+1)">
+                            <span aria-hidden="true">下一页</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

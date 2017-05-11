@@ -1,0 +1,27 @@
+<div ng-switch on="isLogin">
+    <div ng-switch-default>
+        <a class="scroll" ui-sref="login">
+            <div class="login-pic">
+                <img src="upfile/user3.png" alt="">
+            </div>
+        </a>
+    </div>
+    <div ng-switch-when="true">
+        <span style="color: #ffffff">
+            {{usertel}}
+            <a ng-click="zhuxiao()" style="cursor: pointer">注销</a>
+        </span>
+        <a class="scroll" ui-sref="personal">
+            <div class="login-pic">
+                <img src="http://localhost:3000/uploads/{{uicon}}" alt="">
+            </div>
+        </a>
+    </div>
+    <div ng-switch-when="false">
+        <a class="scroll" ui-sref="login">
+            <div class="login-pic">
+                <img src="upfile/user3.png" alt="">
+            </div>
+        </a>
+    </div>
+</div>

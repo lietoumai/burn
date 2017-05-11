@@ -1,0 +1,71 @@
+
+<div class="blog-warp">
+    <div class="container">
+        <div class="row">
+            <div class="biog-container">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                    <div class="blog-content" ui-sref="blog-detail({bid:b.bid})" ng-repeat="b in blogList | limitTo:lookMore">
+                        <div class="blog-box">
+                            <div class="col-lg-12 blog-brief-title">
+                                <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                    <h3 class="text-left"><a href="#" ng-bind="b.btitle"></a></h3>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                    <p ng-bind="b.btime"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 blog-icon">
+                                <img ng-src="{{blogCoverUrl+b.bpic}}" alt="">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 blog-brief">
+                                <p ng-bind="b.bzhaiyao">
+                                </p>
+                                <span>...</span>
+                            </div>
+                            <div class="blog-uploader-info">
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 video-upload-icon">
+                                    <img src="http://localhost:3000/uploads/{{b.uicon}}" alt="头像">
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-4 uploader-name">
+                                    <span ng-bind="b.uname"></span>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-5 col-xs-7 text-right">
+                                    <i class="iconfont icon-zan1 icon-operation"></i>
+                                    <span ng-bind="b.blikecount"></span>
+                                    <i class="iconfont icon-pinglun icon-operation"></i>
+                                    <span ng-bind="b.bcomment"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center see-more">
+                        <p ng-click="lookMore=lookMore+4">查看更多</p>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="blog-aside">
+                        <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 upload-blog text-center" ui-sref="blog-upload">
+                            <i class="iconfont icon-xiugai"></i>
+                            <span>发博客</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 recommend">
+                            <h3>推荐文章</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 recommend-blog-title" ng-repeat="br in blogRecommend">
+                            <p ng-bind="br.btitle" ng-click="recommendBlogDetail(br.bid)">
+                            </p>
+                            <i class="iconfont icon-zan1 icon-operation"></i>
+                            <span ng-bind="br.blikecount"></span>
+                            &nbsp;&nbsp;
+                            <i class="iconfont icon-pinglun icon-operation"></i>
+                            <span ng-bind="br.bcomment"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

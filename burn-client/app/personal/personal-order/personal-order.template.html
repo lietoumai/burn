@@ -1,0 +1,38 @@
+<div class="nav-middle-right">
+    <div class="nav-middle-right-t">
+        <p ng-click="showOrder()">全部订单</p>
+    </div>
+    <div class="nav-middle-right-dingdan" ng-repeat="od in videoOrderData">
+        <div class="nav-middle-right-dingdan-colo">
+            <div class="nav-middle-right-dingdan-t-1">
+                <p>订单编号：<span ng-bind="od.oid"></span></p>
+            </div>
+            <div class="nav-middle-right-dingdan-t-1">
+                <p ng-bind="od.otime"></p>
+            </div>
+        </div>
+        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7  nav-middle-right-dingdan-lef">
+            <div class="nav-middle-right-dingdan-lef-im">
+                <img ng-src="{{videoUrl+od.vpic}}" alt="">
+            </div>
+            <div class="nav-middle-right-dingdan-lef-tt">
+                <p>名称: <span ng-bind="od.vname"></span></p>
+                <p>类型:<span ng-bind="od.kname"></span></p>
+                <p>时长:<span ng-bind="od.vtime"></span></p>
+                <p>难度:<span ng-bind="od.rname"></span></p>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav-middle-right-dingdan-lef">
+            <div class="nav-middle-right-dingdan-pr">
+                <p>¥<span ng-bind="od.vprice"></span></p>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+            <div class="nav-middle-right-dingdan-pa">
+                <a ui-sref="video-detail({vid:od.vid})">立即观看</a>
+            </div>
+        </div>
+        <i class="iconfont icon-shanchu" ng-click="deleteOrder(od.oid)"></i>
+    </div>
+
+</div>

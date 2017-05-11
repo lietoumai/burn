@@ -1,0 +1,105 @@
+<div class="detail-coantianer">
+    <div class="detail-title">
+        <!--<div class="detail-list" id="recent-watch">
+            <p>最近浏览</p>
+        </div>-->
+       <!-- <div class="detail-list" id="purchased">
+            <p ng-click="alreadyCourse()">已购买的课程</p>
+        </div>-->
+        <div class="detail-list" id="schedule">
+            <p ng-click="showCourseById()">课程表</p>
+        </div>
+        <div class="detail-list" id="appoinment">
+            <p ng-click="showAppoById()">预约记录</p>
+        </div>
+    </div>
+
+
+    <div>
+        <!--已购买记录-->
+        <div id="personal-course-purchased">
+
+            <div class="nav-middle-right-dingdan" ng-repeat="vh in videoOrderData">
+                <div class="nav-middle-right-dingdan-colo">
+                    <span style="line-height: 30px;margin-left:15px">购买日期：</span><span ng-bind="vh.otime" style="line-height: 30px;"></span>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7  nav-middle-right-dingdan-lef">
+                    <div class="nav-middle-right-dingdan-lef-im">
+                        <img ng-src="{{videoUrl+vh.vpic}}" alt="">
+                    </div>
+                    <div class="nav-middle-right-dingdan-lef-tt">
+                        <p>名称: <span ng-bind="vh.vname"></span></p>
+                        <p>类型:<span ng-bind="vh.kname"></span></p>
+                        <p>时长:<span ng-bind="vh.vtime"></span></p>
+                        <p>难度:<span ng-bind="vh.rname"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav-middle-right-dingdan-lef">
+                    <div class="nav-middle-right-dingdan-pr">
+                        <p>¥<span ng-bind="vh.vprice"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+                    <div class="nav-middle-right-dingdan-pa">
+                        <a ui-sref="video-detail({vid:vh.vid})">立即观看</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--我的课程表-->
+        <div id="personal-course-schedule" style="display: none">
+            <div class="nav-middle-right-biao">
+                <div class="nav-middle-right-biao-ta">
+                    <table>
+                        <tr>
+                            <th>编号</th>
+                            <th>课程名称</th>
+                            <th>日期</th>
+                            <th>开始时间</th>
+                            <th>结束时间</th>
+                            <th>人数</th>
+                            <th>退课</th>
+                        </tr>
+                        <tr ng-repeat="cou in showmyCourse track by $index">
+                            <td ng-bind="$index+1"></td>
+                            <td ng-bind="cou.cname"></td>
+                            <td ng-bind="cou.cdate"></td>
+                            <td ng-bind="cou.ctimestart"></td>
+                            <td ng-bind="cou.ctimeend"></td>
+                            <td ng-bind="cou.ccount"></td>
+                            <td><button ng-if="cou.a" ng-click="deleteCourse(cou.chid)">退课</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--我的预约记录-->
+        <div id="personal-course-appoinment" style="display: none">
+            <div class="nav-middle-right-biao">
+                <div class="nav-middle-right-biao-ta">
+                    <table>
+                        <tr>
+                            <th>编号</th>
+                            <th>教练</th>
+                            <th>日期</th>
+                            <th>预约时间</th>
+                        </tr>
+                        <tr ng-repeat="ap in showmyAppoInfo track by $index">
+                            <td ng-bind="$index+1"></td>
+                            <td ng-bind="ap.uname"></td>
+                            <td ng-bind="ap.atime"></td>
+                            <td ng-bind="ap.appointtime"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

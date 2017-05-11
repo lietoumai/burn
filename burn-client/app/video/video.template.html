@@ -1,0 +1,103 @@
+<div class="video-warp">
+    <!--classify 分类开始-->
+    <div class="classify">
+        <div class="container">
+            <div class="coach-type classify-item">
+                <ul>
+                    <li id="coach-type-select"style="font-weight: 900;background-color: #00BFF0; color: white">分类</li>
+                    <li ng-click="partSelect(0)" class="all-select" >
+                        全部
+                        <i class="iconfont icon-sanjiao"></i></li>
+                    <li ng-repeat="p in partType" ng-click="partSelect(p.pname)">
+                        <span ng-bind="p.pname"></span>
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="job-type classify-item">
+                <ul>
+                    <li id="job-type-select"style="font-weight: 900;background-color: #00BFF0; color: white ">种类</li>
+                    <li class="all-select" ng-click="kindSelect(0)">
+                        全部
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                    <li ng-repeat="k in kindType"  ng-click="kindSelect(k.kname)">
+                        <span ng-bind="k.kname"></span>
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="job-type classify-item">
+                <ul>
+                    <li id="job-type-select1"style="font-weight: 900;background-color: #00BFF0; color: white">难度</li>
+                    <li ng-click="rankSelect(0)" class="all-select">
+                        全部
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                    <li ng-repeat="r in rankType" ng-click="rankSelect(r.rname)">
+                        <span ng-bind="r.rname"></span>
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="job-type classify-item">
+                <ul>
+                    <li ng-click="free0fCharge(0)" class="all-select">
+                        全部
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                    <li ng-repeat="isc in charge" ng-click="free0fCharge(isc.ischar)">
+                        <span ng-bind="isc.ischar"></span>
+                        <i class="iconfont icon-sanjiao"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--course-container star-->
+    <div class="video-container">
+        <div class="container">
+            <div class="row">
+                <div class="video-content">
+                    <div class="col-lg-3 col-md-4 col-sm-6 video-brief-box" ng-repeat="v in partNew |filter:aaa " ng-click="isCharge(v.vid,v.vprice,v.vname,v.vtime,v.vpic)">
+                        <div class="video-show-box">
+                            <div class="video-type"><p ng-bind="v.pname">肩部</p></div>
+                            <div class="video-show-title">
+                                <h4 ng-bind="v.vname"></h4>
+                                <h6 ng-bind="v.vbrief"></h6>
+                                <p>初级-<span ng-bind="v.vlookcount"></span>-观看</p>
+                            </div>
+                            <div class="watch-mark">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div aria-label="Page navigation" class="text-center">
+                        <ul class="pagination">
+                            <li>
+                                <a href="javascript:void(0);" aria-label="Previous" id="backPage" ng-click="turnPage(page_now-1)">
+                                    <span aria-hidden="true">上一页</span>
+                                </a>
+                            </li>
+
+                            <li ng-repeat="c in part_count">
+                                <a href="javascript:void(0);" ng-bind="c" ng-click="turnPage(c)"></a>
+                            </li>
+
+                            <li >
+                                <a href="javascript:void(0);" aria-label="Next" id="goPage" ng-click="turnPage(page_now+1)">
+                                    <span aria-hidden="true">下一页</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

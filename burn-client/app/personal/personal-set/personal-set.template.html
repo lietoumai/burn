@@ -1,0 +1,142 @@
+<div class="detail-coantianer">
+    <div class="detail-title">
+        <div class="detail-list" id="information">
+            <p>个人信息</p>
+        </div>
+       <!-- <div class="detail-list" id="trueName">
+            <p>实名认证</p>
+        </div>-->
+        <div class="detail-list" id="resetPwd">
+            <p>修改密码</p>
+        </div>
+    </div>
+
+
+    <div>
+
+        <!--个人信息-->
+        <div class="nav-middle-right-se" id="personal-set-information">
+            <div class="information-nickname list-name">
+                <button>昵称:</button><span ng-bind="uname"></span>
+                <i class="iconfont icon-xiugai info-edit" id="information-edit-btn">编辑</i>
+            </div>
+            <div class="information-nickname list-name">
+                <button>手机号:</button><span ng-bind="utel"></span>
+            </div>
+            <div class="information-nickname list-name">
+                <button>性别:</button><span ng-bind="usex"></span>
+            </div>
+            <div class="information-nickname list-name">
+                <button>签名:</button><span ng-bind="usignature"></span>
+            </div>
+        </div>
+
+        <!--个人信息修改页面-->
+        <div class="nav-middle-right-se-dierye" id="personal-set-information-edit" style="display: none">
+            <form action="">
+                <div class="information-nickname list-name">
+                    <button>昵称:</button><input type="text" value="" ng-model="uname">
+                </div>
+                <div class="information-sex list-name">
+                    <button>性别:</button>
+                    <label><input type="radio" name="usersex" value="0" ng-model="usex">男</label>
+                    <label><input type="radio" name="usersex" value="1" ng-model="usex">女</label>
+                </div>
+                <div class="information-signature card-photo">
+                    <h3>个性签名:</h3>
+                    <textarea name="user-signature" ng-model="usignature"></textarea>
+                </div>
+                <div class="operate-btn-box">
+                    <input type="button" class="save-btn" value="保存" ng-click="updateUserInfo()">
+                </div>
+            </form>
+        </div>
+
+
+        <!--实名认证初始化页面-->
+        <div class="nav-middle-right-se" id="personal-set-trueName" style="display: none">
+            <div class="information-nickname list-name">
+                <button>真实姓名:</button><span ng-bind="utname"></span>
+                <i class="iconfont icon-xiugai info-edit" id="true-edit-btn">编辑</i>
+            </div>
+            <div class="information-nickname list-name">
+                <button>身份证号:</button><span ng-bind="ucard"></span>
+            </div>
+            <div class="card-photo">
+                <h3>身份证照:</h3>
+                <div class="card-pic">
+                    <!--<i class="iconfont icon-paizhao"></i>-->
+                    <img ng-src="{{idcardUrl+upic1}}" alt="">
+                </div>
+                <div class="card-pic">
+                    <!--<i class="iconfont icon-paizhao"></i>-->
+                    <img ng-src="{{idcardUrl+upic2}}" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--实名认证修改-->
+        <div class="nav-middle-right-se-disanye" id="personal-set-trueName-edit" style="display: none">
+            <form method="post">
+                <div class="information-nickname list-name">
+                    <button>真是姓名:</button>
+                    <input type="text" ng-model="utname">
+                </div>
+                <div class="information-nickname list-name">
+                    <button>身份证号:</button>
+                    <input type="text" ng-model="ucard">
+                </div>
+                <div class="card-photo">
+                    <h3>身份证照:</h3>
+                    <div class="card-pic" id="card-pic1">
+                        <img ngf-src="userCard1 || data.defaultUserCard" alt="">
+                        <i class="iconfont icon-paizhao" ngf-select="" id="userCard1" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="userCard1"></i>
+                    </div>
+                    <div class="card-pic" id="card-pic2">
+                        <img ngf-src="userCard2 || data.defaultUserCard" alt="">
+                        <i class="iconfont icon-paizhao" ngf-select="" id="userCard2" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="userCard2"></i>
+                    </div>
+                </div>
+                <div class="operate-btn-box">
+                    <input type="button" class="save-btn" ng-click="trueName()" value="保存">
+                </div>
+            </form>
+        </div>
+
+        <!--密码修改-->
+        <div class="nav-middle-right-se" id="personal-set-resetPwd" style="display: none">
+            <form name="upForm">
+                <div class="information-nickname list-name">
+                    <button>原密码:</button>
+                    <input type="password"
+                           ng-model="upwd"
+                           name="upwd"
+                    >
+                    <span id="yuanpass"></span>
+                </div>
+                <div class="information-nickname list-name">
+                    <button>新密码:</button>
+                    <input type="password"
+                           ng-model="upwd2"
+                           name="upwd2"
+                           required
+                           upwdcheck1
+                    >
+                    <span class="check" style="border: solid 1px red" ng-if="upForm.upwd2.$error.upwdcheck1 && upForm.upwd2.$touched">字母开头，6-18，包含字符、数字和下划线</span>
+                </div>
+                <div class="information-nickname list-name">
+                    <button>确认密码:</button>
+                    <input type="password"
+                           ng-model="upwd3"
+                           name="upwd3"
+                    >
+                    <span class="error" ng-if="(upwd2 != upwd3) &&
+                                                  upForm.upwd3.$touched">两次输入密码不一致</span>
+                </div>
+                <div class="operate-btn-box">
+                    <input type="button" class="save-btn" value="保存" ng-click="updatePass()" ng-disabled="upForm.$invalid">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
