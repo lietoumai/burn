@@ -33,7 +33,12 @@ angular.module('personalCoachWork')
                         method: 'GET',
                         url: serverUrl + 'coachs/getCoachCourse?uid='+$rootScope.uid+'',
                     }).then(function (response) {
-                        $scope.coachCourse = response.data.result;
+                        console.log(response.data.result.length);
+                        if(response.data.result.length>0){
+                            $scope.coachCourse = response.data.result;
+                        }else{
+                            $('#personal-coach-schedule').html('<img src="images/null.jpg" height="500" width="900" />');
+                        }
                     })
 
 

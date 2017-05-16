@@ -31,7 +31,7 @@ angular.module('personalCourse')
 
                 //页面加载时执行
                 $(function () {
-                    $scope.alreadyCourse();
+                    $scope.showCourseById();
                 })
 
                 //查看选课信息
@@ -39,9 +39,9 @@ angular.module('personalCourse')
                     showCourseByIdService.showCourseById($rootScope.uid);
                 }
                 //查看已经购买的课程
-                $scope.alreadyCourse = function () {
+            /*    $scope.alreadyCourse = function () {
                     getVideoOrderService.getVideoOrder($rootScope.uid);
-                }
+                }*/
 
                 //查看预约记录
                 $scope.showAppoById = function () {

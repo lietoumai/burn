@@ -160,12 +160,13 @@ angular.module('serviceCourse')
 
         return {
             showCourseById: function (data) {
-
                     $http.get(serverUrl+'courses/showCourseById?uid='+data)
                         .then(function successCallback(response) {
                             // 请求成功执行代码
                             if (response.data.result.length>0) {
                                 $rootScope.showmyCourse = response.data.result;
+                            }else{
+                                $('#personal-course-schedule').html('<img src="images/null.jpg" height="500" width="900" />');
                             }
                         }, function errorCallback(response) {
                             // 请求失败执行代码
@@ -208,6 +209,8 @@ angular.module('serviceCourse')
                         // 请求成功执行代码
                         if (response.data.result.length>0) {
                             $rootScope.showmyAppoInfo = response.data.result;
+                        }else{
+                            $('#personal-course-appoinment').html('<img src="images/null.jpg" height="500" width="900" />');
                         }
                     }, function errorCallback(response) {
                         // 请求失败执行代码

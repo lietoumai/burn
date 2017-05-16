@@ -1,41 +1,43 @@
 <div class="nav-middle-right">
     <div class="nav-middle-right-t">
-        <p>动态</p>
+        <p ng-click="getBlogByuid1()">动态</p>
     </div>
-    <div class="blog-show" ng-repeat="b in showBlogdata">
-        <a  ui-sref="blog-detail({bid:b.bid})">
-        <div class="person-blog-title">
-            <div class="person-blog-title-pic">
-                <img ng-src="{{IconUrl+uicon}}" alt="">
-            </div>
-            <div class="person-blog-title-title">
-                <p><span ng-bind="b.uname" style="color: red;"></span>发布了<span ng-bind="b.btitle"></span></p>
-            </div>
-            <div class="person-blog-title-time">
-                <p><span ng-bind="b.btime"></span></p>
-            </div>
-        </div>
-        <div class="person-blog-content">
-            <div class="person-blog-content-pic">
-                <img ng-src="{{blogCoverUrl+b.bpic}}" alt="">
-            </div>
-            <div class="person-blog-content-right">
-                <div class="person-blog-content-right-1">
-                    <p ng-bind="b.bzhaiyao"></p>
+    <div id="blog-show">
+        <div class="blog-show" ng-repeat="b in showBlogdata">
+            <a  ui-sref="blog-detail({bid:b.bid})">
+                <div class="person-blog-title">
+                    <div class="person-blog-title-pic">
+                        <img ng-src="{{IconUrl+uicon}}" alt="">
+                    </div>
+                    <div class="person-blog-title-title">
+                        <p><span ng-bind="b.uname" style="color: red;"></span>发布了<span ng-bind="b.btitle"></span></p>
+                    </div>
+                    <div class="person-blog-title-time">
+                        <p><span ng-bind="b.btime"></span></p>
+                    </div>
                 </div>
-               <!-- <div class="person-blog-content-right-2">
-                    <span ng-bind="b.bcontent"></span><span>[详细]</span>
-                </div>-->
-                <div class="person-blog-content-right-3">
-                    <i class="iconfont icon-zan1 icon-operation"></i>
-                    <span ng-bind="b.blikecount"></span>
-                    &nbsp;&nbsp;
-                    <i class="iconfont icon-pinglun icon-operation"></i>
-                    <span ng-bind="b.bcomment"></span>
+                <div class="person-blog-content">
+                    <div class="person-blog-content-pic">
+                        <img ng-src="{{blogCoverUrl+b.bpic}}" alt="">
+                    </div>
+                    <div class="person-blog-content-right">
+                        <div class="person-blog-content-right-1">
+                            <p ng-bind="b.bzhaiyao"></p>
+                        </div>
+                        <!-- <div class="person-blog-content-right-2">
+                             <span ng-bind="b.bcontent"></span><span>[详细]</span>
+                         </div>-->
+                        <div class="person-blog-content-right-3">
+                            <i class="iconfont icon-zan1 icon-operation"></i>
+                            <span ng-bind="b.blikecount"></span>
+                            &nbsp;&nbsp;
+                            <i class="iconfont icon-pinglun icon-operation"></i>
+                            <span ng-bind="b.bcomment"></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        </a>
     </div>
 
 

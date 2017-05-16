@@ -31,6 +31,8 @@ angular.module('serviceVideo')
                     .then(function successCallback(response) {
                         if(response.data.result.length>0){
                             $rootScope.videoOrderData = response.data.result;
+                        }else{
+                            $('#nav-middle-right-dingdan').html('<img src="images/null.jpg" height="500" width="900" />');
                         }
                     });
             },
@@ -46,6 +48,8 @@ angular.module('serviceVideo')
                     .then(function successCallback(response) {
                         if(response.data.result.length>0){
                             $rootScope.videokeepData = response.data.result;
+                        }else{
+                            $('#personal-collect-video').html('<img src="images/null.jpg" height="500" width="900" />');
                         }
                     });
             }

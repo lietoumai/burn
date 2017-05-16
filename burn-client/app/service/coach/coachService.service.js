@@ -64,8 +64,9 @@ angular.module('serviceCoach')
                         // 请求成功执行代码
                         console.log(response.data.result);
                         if (response.data.result.length >0) {
-
                             $rootScope.coachdataCourse = response.data.result;
+                        }else{
+                            $('#edu-grids').html('<p style="color:#E84E40;font-size: 20px">该教练暂未发布任何课程！</p>');
                         }
 
                     }, function errorCallback(response) {

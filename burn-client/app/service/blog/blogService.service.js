@@ -15,6 +15,8 @@ angular.module('serviceBlog')
                     .then(function successCallback(response){
                         if(response.data.result.length!=0){
                             $rootScope.showBlogdata = response.data.result;
+                        }else{
+                            $('#blog-show').html('<img src="images/null.jpg" height="500" width="900" />');
                         }
                     })
             }
@@ -30,6 +32,8 @@ angular.module('serviceBlog')
                     .then(function successCallback(response) {
                         if(response.data.result.length>0){
                             $rootScope.blogkeepData = response.data.result;
+                        }else{
+                            $('#personal-collect-blog').html('<img src="images/null.jpg" height="500" width="900" />');
                         }
                     });
             }

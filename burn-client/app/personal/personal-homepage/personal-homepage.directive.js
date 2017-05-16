@@ -19,6 +19,9 @@ angular.module('personalHomepage')
                 $scope.IconUrl = IconUrl;
                 $scope.blogCoverUrl =blogCoverUrl;
                 $scope.icon = $rootScope.uicon;
+                $(function () {
+                    $scope.getBlogByuid1();
+                })
                 $scope.getBlogByuid1 = function () {
                     getBlogByuidService.getBlogByuid($rootScope.uid);
                 }
