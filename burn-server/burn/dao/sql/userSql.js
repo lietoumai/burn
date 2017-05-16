@@ -15,7 +15,7 @@ var sql = {
     getUserById:'select uname,usex,utel,usignature from user where uid=?',   //根据Id查询用户基本信息
     getUserTrueInfo:'select utname,ucard,upic1,upic2 from user where uid=?',//获取用户真实信息
     updateUserInfo:'update user set uname=?,usex=?,usignature=? where uid=?',   //更新用户信息
-    updateUserTrueInfo:'update user utname=?,ucard=?,upic1=?,upic2=? where uid=?',//实名认证
+    updateUserTrueInfo:'update user set utname=?,ucard=?,upic1=?,upic2=? where uid=?',//实名认证
 
 
     selectOldPwd:'select upwd from user where uid=?',  //查询密码

@@ -14,7 +14,7 @@ var videoSql = {
     //查询视频详情
     getVideoDetail:'SELECT vname,vtime,vlookcount,DATE_FORMAT(vuploadtime,"%Y-%m-%d") as vuploadtime,vlikecount,vcontent,vranktype,rname,video.coid,uname,uicon from (((video left join ranktype on video.vranktype=ranktype.rid) left join coach on coach.coid=video.coid) left join user on uid=coach.coid) where vid=?',
     //查询视频评论
-    getVideoComment:'select uname,uicon,vccomment,vctime,vclikecount from videocomment left join user on  videocomment.uid=user.uid where vid=? order by vctime desc',
+    getVideoComment:'select uname,uicon,vccomment,DATE_FORMAT(vctime,"%Y-%m-%d") as vctime,vclikecount from videocomment left join user on  videocomment.uid=user.uid where vid=? order by vctime desc',
     //查询视频收藏
     getVideoCollect:'select * from videokeep where vid=? and uid=?',
     //根据视频难度推荐视频

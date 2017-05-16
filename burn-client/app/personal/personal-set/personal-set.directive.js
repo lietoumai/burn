@@ -21,7 +21,20 @@ angular.module('personalSet')
                 'logout',
                 '$state',
                 'idcardUrl',
-                function ($scope,$http,showUserInfo,$rootScope,IconUrl,Upload,serverUrl,showUserTrueInfo,updateUserInfo,updatePass,logout,$state,idcardUrl) {
+                function (
+                    $scope,
+                    $http,
+                    showUserInfo,
+                    $rootScope,
+                    IconUrl,
+                    Upload,
+                    serverUrl,
+                    showUserTrueInfo,
+                    updateUserInfo,
+                    updatePass,
+                    logout,
+                    $state,
+                    idcardUrl) {
 
                 $scope.idcardUrl = idcardUrl;
 

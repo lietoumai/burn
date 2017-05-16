@@ -227,17 +227,14 @@ var user = {
     //修改实名制信息
 
     updateUserTrueInfo:function (user,callback) {
-        console.log(111)
         domain_sql.on('error',function (err) {
 
             console.log(err.message);
             callback(4);
         });
-
-
         domain_sql.run(function () {
             getClient(function (client) {
-                client.query(usersql.updateUserTrueInfo,[user.name,user.card,user,upic1,user.upic2,user.uid],function (error,result) {
+                client.query(usersql.updateUserTrueInfo,[user.utname,user.ucard,user.upic1,user.upic2,user.uid],function (error,result) {
                     if(error){
                         console.log(error.message);
                         client.release();
