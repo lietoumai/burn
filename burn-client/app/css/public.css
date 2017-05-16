@@ -137,7 +137,7 @@ a{
     height: 88px;
     line-height: 88px;
     background-color: rgba(102,102,102,0.5);
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .nav-top .container .nav-top-logo{
     float: left;
@@ -246,6 +246,7 @@ a{
     font-size: 2em;
 }
 .nav-top .container .login .login-pic{
+    position: relative;
     float: left;
 }
 .nav-top .container .login .login-pic img{
@@ -253,6 +254,65 @@ a{
     height: 33px;
     border-radius: 100%;
 
+}
+
+.login-pic img{
+    cursor: pointer;
+}
+
+.personal-window{
+    position: absolute;
+    z-index: 999;
+    top: 70px;
+    left: -163px;
+    width: 300px;
+    height: 120px;
+    border-top: 3px solid #00bff0;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.user-info{
+    height: 50px;
+    margin-top: 5px;
+    padding-left: 50px;
+}
+
+.user-info p{
+    float: left;
+    line-height: 50px;
+    text-align: center;
+
+}
+.personal-window .user-info p i{
+    float: left;
+    color: black;
+    margin-right: 0px;
+    margin-top: 0px;
+    display: inline-block;
+
+}
+
+.user-info p span{
+    float: left;
+    color: black;
+}
+
+.account-operation{
+    height: 50px;
+}
+
+.account-operation p{
+    cursor: pointer;
+    float: left;
+    line-height: 30px;
+    display: inline-block;
+    width: 90px;
+    margin-left: 40px;
+    text-align: center;
+    border: solid 1px gainsboro;
+    margin-top: 10px;
 }
 
 .nav-top .container .top2 .nav_right{

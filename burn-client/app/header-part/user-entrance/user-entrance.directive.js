@@ -19,6 +19,20 @@ directive('userEntrancePart',function () {
 
             }
 
+            $(function(){
+                $(".login-pic").hover(function(){
+                    $(".personal-window").show();
+                },function(){
+                    $(".personal-window").hide();
+                });
+
+                $(".personal-window").hover(function () {
+                    $(".personal-window").show();
+                },function () {
+                    $(".personal-window").show();
+                })
+            })
+
         }]
     }
 });

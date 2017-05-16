@@ -7,6 +7,7 @@ var usersql = require('./../dao/sql/userSql');
 //图像上传
 var formidable = require('./../node_modules/formidable');
 var AVATAR_UPLOAD_FOLDER = '/uploads/';
+var userCardPic='/userCardPic/'
 var createUnique = require('./../util/createUnique');
 var fs = require('fs');
 /* GET users listing. */
@@ -176,17 +177,41 @@ router.post('/updateUserInfo',function (req,res,next) {
 
 /*实名认证*/
 router.post('/updateTrueUserInfo', function (req, res, next) {
-
+    console.log("AAAAAAAAAAAAAAAAAAAAA")
     var form = new formidable.IncomingForm();
-    form.parse(req, function (err, user,file) {
+    form.parse(req, function (err, user,files) {
         if (err) {
             response.locals.error = err;
             return;
         }
+        // console.log(files);
+        for(var i=1;i<=files.length;i++){
+            console.log(files.file+i)
+        }
+
+
+
+        // console.log("QQ"+files[0].File);
         userdao.getUserById(user,function (result) {
             if(result.length==1){
                 var extName ='';  //后缀名
-                switch (file.file1.type) {  //此处in_file  为页面端 <input type=file name=in_file>
+                for(var i=0;i<files.length;i++){
+                    switch (file[i].type) {  //此处in_file  为页面端 <input type=file name=in_file>
+                        case 'image/jpg':
+                            extName = 'jpg';
+                            break;
+                        case 'image/jpeg':
+                            extName = 'jpeg';
+                            break;
+                        case 'image/png':
+                            extName = 'png';
+                            break;
+                        case 'image/x-png':
+                            extName = 'png';
+                            break;
+                    }
+                }
+                /*switch (file.file1.type) {  //此处in_file  为页面端 <input type=file name=in_file>
                     case 'image/jpg':
                         extName = 'jpg';
                         break;
@@ -200,13 +225,38 @@ router.post('/updateTrueUserInfo', function (req, res, next) {
                         extName = 'png';
                         break;
                 }
-
+*/
                 console.log('extName='+extName)
                 if(extName.length == 0){
                     res.send('只支持png和jpg格式图片');
                     return;
                 }else{
-                    form.uploadDir = "../public/"+imgForUserCard;     //设置上传目录
+                    for(var m=0;m<files.length;i++){
+                        form.uploadDir = "../public/"+userCardPic;     //设置上传目录
+                        form.keepExtensions = true;     //保留后缀
+                        form.maxFieldsSize = 2 * 1024;   //文件大小
+
+                        var avatarName = createUnique.creatName() + '.' + extName;
+                        var newPath = form.uploadDir+avatarName;
+                        var readStream = fs.createReadStream(file[i].path);
+                        var writeStream = fs.createWriteStream(newPath);
+                        console.log(writeStream)
+                        readStream.pipe(writeStream);
+                        readStream.on('end', function () {
+                            fs.unlinkSync(file[0].path);
+
+                        });
+
+
+
+                        console.log('upload end...');
+
+                        res.send('上传成功');
+
+
+
+                    }
+                    /*form.uploadDir = "../public/"+imgForUserCard;     //设置上传目录
                     form.keepExtensions = true;     //保留后缀
                     form.maxFieldsSize = 2 * 1024;   //文件大小
 
@@ -231,7 +281,7 @@ router.post('/updateTrueUserInfo', function (req, res, next) {
 
                     console.log('upload end...');
 
-                    res.send('上传成功');
+                    res.send('上传成功');*/
 
                 }
 

@@ -7,13 +7,16 @@
         </a>
     </div>
     <div ng-switch-when="true">
-        <span style="color: #ffffff">
-            {{usertel}}
-            <a ng-click="zhuxiao()" style="cursor: pointer">注销</a>
-        </span>
-        <a class="scroll" ui-sref="personal">
+        <a class="scroll">
             <div class="login-pic">
-                <img src="http://localhost:3000/uploads/{{uicon}}" alt="">
+                <img ui-sref="personal" src="http://localhost:3000/uploads/{{uicon}}" alt="">
+                <div class="personal-window">
+                    <div class="user-info">
+                        <p><i class="icon-wode"></i><span ng-bind="uname" ui-sref="personal"></span></p>
+                        <p><i class="iconfont icon-lichengdixian"></i><span ng-bind="upointcount"></span></p>
+                    </div>
+                    <div class="account-operation"><p ui-sref="login">切换账号</p> <p ng-click="zhuxiao()">注销登录</p></div>
+                </div>
             </div>
         </a>
     </div>

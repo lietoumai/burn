@@ -20,9 +20,6 @@ angular.module('personal')
                 'blogCoverUrl',
                 function ($scope,$http,$state,$rootScope,serverUrl,Upload,IconUrl,showUserInfo,getBlogByuidService,blogCoverUrl) {
 
-
-
-
                 //展示用户基本信息
                     $(function () {
                         showUserInfo.showUserInfo($rootScope.uid);
