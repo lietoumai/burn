@@ -38,14 +38,6 @@ angular.module('blogDetail')
                        $scope.bcc = response.data;
                     }
                 )
-
-
-
-
-
-
-
-
                     //提交评论
                 $scope.blogComment=function () {
                     var s = localStorage.getItem('isLogin');
@@ -161,3 +153,11 @@ angular.module('blogDetail')
 
         }
     });
+
+$(document).on('click', '.icon-pinglun', function () {
+    $(".my-comment-input").show();
+});
+
+$(document).on('click', '.my-comment-input button', function () {
+    $(".my-comment-input").hide();
+});

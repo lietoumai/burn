@@ -1008,6 +1008,7 @@ button.tijiao{
 }
 .person-content{
     margin-bottom: 50px;
+    background-color: white;
 }
 .person-main-left{
     margin-top: 40px;
@@ -2127,6 +2128,8 @@ table td{
 /*blog-whole 博客详情页面css-----------------------------------------*/
 .blog-row{
     padding-top: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .blog-path{
@@ -2328,6 +2331,10 @@ table td{
     font-size: 1.5em;
     margin-bottom: 15px;
 }
+.comment-content p{
+    padding-left: 20px;
+}
+
 .comment-content h6{
     color: #93999f;
     font-size: 12px;
@@ -2390,11 +2397,14 @@ table td{
     background-color: #00BFF0;
     color: white;
 }
+.video-title-container{
+    background-image:url("../images/video-title.png");
+    background-size:cover;
+    background-position: bottom;
+}
 
 .video-info{
-    height: 200px;
-    background-image:url("../images/xuhua.jpg");
-    background-size:cover;
+    height: 300px;
 }
 
 .video-dirctory ul li{
@@ -2440,7 +2450,9 @@ table td{
     background-color: black;
 }
 
-
+.my-comment{
+    padding: 10px 0px;
+}
 
 
 .uploader-name{

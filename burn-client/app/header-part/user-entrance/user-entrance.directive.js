@@ -19,6 +19,18 @@ directive('userEntrancePart',function () {
 
             }
 
+            $scope.switchAccount=function () {
+                console.log("AAAAAAAAAAAA")
+                logout.logout();
+                $scope.reloadRoute = function () {
+                    $window.location.reload();
+                    $state.go('login');
+                };
+                $scope.reloadRoute();
+                console.log("BBBBBBBBBBBBBB");
+
+            }
+
             $(function(){
                 $(".login-pic").hover(function(){
                     $(".personal-window").show();
