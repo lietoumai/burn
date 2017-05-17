@@ -106,7 +106,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 coach-push-box" ng-repeat=" co in coachPush">
                             <a ui-sref="coachDetail({coid:co.coid})">
                                 <div class="coach-push-img">
-                                    <img src="images/f2.jpg" alt="">
+                                    <img ng-src={{iconUrl+co.copic}} alt="">
                                 </div>
                                 <div class="coach-push-name">
                                     <p ng-bind="co.uname"></p>
@@ -118,32 +118,5 @@
             </div>
         </div>
     </div>
-    <!--<div class="map-contianer">-->
-        <!--&lt;!&ndash;<img src="images/map.jpg" alt="">&ndash;&gt;-->
-    <!--</div>-->
-    <script>
-        $(function () {
-            $(".video-push-box").mouseenter(function () {
-                var ow=$(this).find(".video-push-img img").width();
-                var oh=$(this).find(".video-push-img img").height();
-                var wValue =1.5*ow;
-                var hValue =1.5*oh;
-                $(this).find(".video-push-img img").animate({
-                    width:wValue,
-                    height:hValue,
-                    left:("-"+(0.5*ow)/2),
-                    top:("-"+(0.5*oh)/2,500),
-                })
-//            $(ev.target).find(".video-push-img img").css('width', '150%');
-                $(this).find(".video-push-img").siblings().show();
-                console.log(1)
-            }).mouseleave(function () {
-                $(this).find("div img").css('width','100%');
-                $(this).find(".video-push-img").siblings().hide();
-                console.log(2)
-            })
-        })
-    </script>
-
 </div>
 

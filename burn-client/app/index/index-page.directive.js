@@ -7,8 +7,14 @@ angular.module('indexBurn')
                 restrict: "ACE",
                 replace: true,
                 templateUrl: 'index/index-page.template.html',
-                controller: ['$scope','$http','$state','serverUrl', function ($scope,$http,$state,serverUrl) {
-
+                controller: [
+                    '$scope',
+                    '$http',
+                    '$state',
+                    'serverUrl',
+                    'iconUrl',
+                    function ($scope,$http,$state,serverUrl,iconUrl) {
+                    $scope.iconUrl=iconUrl;
                     //获取博客推荐内容
                     $http({
                         method:'GET',
@@ -79,6 +85,7 @@ angular.module('indexBurn')
                     }).then(
                         function (response) {
                             $scope.coachPush=response.data.result;
+                            console.log($scope.coachPush);
                         }
                     )
 
