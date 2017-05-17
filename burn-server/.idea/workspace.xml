@@ -24,7 +24,7 @@
       <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burn/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
+            <state relative-caret-position="3002">
               <caret line="178" column="62" lean-forward="false" selection-start-line="178" selection-start-column="62" selection-end-line="178" selection-end-column="62" />
               <folding>
                 <element signature="e#4118#4275#0" expanded="false" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="userSql.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burn/dao/sql/userSql.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="84" />
+            <state relative-caret-position="323">
+              <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="blogDAO.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burn/dao/blogDAO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
+            <state relative-caret-position="4503">
               <caret line="237" column="41" lean-forward="true" selection-start-line="237" selection-start-column="41" selection-end-line="237" selection-end-column="41" />
               <folding />
             </state>
@@ -68,7 +68,7 @@
       <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/burn/routes/blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="2926">
               <caret line="154" column="42" lean-forward="true" selection-start-line="153" selection-start-column="16" selection-end-line="154" selection-end-column="42" />
               <folding />
             </state>
@@ -161,8 +161,8 @@
     <handled-path value="$PROJECT_DIR$/burn/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="33" />
+    <option name="x" value="87" />
+    <option name="y" value="35" />
     <option name="width" value="1371" />
     <option name="height" value="735" />
   </component>
@@ -181,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,45 +193,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../burn-client" />
+    <property name="last_opened_file_path" value="E:/H5Project/webApp" />
     <property name="nodejs_interpreter_path" value="D:/programer/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\programer\nodejs\node.exe" />
@@ -455,12 +423,13 @@
       <workItem from="1494833615689" duration="134000" />
       <workItem from="1494844819210" duration="5138000" />
       <workItem from="1494904236092" duration="1476000" />
-      <workItem from="1494916265229" duration="9032000" />
+      <workItem from="1494916265229" duration="9444000" />
+      <workItem from="1494981141620" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="394257000" />
+    <option name="totallyTimeSpent" value="395291000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,26 +441,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="33" width="1371" height="735" extended-state="1" />
-    <editor active="true" />
+    <frame x="87" y="35" width="1371" height="735" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17629407" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17629407" sideWeight="0.4942717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3820598" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30730897" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18134329" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3820598" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -659,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="198" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,97 +653,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="265" lean-forward="false" selection-start-line="5" selection-start-column="265" selection-end-line="5" selection-end-column="265" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.243814830813946951494938511282.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.107141615858270311494938511281.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.157845084481831494938750199.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.7679340551793671494938674069.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.8278634746741241494938756741.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.041612827878945381494939111528.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.45794218315815051494939111529.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.47060554642684281494938728938.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.52653878333900631494939115232.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.55015636401602121494938644155.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.090005774912793821494939162761.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.52088414862436031494939162760.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/routes/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="154" column="42" lean-forward="true" selection-start-line="153" selection-start-column="16" selection-end-line="154" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/dao/blogDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="237" column="41" lean-forward="true" selection-start-line="237" selection-start-column="41" selection-end-line="237" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn/dao/sql/userSql.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.243814830813946951494938511282.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.107141615858270311494938511281.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.157845084481831494938750199.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.7679340551793671494938674069.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.8278634746741241494938756741.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.041612827878945381494939111528.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.45794218315815051494939111529.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.47060554642684281494938728938.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.52653878333900631494939115232.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.55015636401602121494938644155.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.090005774912793821494939162761.jpeg" />
+    <entry file="file://$PROJECT_DIR$/burn/public/userCardPic/0.52088414862436031494939162760.jpeg" />
     <entry file="file://$PROJECT_DIR$/burn/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
+        <state relative-caret-position="3002">
           <caret line="178" column="62" lean-forward="false" selection-start-line="178" selection-start-column="62" selection-end-line="178" selection-end-column="62" />
           <folding>
             <element signature="e#4118#4275#0" expanded="false" />
@@ -788,10 +680,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/burn/dao/sql/userSql.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/burn/dao/userDAO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="247" column="21" lean-forward="false" selection-start-line="247" selection-start-column="21" selection-end-line="247" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn/dao/blogDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4503">
+          <caret line="237" column="41" lean-forward="true" selection-start-line="237" selection-start-column="41" selection-end-line="237" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn/routes/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2926">
+          <caret line="154" column="42" lean-forward="true" selection-start-line="153" selection-start-column="16" selection-end-line="154" selection-end-column="42" />
           <folding />
         </state>
       </provider>

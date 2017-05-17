@@ -16,7 +16,7 @@
 
     <div style="height: 412px"></div>
     <div class="container">
-       <!--首页内容-->
+        <!--首页内容-->
     </div>
     <div class="blog-container">
         <div class="container">
@@ -119,32 +119,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="map-contianer">-->
-        <!--&lt;!&ndash;<img src="images/map.jpg" alt="">&ndash;&gt;-->
-    <!--</div>-->
-    <script>
-        $(function () {
-            $(".video-push-box").mouseenter(function () {
-                var ow=$(this).find(".video-push-img img").width();
-                var oh=$(this).find(".video-push-img img").height();
-                var wValue =1.5*ow;
-                var hValue =1.5*oh;
-                $(this).find(".video-push-img img").animate({
-                    width:wValue,
-                    height:hValue,
-                    left:("-"+(0.5*ow)/2),
-                    top:("-"+(0.5*oh)/2,500),
-                })
-//            $(ev.target).find(".video-push-img img").css('width', '150%');
-                $(this).find(".video-push-img").siblings().show();
-                console.log(1)
-            }).mouseleave(function () {
-                $(this).find("div img").css('width','100%');
-                $(this).find(".video-push-img").siblings().hide();
-                console.log(2)
-            })
-        })
-    </script>
 
 </div>
 

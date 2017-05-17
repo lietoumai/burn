@@ -107,6 +107,7 @@ angular.module('personalSet')
                         url: url,
                         data: data,
                     }).success(function (data) {
+                        alert('实名成功！');
                         $scope.isCropShow=false;
                         $rootScope.navIcon=$rootScope.uicon;
 
