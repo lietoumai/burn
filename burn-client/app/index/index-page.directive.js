@@ -8,6 +8,42 @@ angular.module('indexBurn')
                 replace: true,
                 templateUrl: 'index/index-page.template.html',
                 controller: ['$scope','$http','$state','serverUrl', function ($scope,$http,$state,serverUrl) {
+                    var index=1;
+                    var inter;
+                    $(function () {
+                        $scope.loopShow(index);
+                    })
+                    $scope.loopShow = function(index) {
+                        inter=setInterval(function () {
+
+                            if(index>=3){
+                                index=1;
+                            }else {
+                                index++;
+                            }
+                            // $scope.changeImage(index,0);
+                        },2000);
+                    }
+                    $scope.changeImage = function(i,f) {
+                        var advImg=document.querySelector('#advImage');
+                        advImg.src='upfile/img0'+i+'.jpg';
+                        var imgs=document.querySelectorAll('[id^="img0"]');
+                        for(var j=0;j<imgs.length;j++){
+                            imgs[j].className='';
+                        }
+                        imgs[i-1].className='yellowBorder';
+
+                        if(f==1){
+
+                            window.clearInterval(inter);
+                            $scope.loopShow(i);
+                        }
+                    }
+
+
+
+
+
 
                     //获取博客推荐内容
                     $http({

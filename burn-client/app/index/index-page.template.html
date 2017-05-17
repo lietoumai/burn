@@ -1,18 +1,19 @@
 <div>
-    <div class="banner" ng-controller="CarouselDemoCtrl">
-            <carousel interval="myInterval" no-wrap="noWrapSlides" id="imgDiv">
-                <slide ng-repeat="slide in slides" active="slide.active">
-                    <img ng-src="{{slide.image}}" style="margin:auto;">
-                </slide>
-                <div class="imgIndex">
-                    <ul>
-                        <li id="img01">{{slides[0].text}}</li>
-                        <li id="img02">{{slides[1].text}}</li>
-                        <li id="img03">{{slides[2].text}}</li>
-                    </ul>
-                </div>
-            </carousel>
+    <div class="banner">
+        <div id="imgDiv">
+            <div id="divImage">
+                <img src="upfile/img01.jpg" alt="" id="advImage">
+            </div>
+            <div class="imgIndex">
+                <ul>
+                    <li id="img01" class="yellowBorder" ng-click="changeImage(1,1)">1</li>
+                    <li id="img02" ng-click="changeImage(2,1)">2</li>
+                    <li id="img03" ng-click="changeImage(3,1)">3</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
     <div style="height: 412px"></div>
     <div class="container">
        <!--首页内容-->

@@ -68,6 +68,9 @@ a{
 
 /*媒体查询*/
 @media screen and (max-width: 768px){
+    .header{
+        height:130px !important ;
+    }
     .top-nav{
         display: none;
     }
@@ -97,6 +100,9 @@ a{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
+    .header{
+        height:130px !important ;
+    }
     .top2{
         display: none;
     }
@@ -132,12 +138,16 @@ a{
 
 
 /*top*/
+.header{
+    height:88px ;
+}
 .nav-top{
+    position: fixed;top: 0px;
     width: 100%;
     height: 88px;
     line-height: 88px;
     background-color: rgba(102,102,102,0.5);
-    /*overflow: hidden;*/
+    z-index: 999;
 }
 .nav-top .container .nav-top-logo{
     float: left;
@@ -320,6 +330,9 @@ a{
     margin-right: -20px;
     color: #ffffff;
 }
+.nav-min{
+    margin-top: 88px;
+}
 
 .nav-min ul li a .login-pic{
     margin: auto;
@@ -353,7 +366,7 @@ a{
     width: 100%;
 }
 .container .search1 .search-box1{
-    margin-top: 10px;
+    margin-top: 100px;
     border-radius: 25px;
     width: 100%;
     height: 40px;
@@ -414,7 +427,7 @@ a{
     position: absolute;
     top:0px;
     left: 0;
-    z-index: -10;
+    /*z-index: -10;*/
 }
 
 #imgDiv{
@@ -440,7 +453,7 @@ a{
     font-size: 1.5em;
 }
 .yellowBorder{
-    background-color: #E84E40;
+    background-color: #00BFF0;
     box-sizing: border-box;
     color: #ffffff;
 }
