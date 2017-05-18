@@ -60,8 +60,7 @@ angular.module('personal')
 
 
 
-                    // 图片上传
-
+                    //上传头像
                     $scope.data = {
                         defaultImage:IconUrl+$rootScope.uicon
                     };
@@ -77,9 +76,7 @@ angular.module('personal')
                             url: url,
                             data: data
                         }).success(function (data) {
-                            console.log(data.result[0].uicon);
                             $rootScope.uicon = data.result[0].uicon;
-                            console.log($rootScope.uicon);
                             $scope.isCropShow=false;
 
                         }).error(function () {

@@ -51,7 +51,6 @@ angular.module('serviceUser')
                             sessionStorage.setItem('upointcount',$rootScope.upointcount);
                             sessionStorage.setItem('checkbox', false);
                         }
-
                         // $('#loginSuccess').modal('show');
 
                     } else if (response.data.result == 2) {   //密码错误

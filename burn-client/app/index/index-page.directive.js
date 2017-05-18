@@ -85,7 +85,6 @@ angular.module('indexBurn')
                     }).then(
                         function (response) {
                             $scope.coachPush=response.data.result;
-                            console.log($scope.coachPush);
                         }
                     )
 

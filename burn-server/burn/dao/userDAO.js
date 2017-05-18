@@ -228,7 +228,6 @@ var user = {
 
     updateUserTrueInfo:function (user,callback) {
         domain_sql.on('error',function (err) {
-
             console.log(err.message);
             callback(4);
         });
@@ -243,7 +242,8 @@ var user = {
                     }
                     if(result.length=1){
                         //修改成功
-                        console.log(1)
+                        console.log(1);
+                        callback(result.affectedRows);
                     }else{
                         callback(0)
                     }

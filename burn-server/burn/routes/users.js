@@ -15,32 +15,9 @@ router.get('/', function(req, res, next) {
 
 });
 
-/*get方式登录*/
-/*router.get('/login', function(req, res, next) {
-    var user=req.query;
-    console.log(user);
-
-    if(user!=null && user.utel!=null && user.upwd!=null){
-
-        if(user.utel.length==11){
-            console.log(11231);
-            userdao.getUserPwd(user,function (_res) {
-
-                res.json({result:_res});
-
-            })
-        }else{
-
-            res.json({result:4});  //数据库连接错误
-        }
-    }
-});*/
-
 /*post方式登录*/
 router.post('/login', function(req, res, next) {
-
     var user=req.body;
-
     if(user!=null && user.utel!=null && user.upwd!=null){
         if(user.utel.length==11){
             userdao.getUserPwd(user,function (_res) {
@@ -178,7 +155,7 @@ router.post('/updateUserInfo',function (req,res,next) {
 /*实名认证*/
 router.post('/updateTrueUserInfo', function (req, res, next) {
     var form = new formidable.IncomingForm();
-    form.parse(req, function (err, user,files) {
+    form.parse(req, function (err,user,files) {
         if (err) {
             response.locals.error = err;
             return;
@@ -229,18 +206,13 @@ router.post('/updateTrueUserInfo', function (req, res, next) {
                         fs.unlinkSync(files.file2.path);
                     });
 
-                    res.send('上传成功');
 
                 }
                 user.upic1=avatarName1;
                 user.upic2=avatarName2;
                 userdao.updateUserTrueInfo(user,function (result) {
-                    console.log({result:result});
                     res.json({result:result});
                 })
-
-
-
             }
         }) //end getUserByid
     })//end form.parse
