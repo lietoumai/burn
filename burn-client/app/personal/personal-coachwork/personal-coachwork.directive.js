@@ -26,6 +26,9 @@ angular.module('personalCoachWork')
                     $("#personal-coach-push-schedule").show();
                 });
 
+                $scope.aqq = function () {
+                    alert(1);
+                }
 
                 //获取教练课程
 

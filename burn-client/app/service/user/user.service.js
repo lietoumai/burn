@@ -117,11 +117,11 @@ angular.module('serviceUser')
                     .then(function successCallback(response) {
                         // 请求成功执行代码
                         if (response.data.result.length == 1) {
-
                             $rootScope.utname=response.data.result[0].utname;
                             $rootScope.ucard=response.data.result[0].ucard;
                             $rootScope.upic1 =response.data.result[0].upic1;
                             $rootScope.upic2 =response.data.result[0].upic2;
+
                         }
                     })
             }
