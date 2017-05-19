@@ -30,7 +30,7 @@ var sql = {
     alreadyCoach:'select coid from coach where coid=?',
 
     //获取教练课程
-    getCoachCourse:'select cpicc1,cname,date_format(cdate,"%Y-%m-%d") as cdate,date_format(ctimestart,"%m-%d %H:%m") as ctimestart,date_format(ctimeend,"%m-%d %H:%m") as ctimeend,count(coursehistory.cid) as ccount from coursehistory,course where coursehistory.cid = course.cid and coid=? GROUP BY coursehistory.cid',
+    getCoachCourse:'select course.cid,cpicc2,cname,date_format(cdate,"%Y-%m-%d") as cdate,date_format(ctimestart,"%m-%d %H:%m") as ctimestart,date_format(ctimeend,"%m-%d %H:%m") as ctimeend,count(coursehistory.cid) as ccount from coursehistory,course where coursehistory.cid = course.cid and coid=? GROUP BY coursehistory.cid',
     //发布课程
     insertCourse:'insert into course(cname,ctimestart,ctimeend,cdate,ccount,cpicc1,cintroduce,coid) values(?,?,?,?,?,?,?,?)',
 }

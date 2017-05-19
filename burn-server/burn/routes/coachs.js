@@ -155,7 +155,6 @@ router.get('/alreadyCoach',function (req,res,next) {
 
 //教练查看预约记录
 router.get('/getCoachCourse',function (req,res,next) {
-    console.log(1111111111)
     var data = req.query;
     console.log(data.uid);
     if(data!=null){

@@ -15,31 +15,13 @@ router.get('/', function(req, res, next) {
 
 });
 
-/*get方式登录*/
-/*router.get('/login', function(req, res, next) {
-    var user=req.query;
-    console.log(user);
-
-    if(user!=null && user.utel!=null && user.upwd!=null){
-
-        if(user.utel.length==11){
-            console.log(11231);
-            userdao.getUserPwd(user,function (_res) {
-
-                res.json({result:_res});
-
-            })
-        }else{
-
-            res.json({result:4});  //数据库连接错误
-        }
-    }
-});*/
 
 /*post方式登录*/
 router.post('/login', function(req, res, next) {
 
     var user=req.body;
+
+    console.log(user)
 
     if(user!=null && user.utel!=null && user.upwd!=null){
         if(user.utel.length==11){

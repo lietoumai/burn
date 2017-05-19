@@ -7,41 +7,226 @@ angular.module('indexBurn')
                 restrict: "ACE",
                 replace: true,
                 templateUrl: 'index/index-page.template.html',
-                controller: ['$scope','$http','$state','serverUrl', function ($scope,$http,$state,serverUrl) {
-                    var index=1;
-                    var inter;
-                    $(function () {
-                        $scope.loopShow(index);
-                    })
-                    $scope.loopShow = function(index) {
-                        inter=setInterval(function () {
+                controller: ['$scope','$http','$state','serverUrl','courseUrl', function ($scope,$http,$state,serverUrl,courseUrl) {
 
-                            if(index>=3){
-                                index=1;
-                            }else {
-                                index++;
+                    $scope.courseUrl = courseUrl;
+
+                    $scope.css = function (obj, attr, value) {
+                        if(arguments.length==2)
+                        {
+                            if(attr!='opacity')
+                            {
+                                return parseInt(obj.currentStyle?obj.currentStyle[attr]:document.defaultView.getComputedStyle(obj, false)[attr]);
                             }
-                            // $scope.changeImage(index,0);
-                        },2000);
-                    }
-                    $scope.changeImage = function(i,f) {
-                        var advImg=document.querySelector('#advImage');
-                        advImg.src='upfile/img0'+i+'.jpg';
-                        var imgs=document.querySelectorAll('[id^="img0"]');
-                        for(var j=0;j<imgs.length;j++){
-                            imgs[j].className='';
+                            else
+                            {
+                                return Math.round(100*parseFloat(obj.currentStyle?obj.currentStyle[attr]:document.defaultView.getComputedStyle(obj, false)[attr]));
+                            }
                         }
-                        imgs[i-1].className='yellowBorder';
+                        else if(arguments.length==3)
+                            switch(attr)
+                            {
+                                case 'width':
+                                case 'height':
+                                case 'paddingLeft':
+                                case 'paddingTop':
+                                case 'paddingRight':
+                                case 'paddingBottom':
+                                    value=Math.max(value,0);
+                                case 'left':
+                                case 'top':
+                                case 'marginLeft':
+                                case 'marginTop':
+                                case 'marginRight':
+                                case 'marginBottom':
+                                    obj.style[attr]=value+'px';
+                                    break;
+                                case 'opacity':
+                                    obj.style.filter="alpha(opacity:"+value+")";
+                                    obj.style.opacity=value/100;
+                                    break;
+                                default:
+                                    obj.style[attr]=value;
+                            }
 
-                        if(f==1){
+                        return function (attr_in, value_in){css(obj, attr_in, value_in)};
+                    }
+                    $scope.MIAOV_MOVE_TYPE={
+                        BUFFER: 1,
+                        FLEX: 2
+                    };
+                    $scope.miaovStopMove = function (obj) {
+                        clearInterval(obj.timer);
+                    }
+                    $scope.miaovStartMove = function (obj, oTarget, iType, fnCallBack, fnDuring) {
+                        $scope.fnMove=null;
+                        if(obj.timer)
+                        {
+                            clearInterval(obj.timer);
+                        }
 
-                            window.clearInterval(inter);
-                            $scope.loopShow(i);
+                        switch(iType)
+                        {
+                            case $scope.MIAOV_MOVE_TYPE.BUFFER:
+                                $scope.fnMove=$scope.miaovDoMoveBuffer;
+                                break;
+                            case $scope.MIAOV_MOVE_TYPE.FLEX:
+                                $scope.fnMove=$scope.miaovDoMoveFlex;
+                                break;
+                        }
+
+                        obj.timer=setInterval(function (){
+                            $scope.fnMove(obj, oTarget, fnCallBack, fnDuring);
+                        }, 30);
+                    }
+
+
+                    $scope.miaovDoMoveBuffer = function (obj, oTarget, fnCallBack, fnDuring) {
+                        $scope.bStop=true;
+                        $scope.attr='';
+                        $scope.speed=0;
+                        $scope.cur=0;
+
+                        for($scope.attr in oTarget)
+                        {
+                            $scope.cur=$scope.css(obj, $scope.attr);
+                            if(oTarget[$scope.attr]!=$scope.cur)
+                            {
+                                $scope.bStop=false;
+
+                                $scope.speed=(oTarget[$scope.attr]-$scope.cur)/5;
+                                $scope.speed=$scope.speed>0?Math.ceil($scope.speed):Math.floor($scope.speed);
+
+                                $scope.css(obj, $scope.attr, $scope.cur+$scope.speed);
+                            }
+                        }
+
+                        if(fnDuring)fnDuring.call(obj);
+
+                        if($scope.bStop)
+                        {
+                            clearInterval(obj.timer);
+                            obj.timer=null;
+
+                            if(fnCallBack)fnCallBack.call(obj);
                         }
                     }
 
 
+                    $scope.miaovDoMoveFlex = function (obj, oTarget, fnCallBack, fnDuring) {
+                        $scope.bStop=true;
+                        $scope.attr='';
+                        $scope.speed=0;
+                        $scope.cur=0;
 
+                        for($scope.attr in oTarget)
+                        {
+                            if(!obj.oSpeed)obj.oSpeed={};
+                            if(!obj.oSpeed[attr])obj.oSpeed[attr]=0;
+                            $scope.cur=$scope.css(obj, $scope.attr);
+                            if(Math.abs(oTarget[$scope.attr]-$scope.cur)>=1 || Math.abs(obj.oSpeed[$scope.attr])>=1)
+                            {
+                                $scope.bStop=false;
+
+                                obj.oSpeed[$scope.attr]+=(oTarget[$scope.attr]-$scope.cur)/5;
+                                obj.oSpeed[$scope.attr]*=0.7;
+
+                                $scope.css(obj, $scope.attr, $scope.cur+obj.oSpeed[$scope.attr]);
+                            }
+                        }
+
+                        if(fnDuring)fnDuring.call(obj);
+
+                        if($scope.bStop)
+                        {
+                            clearInterval(obj.timer);
+                            obj.timer=null;
+
+                            if(fnCallBack)fnCallBack.call(obj);
+                        }
+                    }
+
+
+                    
+                    $(function () {
+
+                        $http({
+                            method:'GET',
+                            url:serverUrl+'courses/bannerPush',
+                        }).then(
+                            function (response) {
+                                $scope.bannerPush = response.data.result;
+                            }
+                        )
+
+
+
+
+
+                        $scope.aPicLi=document.getElementById('pic_list').getElementsByTagName('li');
+                        $scope.aIcoLi=document.getElementById('ico_list').getElementsByTagName('li');
+                        $scope.oIcoUl=document.getElementById('ico_list').getElementsByTagName('ul')[0];
+                        $scope.oDiv=document.getElementById('imgDiv');
+                        $scope.i=0;
+                        $scope.iNowUlLeft=0;
+                        $scope.iNow=0;
+
+
+                        for(i=0;i<$scope.aIcoLi.length;i++){
+                            $scope.aIcoLi[i].index=i;
+                            $scope.aIcoLi[i].onclick=function(){
+                                if($scope.iNow==this.index){
+                                    return false;
+                                }
+                                $scope.iNow=this.index;
+                                $scope.tab();
+                            }
+                        }
+
+                        $scope.tab = function () {
+                            for(i=0;i<$scope.aIcoLi.length;i++){
+                                $scope.aIcoLi[i].className='';
+                                $scope.aPicLi[i].style.filter='alpha(opacity:0)';
+                                $scope.aPicLi[i].style.opacity=0;
+                                $scope.miaovStopMove($scope.aPicLi[i]);
+                            }
+                            $scope.aIcoLi[$scope.iNow].className='yellowBorder';
+                            $scope.miaovStartMove($scope.aPicLi[$scope.iNow],{opacity:100},$scope.MIAOV_MOVE_TYPE.BUFFER);
+                        }
+
+                        $scope.oUlleft = function () {
+                            $scope.oIcoUl.style.left=-$scope.aIcoLi[0].offsetWidth*$scope.iNowUlLeft+'px';
+                        }
+
+                        $scope.autoplay = function () {
+                            $scope.iNow++;
+                            if($scope.iNow>=$scope.aIcoLi.length){
+                                $scope.iNow=0;
+                            }
+                            if($scope.iNow<$scope.iNowUlLeft){
+                                $scope.iNowUlLeft=$scope.iNow;
+                            }else if($scope.iNow>=$scope.iNowUlLeft+7){
+                                $scope.iNowUlLeft=$scope.iNow-6;
+                            }
+
+                            $scope.oUlleft();
+                            $scope.tab();
+                        }
+
+                        $scope.time=setInterval($scope.autoplay,3000);
+                        $scope.oDiv.onmouseover=function(){
+                            clearInterval(time);
+                        }
+                        $scope.oDiv.onmouseout=function(){
+                            $scope.time=setInterval($scope.autoplay,3000);
+                        }
+
+
+
+                    })
+
+
+                    //导航轮播
 
 
 

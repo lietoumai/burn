@@ -8,6 +8,7 @@ var getClient = require('./../util/DBHelper');
 var domain = require('domain');
 var coursesql = require('./sql/courseSql');
 var domain_sql = domain.create();
+var sd = require('silly-datetime');
 
 
 var course = {
@@ -239,7 +240,8 @@ var course = {
             callback(4);
         });
         getClient(function (client) {
-            client.query(coursesql.ReleaseCourse,[course.cname,course.coid,course.ctimestart,course.ctimeend,course.cdate,course.cintroduce,course.cpic,course.ccount],function (error,result) {
+            client.query(coursesql.ReleaseCourse,[course.cname,course.coid,course.ctimestart,course.ctimeend,course.cdate,course.cintroduce,course.cpic1,course.cpic2,course.ccount],function (error,result) {
+                console.log(course)
                 if(error){
                     console.log(error.message);
                     client.release();
@@ -273,6 +275,48 @@ var course = {
             })
         })
     },
+
+    //申请轮播
+    insertBanner:function (course,callback) {
+        domain_sql.on('error',function (err) {
+            console.log(err.message);
+            callback(4);
+        });
+        getClient(function (client) {
+            var batime=sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+            client.query(coursesql.insertBanner,[course.cid,course.cpicc2,course.cname,batime],function (error,result) {
+                if(error){
+                    console.log(error.message);
+                    client.release();
+                    //4表示数据库连接错误
+                    callback(4);
+                }
+                callback(result.affectedRows);
+                client.release();
+            })
+        })
+    },
+
+
+    //展示轮播
+    bannerPush:function (callback) {
+        domain_sql.on('error',function (err) {
+            console.log(err.message);
+            callback(4);
+        });
+        getClient(function (client) {
+            client.query(coursesql.bannerPush,function (error,result) {
+                if(error){
+                    console.log(error.message);
+                    client.release();
+                    //4表示数据库连接错误
+                    callback(4);
+                }
+                callback(result);
+                client.release();
+            })
+        })
+    }
 }
 
 module.exports=course;

@@ -52,8 +52,6 @@ angular.module('serviceUser')
                             sessionStorage.setItem('checkbox', false);
                         }
 
-                        // $('#loginSuccess').modal('show');
-
                     } else if (response.data.result == 2) {   //密码错误
                         $('#loginupwd').text('密码错误');
                         setTimeout('$("#loginupwd").text("")', 2000);

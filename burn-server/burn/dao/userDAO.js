@@ -96,6 +96,7 @@ var user = {
                         //4表示数据库连接错误
                         callback(4);
                     }
+
                     if(result.length==1){
                         //1表示登陆成功
                         if(result[0].upwd===util.MD5(user.upwd)){
