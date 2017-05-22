@@ -7,11 +7,11 @@ var option={
     database:'burn',
     user:'root',
     password:'123456'*/
-    host:'182.254.128.241',
-    port:'7832',
+    host:'rm-uf695npc4dlthgm7yo.mysql.rds.aliyuncs.com',
+    port:'3306',
     database:'burn',
     user:'root',
-    password:'h5123456'
+    password:'123456Burn'
 };
 
 module.exports=option;

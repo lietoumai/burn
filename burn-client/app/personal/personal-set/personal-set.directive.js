@@ -107,19 +107,15 @@ angular.module('personalSet')
                         url: url,
                         data: data,
                     }).success(function (data) {
-<<<<<<< HEAD
                         console.log(data)
                         alert("认证成功");
                         console.log($rootScope.uid);
                         showUserTrueInfo.showUserTrueInfo($rootScope.uid);
-                        console.log(3333333333333);
                         // $scope.isCropShow=false;
                         // $rootScope.navIcon=$rootScope.uicon;
-=======
                         alert('实名成功！');
                         $scope.isCropShow=false;
                         $rootScope.navIcon=$rootScope.uicon;
->>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
 
                     }).error(function () {
                         console.log('error');
