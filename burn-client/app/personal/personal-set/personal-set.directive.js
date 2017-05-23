@@ -51,7 +51,7 @@ angular.module('personalSet')
                 $("#trueName").click(function(){
                     $("#personal-set-trueName").siblings().hide()
                     $("#personal-set-trueName").show();
-                    showUserTrueInfo.showUserTrueInfo($rootScope.uid);
+                     showUserTrueInfo.showUserTrueInfo($rootScope.uid);
                 });
                 // 修改密码
                 $("#resetPwd").click(function(){
@@ -93,7 +93,7 @@ angular.module('personalSet')
 
                 // 图片上传
 
-
+                 // 实名制
                 $scope.data = {
                     defaultCart:IconUrl+$rootScope.uicon
                 };
@@ -107,6 +107,12 @@ angular.module('personalSet')
                         url: url,
                         data: data,
                     }).success(function (data) {
+                        console.log(data)
+                        alert("认证成功");
+                        console.log($rootScope.uid);
+                        showUserTrueInfo.showUserTrueInfo($rootScope.uid);
+                        // $scope.isCropShow=false;
+                        // $rootScope.navIcon=$rootScope.uicon;
                         alert('实名成功！');
                         $scope.isCropShow=false;
                         $rootScope.navIcon=$rootScope.uicon;

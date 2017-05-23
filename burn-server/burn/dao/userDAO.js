@@ -96,12 +96,38 @@ var user = {
 
     //修改实名制信息
     updateUserTrueInfo:function (user,callback) {
+<<<<<<< HEAD
         getClient(usersql.updateUserTrueInfo,[user.utname,user.ucard,user.upic1,user.upic2,user.uid],function (result) {
             if(result.length=1){
                 callback(1)
             }else{
                 callback(0)
             }
+=======
+        domain_sql.on('error',function (err) {
+            console.log(err.message);
+            callback(4);
+        });
+        domain_sql.run(function () {
+            getClient(function (client) {
+                client.query(usersql.updateUserTrueInfo,[user.utname,user.ucard,user.upic1,user.upic2,user.uid],function (error,result) {
+                    if(error){
+                        console.log(error.message);
+                        client.release();
+                        // 数据库连接错误
+                        callback(4);
+                    }
+                    if(result.length=1){
+                        //修改成功
+                        console.log(1);
+                        callback(result.affectedRows);
+                    }else{
+                        callback(0)
+                    }
+                    client.release();
+                })
+            })
+>>>>>>> e97f57a31fd335276cc0ebc37edccef6985212d8
         })
     },
 

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="046c30c4-39bd-47ab-bb19-282a68ccb3c5" name="Default" comment="">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/burn-client/app/demo.htm" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/burn-client/app/css/My97DatePicker/calendar.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/burn-client/app/css/My97DatePicker/lang/en.js" afterPath="" />
@@ -50,13 +52,21 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/burn-client/app/js/My97DatePicker/开发包/skin/whyGreen/img.gif" afterPath="$PROJECT_DIR$/burn-client/app/My97DatePicker/skin/whyGreen/img.gif" />
 =======
       <change type="DELETED" beforePath="$PROJECT_DIR$/burn-server/lcx.txt" afterPath="" />
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/burn-client/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/index/index-page.directive.js" afterPath="$PROJECT_DIR$/burn-client/app/index/index-page.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/index/index-page.template.html" afterPath="$PROJECT_DIR$/burn-client/app/index/index-page.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/personal/personal-set/personal-set.directive.js" afterPath="$PROJECT_DIR$/burn-client/app/personal/personal-set/personal-set.directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/personal/personal.directive.js" afterPath="$PROJECT_DIR$/burn-client/app/personal/personal.directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/service/public/public.module.js" afterPath="$PROJECT_DIR$/burn-client/app/service/public/public.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/service/user/user.service.js" afterPath="$PROJECT_DIR$/burn-client/app/service/user/user.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-client/app/video/video-detail/video-detail.template.html" afterPath="$PROJECT_DIR$/burn-client/app/video/video-detail/video-detail.template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/burn-server/.idea/workspace.xml" />
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-server/burn/dbconfig.js" afterPath="$PROJECT_DIR$/burn-server/burn/dbconfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/burn-server/burn/routes/users.js" afterPath="$PROJECT_DIR$/burn-server/burn/routes/users.js" />
+=======
 >>>>>>> 1d4d2e56964241bf641e9b2e2e295d25ae7f5189
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,6 +83,9 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/burn-client/app/index.html">
@@ -199,6 +212,7 @@
         </entry>
       </file>
     </leaf>
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -242,7 +256,6 @@
         <option value="$PROJECT_DIR$/burn-client/app/personal/personal-course/personal-course.template.html" />
         <option value="$PROJECT_DIR$/burn-client/app/personal/personal.template.html" />
         <option value="$PROJECT_DIR$/burn-client/app/personal/personal-homepage/personal-homepage.directive.js" />
-        <option value="$PROJECT_DIR$/burn-server/burn/dbconfig.js" />
         <option value="$PROJECT_DIR$/burn-client/app/personal/personal-course/personal-course.directive.js" />
         <option value="$PROJECT_DIR$/burn-client/app/service/course/courses.service.js" />
         <option value="$PROJECT_DIR$/burn-client/app/coach/coach-detail/coach-detail.template.html" />
@@ -260,10 +273,20 @@
         <option value="$PROJECT_DIR$/burn-client/app/personal/personal-coachwork/personal-coachwork.template.html" />
 =======
         <option value="$PROJECT_DIR$/burn-client/app/index.html" />
-        <option value="$PROJECT_DIR$/burn-client/app/index/index-page.directive.js" />
         <option value="$PROJECT_DIR$/burn-client/app/index/index-page.template.html" />
+        <option value="$PROJECT_DIR$/burn-client/app/service/public/public.module.js" />
         <option value="$PROJECT_DIR$/burn-client/app/video/video-detail/video-detail.template.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/burn-client/app/index/index-page.directive.js" />
+        <option value="$PROJECT_DIR$/burn-client/app/login/login.directive.js" />
+        <option value="$PROJECT_DIR$/burn-server/burn/dbconfig.js" />
+        <option value="$PROJECT_DIR$/burn-server/burn/routes/users.js" />
+        <option value="$PROJECT_DIR$/burn-client/app/personal/personal.directive.js" />
+        <option value="$PROJECT_DIR$/burn-client/app/personal/personal-set/personal-set.directive.js" />
+        <option value="$PROJECT_DIR$/burn-client/app/service/user/user.service.js" />
+=======
 >>>>>>> 1d4d2e56964241bf641e9b2e2e295d25ae7f5189
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
       </list>
     </option>
   </component>
@@ -355,7 +378,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,6 +397,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="burn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="burn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="burn-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
 <<<<<<< HEAD
@@ -385,7 +422,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/burn-server" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="D:/programer/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -545,12 +582,19 @@
       <workItem from="1495022053353" duration="820000" />
 =======
       <workItem from="1494935108899" duration="2245000" />
+<<<<<<< HEAD
+      <workItem from="1495018976177" duration="7986000" />
+=======
       <workItem from="1495018976177" duration="4074000" />
 >>>>>>> 1d4d2e56964241bf641e9b2e2e295d25ae7f5189
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="17200000" />
+=======
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="20280000" />
   </component>
@@ -565,17 +609,22 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2967213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 =======
     <option name="totallyTimeSpent" value="13288000" />
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19419643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19419643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31639344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31639344" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> 1d4d2e56964241bf641e9b2e2e295d25ae7f5189
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33770493" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -603,62 +652,6 @@
   <component name="editorHistoryManager">
 <<<<<<< HEAD
 =======
-    <entry file="file://$PROJECT_DIR$/burn-client/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="51" lean-forward="false" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/personal/personal-course/personal-course.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/coach/coach.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/coach/coach-detail/coach-detail.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/service/coach/coachService.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/header-part/user-entrance/user-entrance.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/service/blog/blogService.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/burn-client/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -761,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/personal/personal.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/burn-client/app/service/video/videoService.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -804,6 +790,8 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/burn-client/app/service/public/public.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -821,6 +809,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
     <entry file="file://$PROJECT_DIR$/burn-client/app/personal/personal-homepage/personal-homepage.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -839,6 +828,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding />
+=======
         </state>
       </provider>
     </entry>
@@ -857,6 +849,7 @@
           <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
 =======
 >>>>>>> 1d4d2e56964241bf641e9b2e2e295d25ae7f5189
+>>>>>>> ca5daba1adf7ee9a55f6791c19f5ffd676d982b1
         </state>
       </provider>
     </entry>
@@ -919,18 +912,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/index/index-page.template.html">
+    <entry file="file://$PROJECT_DIR$/burn-client/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="108" column="76" lean-forward="true" selection-start-line="108" selection-start-column="76" selection-end-line="108" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/service/public/public.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="133">
+          <caret line="121" column="69" lean-forward="true" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -943,50 +928,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/index.html">
+    <entry file="file://$PROJECT_DIR$/burn-client/app/index/index-page.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="121" column="69" lean-forward="true" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
+        <state relative-caret-position="399">
+          <caret line="108" column="76" lean-forward="true" selection-start-line="108" selection-start-column="76" selection-end-line="108" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/header-part/user-entrance/user-entrance.template.html">
+    <entry file="file://$PROJECT_DIR$/burn-client/app/service/public/public.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-client/app/login/login.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/burn-server/burn/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4580">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/burn-client/app/video/video-detail/video-detail.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="49" column="77" lean-forward="false" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+        <state relative-caret-position="114">
+          <caret line="48" column="83" lean-forward="false" selection-start-line="48" selection-start-column="83" selection-end-line="48" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/appBurn.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="313" column="19" lean-forward="false" selection-start-line="313" selection-start-column="19" selection-end-line="313" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/login/login.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/login/login.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="51" column="119" lean-forward="true" selection-start-line="51" selection-start-column="119" selection-end-line="51" selection-end-column="156" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/index/index-page.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-server/burn/dao/userDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1041">
+          <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-server/burn/dbconfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-server/burn/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/login/login.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/personal/personal.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/service/user/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/header-part/user-entrance/user-entrance.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-server/burn/public/userCardPic/0.65723413170654751495027241861.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-server/burn/public/userCardPic/0.89923777911724351495027241861.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/burn-client/app/index/index-page.directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="87" column="58" lean-forward="false" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+        <state relative-caret-position="141">
+          <caret line="86" column="66" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/burn-client/app/personal/personal-set/personal-set.directive.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="109" column="44" lean-forward="true" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
           <folding />
         </state>
       </provider>

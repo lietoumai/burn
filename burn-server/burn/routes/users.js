@@ -15,7 +15,10 @@ router.get('/', function(req, res, next) {
 
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e97f57a31fd335276cc0ebc37edccef6985212d8
 /*post方式登录*/
 router.post('/login', function(req, res, next) {
     var user=req.body;
@@ -147,7 +150,7 @@ router.post('/updateUserInfo',function (req,res,next) {
 /*实名认证*/
 router.post('/updateTrueUserInfo', function (req, res, next) {
     var form = new formidable.IncomingForm();
-    form.parse(req, function (err, user,files) {
+    form.parse(req, function (err,user,files) {
         if (err) {
             response.locals.error = err;
             return;
@@ -198,7 +201,6 @@ router.post('/updateTrueUserInfo', function (req, res, next) {
                         fs.unlinkSync(files.file2.path);
                     });
 
-                    res.send('上传成功');
 
                 }
                 user.upic1=avatarName1;
@@ -206,9 +208,6 @@ router.post('/updateTrueUserInfo', function (req, res, next) {
                 userdao.updateUserTrueInfo(user,function (result) {
                     res.json({result:result});
                 })
-
-
-
             }
         }) //end getUserByid
     })//end form.parse
