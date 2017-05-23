@@ -6,9 +6,9 @@ var sql = {
     //查看当前课程是否已经过期
     sellectCourseTime:'select * from course where ctimestart>now() and cid=?',
     //展示课程简介
-    getCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate>=date_format(now(),"%y-%m-%d") order by course.cdate asc',
+    getCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.ctimestart>=date_format(now(),"%y-%m-%d %H:%m:%s") order by course.cdate asc',
     //展示课程简介
-    getTodayCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate=date_format(now(),"%y-%m-%d")',
+    getTodayCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate=DATE_SUB(curdate(),INTERVAL -1 DAY)',
     //根据日期获取课程信息
     selectcal:'select cid,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,cname from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and cdate=?',
     //查看课程详情

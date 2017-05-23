@@ -57,7 +57,6 @@ router.get('/getBlogRecommend',function (req,res,next) {;
     }),
 //博客评论
     router.get('/insertBlogComment',function (req,res,next) {
-        console.log('insertBlogComment');
         var bc = req.query;
         if(bc.bid!=null){
             blogDAO.insertBlogComment(bc,function (result) {
@@ -78,6 +77,7 @@ router.get('/getBlogRecommend',function (req,res,next) {;
 router.get('/getBlogCollect',function (req,res,next) {
     var data = req.query;
     if(data.bid!=null){
+        console.log(data)
         blogDAO.getBlogCollect(data,function (result) {
             console.log(result);
             res.json(result);
@@ -94,25 +94,12 @@ router.get('/updateBlogLike',function (req,res,next) {
     }
 })
 
-//插入博客
-/*router.get('/insertBlog',function (req,res,next) {
- var data = req.query;
- console.log(11111111111111)
- console.log(data.bpic);
- if(data.uid!=null){
- blogDAO.insertBlog(data,function (result) {
- res.json(result);
- })
- }
- })*/
-
 //上传博客
 router.post('/insertBlog', function (req, res, next) {
     var form = new formidable.IncomingForm();
 
     form.parse(req, function (err, fields, files) {
         var data=fields.blogtxt;
-        console.log('文件后缀名为 '+files.file.type);
         switch (files.file.type) {  //此处in_file  为页面端 <input type=file name=in_file>
             case 'image/jpeg':
                 extName = 'jpeg';
@@ -142,7 +129,6 @@ router.post('/insertBlog', function (req, res, next) {
             readStream.pipe(writeStream);
             readStream.on('end', function () {
                 fs.unlinkSync(files.file.path);
-
             });
 
             var blogdata=JSON.parse(data);
@@ -151,7 +137,6 @@ router.post('/insertBlog', function (req, res, next) {
 
 
             blogDAO.insertBlog(blogdata,function (result) {
-                console.log({result:result});
                 res.json({result:result});
 
             })
@@ -177,7 +162,7 @@ router.get('/getBlogByuid',function (req,res,next) {
 //个人中心收藏的博客
 router.get('/getBlogKeep',function (req,res,next) {
     var blog = req.query;
-    if(blog.uid!=null){
+    if(blog!=null){
         blogDAO.getBlogKeep(blog,function (_result) {
             res.json({result:_result});
         })

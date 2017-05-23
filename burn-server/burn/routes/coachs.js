@@ -40,39 +40,46 @@ router.get('/showcoach',function (req,res,next) {
 //展示教练详情
 router.get('/showcoachDetail',function (req,res,next) {
     var coach = req.query;
-    coachdao.showcoachDetail(coach,function (_result) {
-         res.json({result:_result});
-    })
+    if(coach!=null){
+        coachdao.showcoachDetail(coach,function (_result) {
+            res.json({result:_result});
+        })
+    }
 })
 
 //预约教练
 router.post('/appointCoach',function (req,res,next) {
     var coach = req.body;
-    coachdao.appointCoach(coach,function (_result) {
-        res.json({result:_result});
-    })
+    if(coach!=null){
+        coachdao.appointCoach(coach,function (_result) {
+            res.json({result:_result});
+        })
+    }
 })
 
 //查看某时段教练是否已经被预约
 router.post('/getappointInfo1',function (req,res,next) {
     var coach = req.body;
-    coachdao.getappointInfo1(coach,function (_result) {
-        res.json({result:_result});
-    });
+    if(coach!=null){
+        coachdao.getappointInfo1(coach,function (_result) {
+            res.json({result:_result});
+        });
+    }
 })
 //查看该时段是否已经预约
 router.post('/getappointtime',function (req,res,next) {
     var coach = req.body;
-    coachdao.getappointtime(coach,function (_result) {
-        res.json({result:_result});
-    })
+    if(coach!=null){
+        coachdao.getappointtime(coach,function (_result) {
+            res.json({result:_result});
+        })
+    }
 })
 
 
 //个人中心查看预约记录
 router.get('/showAppoById',function (req,res,next) {
     var coach = req.query;
-    console.log(coach);
     if(coach!=null){
         coachdao.showAppoById(coach,function (_result) {
             res.json({result:_result});
@@ -89,7 +96,6 @@ router.post('/becomeCoach', function (req, res, next) {
 
     form.parse(req, function (err, fields, files) {
         var data=fields.coachdata;
-        console.log('文件后缀名为 '+files.file.type);
         switch (files.file.type) {  //此处in_file  为页面端 <input type=file name=in_file>
             case 'image/jpeg':
                 extName = 'jpeg';
@@ -119,7 +125,6 @@ router.post('/becomeCoach', function (req, res, next) {
             readStream.pipe(writeStream);
             readStream.on('end', function () {
                 fs.unlinkSync(files.file.path);
-
             });
 
             var coachdata=JSON.parse(data);
@@ -136,8 +141,6 @@ router.post('/becomeCoach', function (req, res, next) {
                 }
             })
 
-
-
         }
 
     })//end form.parse
@@ -147,19 +150,19 @@ router.post('/becomeCoach', function (req, res, next) {
 //检测是否是教练
 router.get('/alreadyCoach',function (req,res,next) {
     var coach = req.query;
-    coachdao.alreadyCoach(coach,function (_result) {
-        res.json({result:_result});
-    });
+    if(coach!=null){
+        coachdao.alreadyCoach(coach,function (_result) {
+            res.json({result:_result});
+        });
+    }
 })
 
 
 //教练查看预约记录
 router.get('/getCoachCourse',function (req,res,next) {
     var data = req.query;
-    console.log(data.uid);
     if(data!=null){
         coachdao.getCoachCourse(data,function (result) {
-            console.log(result)
             res.json({result:result});
         })
     }

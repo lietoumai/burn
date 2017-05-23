@@ -7,8 +7,12 @@ angular.module('course')
                 restrict: "ACE",
                 replace: true,
                 templateUrl: 'course/course-page.template.html',
-                controller: ['$http','$scope','serverUrl','IconUrl','selectcal','$filter','courseUrl',
-                    function ($http,$scope,serverUrl,IconUrl,selectcal,$filter,courseUrl) {
+                controller: ['$http','$scope','serverUrl','IconUrl','selectcal','$filter','courseUrl','courseTimeService',
+                    function ($http,$scope,serverUrl,IconUrl,selectcal,$filter,courseUrl,courseTimeService) {
+
+                    //明日课程信息
+                    $scope.now = new Date().getTime()+1000*60*60*24;   //获取明天日期
+
 
 
                     //倒计时
@@ -26,13 +30,13 @@ angular.module('course')
                     $scope.IconUrl = IconUrl;
                     $scope.courseUrl = courseUrl;
 
-
-
                     //获取今日课程
                         $http.get(serverUrl+'courses/getTodayCourse/')
                             .then(function successCallback(response) {
                                 if(response.data.result.length>0){
                                     $scope.coursedataToday = response.data.result;
+                                }else{
+                                    $('#noneCourse').html('<p style="color: #e84e40">明日暂未发布课程，请预约其他日期</p>');
                                 }
                             });
 

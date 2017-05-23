@@ -10,8 +10,9 @@
 
     <div class="course-main">
         <div class="container">
+            <h1 style="margin: 50px auto">明日课程 <span style="color:#E84E40;" ng-bind="now|date: 'yyyy-MM-dd'"></span></h1>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 show-course-container" ng-repeat="c in coursedataToday">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 show-course-container"  ng-repeat="c in coursedataToday">
                     <div class="show-course">
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 show-course-pic">
                             <img ng-src="{{courseUrl+c.cpicc1}}" alt="">
@@ -34,7 +35,7 @@
                             <div class="show-course-btn">
                                 <a ui-sref="courseDetaileds({cid:c.cid})">阅读更多</a>
                             </div>
-                            <span class="timespan"></span>
+                           <!-- <span class="timespan"></span>-->
                         </div>
                     </div>
                 </div>
@@ -46,11 +47,10 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 show-course-container">
                         <div class="joinLogin">
                             <h1>加入我们吧</h1>
-                            <p>sed diam nonummy nibh euismod</p>
-                            <p>Lorem ipsum dolor sit amet，consectetuer adipiscing elit，sed diamnibh euismod tincidunt ut
-                                laoreet dolore magna。</p>
+                            <p ng-bind="coursedataToday[0].cname"></p>
+                            <p ng-bind="coursedataToday[0].cintroduce"></p>
 
-                            <button>立即加入</button>
+                            <button ui-sref="courseDetaileds({cid:coursedataToday[0].cid})">立即加入</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                             <ul ng-repeat="c1 in coursedata">
                                 <a ui-sref="courseDetaileds({cid:c1.cid})">
                                     <li ng-bind="c1.cname" style="float: left;width: 100px; text-align: left"></li>
-                                    <li ng-bind="c1.ctimestart"></li>
+                                    <li id="datepass" ng-bind="c1.ctimestart"></li>
                                     <li ng-bind="c1.cdate" style="float: right"></li>
                                 </a>
                             </ul>

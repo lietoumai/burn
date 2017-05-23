@@ -31,7 +31,7 @@
                                     <span ng-bind="b.uname"></span>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-5 col-xs-7 text-right">
-                                    <i class="iconfont icon-zan1 icon-operation"></i>
+                                    <i class="iconfont icon-zan icon-operation"></i>
                                     <span ng-bind="b.blikecount"></span>
                                     <i class="iconfont icon-pinglun icon-operation"></i>
                                     <span ng-bind="b.bcomment"></span>
@@ -56,11 +56,13 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 recommend-blog-title" ng-repeat="br in blogRecommend">
                             <p ng-bind="br.btitle" ng-click="recommendBlogDetail(br.bid)">
                             </p>
-                            <i class="iconfont icon-zan1 icon-operation"></i>
-                            <span ng-bind="br.blikecount"></span>
-                            &nbsp;&nbsp;
-                            <i class="iconfont icon-pinglun icon-operation"></i>
-                            <span ng-bind="br.bcomment"></span>
+                            <p style="text-align: right;font-size: 1em">
+                                <i class="iconfont icon-zan icon-operation"></i>
+                                <span ng-bind="br.blikecount"></span>
+                                &nbsp;&nbsp;
+                                <i class="iconfont icon-pinglun icon-operation"></i>
+                                <span ng-bind="br.bcomment"></span>
+                            </p>
                         </div>
                     </div>
                 </div>

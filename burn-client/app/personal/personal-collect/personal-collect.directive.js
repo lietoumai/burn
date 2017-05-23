@@ -12,14 +12,13 @@ angular.module('personalCollect')
                 'videoKeepService',
                 'videoUrl',
                 'IconUrl',
-                'blogUrl',
                 'blogKeepService',
                 '$http',
                 'serverUrl',
                 'deleteblogService',
                 'deletevideoCollectService',
                 'blogCoverUrl',
-                function ($scope,$rootScope,videoKeepService,videoUrl,IconUrl,blogUrl,blogKeepService,$http,serverUrl,deleteblogService,deletevideoCollectService,blogCoverUrl) {
+                function ($scope,$rootScope,videoKeepService,videoUrl,IconUrl,blogKeepService,$http,serverUrl,deleteblogService,deletevideoCollectService,blogCoverUrl) {
 
                     $scope.videoUrl = videoUrl;
                     $scope.IconUrl = IconUrl;

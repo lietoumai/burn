@@ -24,6 +24,7 @@ angular.module('courseDetaileds')
                 //查看课程是否已经过期
                 $(function () {
                     courseTimeService.sellectCourseTime({cid:$stateParams.cid});
+                    selectCourseDetailed.selectCourseDetailed({cid:$stateParams.cid});
                 })
 
 
@@ -42,7 +43,6 @@ angular.module('courseDetaileds')
                                 alert('请先登录')
                             }
                         }
-
 
             }]
         }

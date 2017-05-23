@@ -16,7 +16,6 @@ angular.module('serviceCourse')
                         if (response.data.result.length >0) {
                             $rootScope.coursedataCount = response.data.result[0];
                         }
-
                     })
             }
         }
@@ -32,7 +31,6 @@ angular.module('serviceCourse')
                         console.log(response.data.result)
                         // 请求成功执行代码
                         if (response.data.result==0) {
-                            // alert('该课程已经过期!');
                             $('#selectCourse').attr('disabled',true);
                             $('#selectCourse').val('该课程已经过期');
                             $('#selectCourse').css('background-color','grey');
@@ -118,7 +116,9 @@ angular.module('serviceCourse')
     return {
         selectCourse: function (data) {
             if($rootScope.coursedataCount.peopleCount==$rootScope.coursedataDetailed.ccount){
-                    alert('该课程已经被选满');
+                $('#selectCourse').attr('disabled',$rootScope.isSelected);
+                $('#selectCourse').val('已选满');
+                $('#selectCourse').css('background-color','grey');
             }else{
                 $http({
                     url: serverUrl + "courses/selectCourse",
@@ -138,6 +138,7 @@ angular.module('serviceCourse')
                         // 请求成功执行代码
                         if (response.data.result==1) {
                             $rootScope.isSelected = true;
+                            $rootScope.selectCourseCount();
                             alert('选课成功!')
                         }else if(response.data.result==5){
                             $rootScope.isSelected = true;
