@@ -14,11 +14,6 @@ var fs = require('fs');
 router.get('/', function(req, res, next) {
 
 });
-
-<<<<<<< HEAD
-
-=======
->>>>>>> e97f57a31fd335276cc0ebc37edccef6985212d8
 /*post方式登录*/
 router.post('/login', function(req, res, next) {
     var user=req.body;
