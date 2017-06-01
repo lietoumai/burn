@@ -434,9 +434,15 @@ a{
     width: 100%;
     position: relative;
 }
+.lunbo ul li{
+    display: inline;
+}
 #imgDiv img{
     width: 2000px;
 }
+
+#pic_list{position:relative;}
+#pic_list li{position:absolute;left:0;top:0;opacity:0;fliter:alpha(opacity=0);}
 #imgDiv .imgIndex{
     color: #ffffff;
     position: absolute;

@@ -6,9 +6,9 @@ var sql = {
     //查看当前课程是否已经过期
     sellectCourseTime:'select * from course where ctimestart>now() and cid=?',
     //展示课程简介
-    getCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate>=date_format(now(),"%y-%m-%d") order by course.cdate asc',
+    getCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.ctimestart>=date_format(now(),"%y-%m-%d %H:%m:%s") order by course.cdate asc',
     //展示课程简介
-    getTodayCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate=date_format(now(),"%y-%m-%d")',
+    getTodayCourse:'select cid,uname,uicon,cpicc1,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate=DATE_SUB(curdate(),INTERVAL -1 DAY)',
     //根据日期获取课程信息
     selectcal:'select cid,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,cname from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and cdate=?',
     //查看课程详情
@@ -25,10 +25,17 @@ var sql = {
     deleteCourse:'delete from coursehistory where chid=?',
 
     //发布课程
-    ReleaseCourse:'insert into course(cname,coid,ctimestart,ctimeend,cdate,cintroduce,cpicc1,ccount) values(?,?,?,?,?,?,?,?)',
+    ReleaseCourse:'insert into course(cname,coid,ctimestart,ctimeend,cdate,cintroduce,cpicc1,cpicc2,ccount) values(?,?,?,?,?,?,?,?,?)',
 
 
     //教练课程推送
     getCourseThree:'select cid,uname,cname,DATE_FORMAT(ctimestart,"%H:%m") as ctimestart,DATE_FORMAT(ctimeend,"%H:%m") as ctimeend,DATE_FORMAT(cdate,"%Y-%m-%d") as cdate,substring(cintroduce,1,40) as cintroduce from user,coach,course where user.uid=coach.coid and coach.coid=course.coid and course.cdate>=date_format(now(),"%y-%m-%d") and course.coid=? order by course.cdate asc limit 3',
+
+    //请求轮播
+    insertBanner:'insert into banner (cid,cpicc2,cname,batime) values(?,?,?,?)',
+
+    //展示轮播
+    bannerPush:'select * from banner order by batime desc limit 3'
+
 }
 module.exports = sql;

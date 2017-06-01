@@ -14,7 +14,6 @@ var fs = require('fs');
 router.get('/', function(req, res, next) {
 
 });
-
 /*post方式登录*/
 router.post('/login', function(req, res, next) {
     var user=req.body;
@@ -31,7 +30,6 @@ router.post('/login', function(req, res, next) {
 
 /*get方式注册*/
 router.get('/regist', function(req, res, next) {
-
     var user=req.query;
     if(user!=null && user.utel!=null && user.upwd!=null && user.uname!=null){
         userdao.addUser(user,function (_result) {
@@ -42,7 +40,6 @@ router.get('/regist', function(req, res, next) {
 
 /*post方式注册*/
 router.post('/regist', function(req, res, next) {
-
     var user=req.body;
     if(user!=null && user.utel!=null && user.upwd!=null && user.uname!=null){
         userdao.addUser(user,function (_result) {
@@ -57,14 +54,10 @@ router.post('/upload', function (req, res, next) {
     var form = new formidable.IncomingForm();
 
     form.parse(req, function (err, fields, files) {
-    console.log(files);
         if (err) {
             response.locals.error = err;
-            // response.render("uploads");
             return;
         }
-        // console.log(fields.user_phone_number.length);
-        // console.log(files);
         userdao.getUserIcon(fields.uid,function (result) {
             if(result.length==1){
                 var extName ='';  //后缀名
@@ -102,9 +95,6 @@ router.post('/upload', function (req, res, next) {
                         fs.unlinkSync(files.file.path);
 
                     });
-
-                    console.log('upload end...');
-
                     userdao.upLoadIcon(avatarName,fields.uid,function (result) {
 
                     })

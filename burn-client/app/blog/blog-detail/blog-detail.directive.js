@@ -32,7 +32,7 @@ angular.module('blogDetail')
                     //请求评论
                 $http({
                     method: 'GET',
-                    url: serverUrl + 'blog/getBlogComment?bid=' + $scope.bdid + '',
+                    url: serverUrl + 'blog/getBlogComment?bid=' + $scope.bdid +'',
                 }).then(
                     function (response) {
                        $scope.bcc = response.data;
@@ -62,9 +62,16 @@ angular.module('blogDetail')
                                     uid:$scope.uid,
                                     bccontent:$scope.cbccontent
                                 }
-                            }).then(
-                                function (response) {
-                                    $scope.bcc.splice(0,0,datac);
+                            }).then(function (response) {
+                                    $http({
+                                        method: 'GET',
+                                        url: serverUrl + 'blog/getBlogComment?bid=' + $scope.bdid +'',
+                                    }).then(
+                                        function (response) {
+                                            $scope.bcc = response.data;
+                                        }
+                                    )
+                                    // $scope.bcc.splice(0,0,datac);
                                 }
                             )
                         }else {

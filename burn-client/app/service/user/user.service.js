@@ -51,7 +51,11 @@ angular.module('serviceUser')
                             sessionStorage.setItem('upointcount',$rootScope.upointcount);
                             sessionStorage.setItem('checkbox', false);
                         }
+<<<<<<< HEAD
                         // $('#loginSuccess').modal('show');
+=======
+>>>>>>> 05616816dc5d669d9e306d9f051d3de0c3e31f63
+
 
                     } else if (response.data.result == 2) {   //密码错误
                         $('#loginupwd').text('密码错误');

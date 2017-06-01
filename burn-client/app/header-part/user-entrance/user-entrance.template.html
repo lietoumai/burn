@@ -9,7 +9,7 @@
     <div ng-switch-when="true">
         <a class="scroll">
             <div class="login-pic">
-                <img ui-sref="personal" src="http://localhost:3000/uploads/{{uicon}}" alt="">
+                <img ui-sref="personal" ng-src="{{IconUrl+uicon}}" alt="">
                 <div class="personal-window">
                     <div class="user-info">
                         <p><i class="icon-wode"></i><span ng-bind="uname" ui-sref="personal"></span></p>

@@ -5,7 +5,7 @@ var blogSql = {
     //查询博客前六条
     getBlog:'select blog.bid,btitle,bpic,bzhaiyao,DATE_FORMAT(btime,"%Y-%m-%d") as btime,blikecount,uicon,uname,count(blogcomment.bid) as bcomment from ((blog left join user on blog.uid=user.uid)left join blogcomment on blog.bid=blogcomment.bid) group by btime desc',
     //博客推荐
-    getBlogRecommend:'SELECT bid,btitle,blikecount,blookcount,bcomment FROM blog ORDER BY blookcount desc LIMIT 6',
+    getBlogRecommend:'SELECT blog.bid,btitle,blikecount,blookcount,count(blogcomment.bid) as bcomment FROM blogcomment left join blog on blogcomment.bid = blog.bid group by blog.bid ORDER BY blookcount desc LIMIT 6',
     //博客详情
     getBlogDetail:'SELECT bid,btitle,bcontent,blookcount,DATE_FORMAT(btime,"%Y-%m-%d") as btime,user.uid,user.uicon,user.uname FROM blog,user WHERE blog.uid=user.uid AND bid=?',
     //博客品论查询

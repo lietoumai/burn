@@ -37,14 +37,13 @@
 
         <div  id="personal-collect-blog" style="display: none">
             <div class="blog-show" ng-repeat="bk in blogkeepData">
-                <a  >
                 <div class="person-blog-title">
                     <i class="iconfont icon-shanchu" ng-click="deleteBlogCollect(bk.bkid)"></i>
                     <div class="person-blog-title-pic" ui-sref="blog-detail({bid:bk.bid})">
                         <img ng-src="{{IconUrl+bk.uicon}}" alt="">
                     </div>
                     <div class="person-blog-title-title">
-                        <span style="color: red;font-weight: 600" ng-bind="bk.uname"> </span><span>发布了博客:</span><span style="font-weight: 600" ng-bind="bk.btitle"></span>
+                        <span style="color: red;font-weight: 600" ng-bind="bk.uname"> </span><span style="font-weight: 100">发布了博客:</span><span style="font-weight: 600" ng-bind="bk.btitle"></span>
                     </div>
                     <div class="person-blog-title-time">
                         <p><span ng-bind="bk.bktime"></span>收藏了博客</p>
@@ -59,15 +58,14 @@
                             <span ng-bind="bk.bzhaiyao"></span>
                         </div>
                         <div class="person-blog-content-right-3">
-                            <i class="iconfont icon-zan1 icon-operation"></i>
-                            <span ng-bind="bk.bcomment"></span>
+                            <i class="iconfont icon-zan icon-operation"></i>
+                            <span ng-bind="bk.blikecount"></span>
                             &nbsp;&nbsp;
                             <i class="iconfont icon-pinglun icon-operation"></i>
-                            <span ng-bind="bk.blikecount"></span>
+                            <span ng-bind="bk.bcomment"></span>
                         </div>
                     </div>
                 </div>
-                </a>
             </div>
         </div>
 

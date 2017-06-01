@@ -20,7 +20,6 @@ router.get('/', function(req, res, next) {
 });
 //博客推荐
 router.get('/getBlogPush',function (req,res,next) {
-    console.log(11111111111111111)
     indexDAO.getBlogPush(function (result) {
         if(result.length>0){
             res.json({result:result});

@@ -47,7 +47,6 @@ angular.module('personal')
                    })
                      // 修改头像样式
                    $('#change-user-icon-btn').click(function () {
-                       console.log(111);
                        $('#change-user-icon-btn').hide();
                        $('#true-icon-btn').show();
                    })

@@ -44,14 +44,14 @@
             </div>-->
 
 
-            <div class="coach-schedule-box" ng-repeat="cc in coachCourse">
+            <div class="coach-schedule-box" ng-repeat="cc in coachCourse track by $index">
                 <i class="iconfont icon-sanjiao"></i>
                 <div class="coach-schedule-box-top">
                     <div class="schedule-box-top-left">
                         <img src="images/f2.jpg" alt="">
                     </div>
                     <div class="schedule-box-top-right">
-                        <h5 ng-bind="cc.cname"></h5>
+                        <h5 ng-bind="cc.cpicc2"></h5>
                         <p><span ng-bind="cc.ccount"></span>:个预约</p>
                     </div>
                 </div>
@@ -60,6 +60,7 @@
                     <div class="coach-schedule-time">开始时间：<span ng-bind="cc.ctimestart"></span></div>
                     <div class="coach-schedule-time">结束时间：<span ng-bind="cc.ctimeend"></span></div>
                 </div>
+                <button id="{{insertBtn+$index}}" style="margin-top: 10px;margin-left: 100px" ng-click="insertBanner(cc.cid,cc.cname,cc.cpicc2)">申请推送</button>
             </div>
         </div>
 
@@ -94,6 +95,10 @@
                 <div class="card-pic">
                     <img ngf-src="coursePic || data.defaultCoursePic" alt="">
                     <i class="iconfont icon-paizhao" ngf-select="" id="userCard1" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="coursePic"></i>
+                </div>
+                <div class="card-pic">
+                    <img ngf-src="coursePic2 || data.defaultCoursePic" alt="">
+                    <i class="iconfont icon-paizhao" ngf-select="" id="userCard2" ngf-pattern="'image/*'"  ngf-multiple="false" ng-model="coursePic2"></i>
                 </div>
             </div>
             <div class="information-signature card-photo">
